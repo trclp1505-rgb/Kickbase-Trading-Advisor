@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8">
+<title>KickAdvisor – Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+<h1>⚽️ KickAdvisor – Dashboard</h1>
+<p><button id="reload">Aktualisieren</button> <span id="s"></span></p>
+<pre id="out">Noch keine Daten. Starte den Workflow.</pre>
+<script>
+const out=document.getElementById('out'),s=document.getElementById('s');
+async function load(){
+  s.textContent='Lade…';
+  try{
+    const r=await fetch('data/output.txt?t='+Date.now());
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    out.textContent=await r.text(); s.textContent='Aktualisiert.';
+  }catch(e){ out.textContent='Hinweis: '+e.message; s.textContent='—'; }
+}
+document.getElementById('reload').onclick=load; load();
+</script>
