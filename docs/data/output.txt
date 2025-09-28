@@ -1,0 +1,83 @@
+Run: 2025-09-28 20:02:00 UTC
+
+Logged in to Kickbase.
+Warning: No league found with name 'Die 10 Nuggatschleusen'. Falling back to the first available league: 'SGE4EVER 25/26'
+Warning: Failed to process achievement bonus {'i': '11382028995', 't': 26, 'coc': 0, 'data': {'t': 701, 'n': 'Bronze hand', 'd': 'Yield 3 mil profit with a player. No transfers between managers.'}, 'dt': '2025-09-26T20:14:18Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11367904171', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-09-22T17:53:13Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11340676804', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2025-09-15T22:47:14Z'}: 'ac'
+Warning: Failed to process achievement bonus {'i': '11340676671', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-09-15T22:47:14Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11340676576', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-09-15T22:47:14Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11340676465', 't': 26, 'coc': 0, 'data': {'t': 5, 'n': 'Match day winner', 'd': 'Win the match day'}, 'dt': '2025-09-15T22:47:14Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11289153806', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-09-01T18:16:41Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11261203308', 't': 26, 'coc': 0, 'data': {'t': 301, 'n': 'Match winner', 'd': 'Score at least 300 points with a player'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11261203197', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11261203098', 't': 26, 'coc': 0, 'data': {'t': 200, 'n': 'Season points bronze', 'd': 'Score at least 1.000 points during a season'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11261202999', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11261202882', 't': 26, 'coc': 0, 'data': {'t': 100, 'n': 'Match day points bronze', 'd': 'Score at least 500 points during a match day'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11244575359', 't': 26, 'coc': 0, 'data': {'t': 700, 'n': 'The right touch', 'd': 'Yield 1 mil profit with a player. No transfers between managers.'}, 'dt': '2025-08-21T21:53:44Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11237418950', 't': 26, 'coc': 0, 'data': {'t': 501, 'n': 'Transfer King bronze', 'd': 'Sell or buy 50 players during a season'}, 'dt': '2025-08-19T18:22:18Z'}: 'er'
+
+=== Manager Budgets ===
+             User      Budget  Team Value  Max Negative  Available Budget
+0       JesseJay  124.908.125 147.792.941   -89.991.352       214.899.477
+1        MACHETE   97.217.767 155.598.949   -83.429.516       180.647.283
+2           frahd  87.044.665 187.335.477   -90.545.447       177.590.112
+3           Henok  87.116.453 176.569.324   -87.016.306       174.132.759
+4        Simon ❗️  59.906.032 233.473.919   -96.815.384       156.721.416
+5          Freddy  55.396.055 233.648.738   -95.384.782       150.780.837
+6        BAN PIVA  66.810.396 159.701.439   -74.748.906       141.559.302
+7        Mare1987  58.584.584 178.709.125   -78.306.924       136.891.508
+8         Batigol  64.134.781 153.400.191   -71.786.541       135.921.322
+9   David Nikolic  61.798.665 120.796.312   -60.256.342       122.055.007
+10        Elvisee  43.609.996 176.600.374   -72.669.422       116.279.418
+11      Falco1899  43.615.553 135.851.289   -59.224.058       102.839.611
+12        Simon94  24.578.584 174.798.747   -65.794.519        90.373.103
+13      Christoph  -5.330.120 224.846.777   -72.440.497        67.110.377
+14          Jens  -18.192.400 217.169.645   -65.662.491        47.470.091
+
+Data reload needed, this takes a few minutes...
+
+Data loaded from database.
+
+Data preprocessed.
+
+Model evaluation:
+Signs correct: 76.00%
+RMSE: 2244777731.54
+MAE: 25865.29
+R2: 0.92
+
+=== Market Recommendations ===
+      last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0          Boey      Bayern  7.411.059              351.411              349.114          3            13           False
+1     Al Dakhil   Stuttgart  3.007.053              335.706              330.141          4           672           False
+2      Manzambi    Freiburg  7.139.689              150.561              213.785          5            15           False
+3        Jaquez   Stuttgart  4.702.031              130.221              209.459          2            73           False
+4    Ben Seghir  Leverkusen 10.610.920              199.320              204.259          3           692           False
+5       Ullrich  M'gladbach  6.613.628              127.051              199.971          2            28           False
+6        Scally  M'gladbach  8.304.372              127.106              175.124          2            42           False
+7      Goretzka      Bayern 22.654.593              157.752              168.490          3           720           False
+8       Makengo    Freiburg  6.465.652              121.568              127.265          3           717           False
+9          Kade    Augsburg    683.591              162.158              102.400          4            13           False
+10      Banzuzi     Leipzig  9.375.341               71.606               90.016          3           692           False
+11     Hendriks   Stuttgart  4.020.843               43.711               84.270          4            23           False
+12  Veratschnig       Mainz  4.695.924               37.810               12.609          3           474           False
+
+=== Squad Recommendations ===
+     last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
+0     Vušković     Hamburg 10.481.608              233.306              200.123          1
+1     Grimaldo  Leverkusen 33.943.825              120.266              117.295          1
+2         Díaz      Bayern 48.295.220               48.661               57.042          2
+3      Tillman  Leverkusen 25.627.823               50.149               52.131          1
+4     Mbangula      Bremen 10.827.777               17.896               42.860          3
+5   Sebulonsen        Köln  8.671.946               21.209               33.097          1
+6        Omlin  M'gladbach    500.000                    0               10.943          5
+7       Müller   Wolfsburg    500.000                    0                  170          5
+8      Stiller   Stuttgart 30.727.360                  406              -17.074          1
+9    Coulibaly      Bremen  7.430.834              -21.613              -52.490          3
+10     Hajdari  Hoffenheim  8.622.073              -37.243              -52.787          2
+11      Kofane  Leverkusen  4.746.774              -64.617              -63.877          4
+12      Schmid      Bremen 19.605.874              -93.002              -77.199          1
+13      Burger  Hoffenheim  6.798.739              -93.219             -100.960          2
+
+No email provided, skipping email sending.
