@@ -1,6 +1,6 @@
 name: Daily Predictions
 on:
-  schedule: [{ cron: '30 22 * * *' }]   # täglich 22:30 UTC
+  schedule: [{ cron: '30 22 * * *' }]
   workflow_dispatch: {}
 permissions: { contents: write }
 
@@ -18,13 +18,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 1) immer frischen Zeitstempel schreiben (damit sicher eine Änderung existiert)
+      # Immer was schreiben, damit eine Änderung sicher da ist
       - name: Write timestamp
         run: |
           mkdir -p docs/data
           echo "Run: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" > docs/data/output.txt
 
-      # 2) Python-Skript ausführen und Log an die Datei anhängen (auch bei Fehlern)
+      # Python-Log anhängen (auch bei Fehlern)
       - name: Run daily_predictions.py (append logs)
         shell: bash
         env:
@@ -34,7 +34,7 @@ jobs:
           set -o pipefail
           python daily_predictions.py |& tee -a docs/data/output.txt || true
 
-      # 3) Commit & Push zurück ins Repo
+      # Commit & Push zurück ins Repo
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
