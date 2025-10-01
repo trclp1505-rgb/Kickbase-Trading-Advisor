@@ -3,7 +3,7 @@ name: Kickbase Market Alert (Discord)
 on:
   schedule:
     - cron: "*/15 * * * *"   # alle 15 Minuten
-  workflow_dispatch: {}       # manuell startbar
+  workflow_dispatch:
 
 jobs:
   alert:
@@ -31,11 +31,9 @@ jobs:
 import os, requests
 
 user = os.environ["KICK_USER"]
-pw   = os.environ["KICK_PASS"]
 wh   = os.environ["DISCORD_WEBHOOK"]
 
-# Zum Test nur eine Nachricht schicken
-msg = {"content": f"✅ Workflow läuft! Login: {user}"}
+msg = {"content": f"✅ Workflow läuft! Eingeloggt als {user}"}
 r = requests.post(wh, json=msg, timeout=10)
 print("Discord Antwort:", r.status_code, r.text)
 PY
