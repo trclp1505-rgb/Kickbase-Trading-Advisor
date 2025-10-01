@@ -21,12 +21,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run alert script
+            - name: Run alert script
         env:
-          KICK_USER:        ${{ secrets.KICK_USER }}
-          KICK_PASS:        ${{ secrets.KICK_PASS }}
-          DISCORD_WEBHOOK:  ${{ secrets.DISCORD_WEBHOOK }}
-          KICK_LEAGUE_NAME: ${{ secrets.KICK_LEAGUE_NAME }}
+          KICK_USER:         ${{ secrets.KICK_USER }}
+          KICK_PASS:         ${{ secrets.KICK_PASS }}
+          DISCORD_WEBHOOK:   ${{ secrets.DISCORD_WEBHOOK }}
+          KICK_LEAGUE_ID:    ${{ secrets.KICK_LEAGUE_ID }}   # <- wichtig! z.B. 5654776
+          KICK_LEAGUE_NAME:  ${{ secrets.KICK_LEAGUE_NAME }} # optional
           GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: |
           python .github/scripts/kickbase_alert.py
+
