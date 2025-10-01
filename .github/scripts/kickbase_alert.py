@@ -1,4 +1,7 @@
 import os, requests, datetime, json
+import sys, os, requests, datetime, json
+sys.path.insert(0, os.getcwd())  # erlaubt Import aus deinem Repo
+from kickbase_api.user import login as kb_login
 
 EMAIL   = os.environ["KICK_USER"]
 PASS    = os.environ["KICK_PASS"]
@@ -21,24 +24,14 @@ def discord_post(text: str):
         text = text[1900:]
 
 def login():
-    headers_like_app = {
-        "Accept": "application/json",
-        "Content-Type": "application/json",
-        "User-Agent": "Kickbase/6.0.0 (iPhone; iOS 16.0)",
-        "X-App-Version": "6.0.0",
-        "X-Platform": "ios"
-    }
-    r = session.post("https://api.kickbase.com/v4/user/login",
-                     json={"email": EMAIL, "password": PASS},
-                     headers=headers_like_app,
-                     timeout=20)
-    if not r.ok:
-        raise RuntimeError(f"Login fehlgeschlagen: {r.status_code} {r.text[:200]}")
-    j = r.json()
-    token = j.get("token") or j.get("accessToken")
-    if token:
-        session.headers.update({"Authorization": f"Bearer {token}"})
-    return j
+    token = kb_login(EMAIL, PASS)   # nutzt die getestete Funktion aus deinem Repo
+    session.headers.update({"Authorization": f"Bearer {token}"})
+    # direkt alle Ligen abholen
+    r = session.get("https://api.kickbase.com/leagues", timeout=20)
+    if r.ok:
+        return {"leagues": r.json()}
+    return {"leagues": []}
+
 
 def main():
     try:
