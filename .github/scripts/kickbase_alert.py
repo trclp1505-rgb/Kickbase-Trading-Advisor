@@ -131,10 +131,8 @@ def ts(val):
     except:
         return str(val)
 
-def main():
-    try:
-        lj = login()
-        def main():
+
+  def main():
     try:
         lj = login()
 
@@ -159,6 +157,7 @@ def main():
                 discord_post(f"{u} → {r.status_code} {r.text[:100]}")
 
         lid, lname = choose_league(lj)
+
 
                 # Debug: versuche verschiedene Endpoints, um Ligen zu listen
         for u in [
