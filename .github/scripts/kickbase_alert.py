@@ -134,6 +134,32 @@ def ts(val):
 def main():
     try:
         lj = login()
+        def main():
+    try:
+        lj = login()
+
+        # Debug-Ausgabe: Login-Daten und mögliche Liga-Listen
+        discord_post("Login JSON:\n" + json.dumps(lj, indent=2)[:1800])
+
+        for u in [
+            "https://api.kickbase.com/v4/user/leagues",
+            "https://api.kickbase.com/v4/leagues",
+            "https://api.kickbase.com/v3/leagues",
+            "https://api.kickbase.com/leagues",
+        ]:
+            r = session.get(u, timeout=15)
+            if r.ok:
+                try:
+                    data = r.json()
+                    preview = json.dumps(data, indent=2)[:1800]
+                    discord_post(f"Ligen von {u}:\n{preview}")
+                except Exception as e:
+                    discord_post(f"{u} → Fehler beim JSON: {e}")
+            else:
+                discord_post(f"{u} → {r.status_code} {r.text[:100]}")
+
+        lid, lname = choose_league(lj)
+
                 # Debug: versuche verschiedene Endpoints, um Ligen zu listen
         for u in [
             "https://api.kickbase.com/v4/leagues",
