@@ -32,12 +32,32 @@ def login():
         return {"leagues": r.json()}
     return {"leagues": []}
 
+def choose_league():
+    # Wenn Secret KICK_LEAGUE_ID gesetzt ist, nutzen wir das fest
+    if LEAGUE_ID:
+        return LEAGUE_ID, "(per ID)"
+
+    # Fallback: Suche Liga über Namen im /v4/leagues JSON
+    for url in [
+        "https://api.kickbase.com/v4/leagues",
+        "https://api.kickbase.com/v3/leagues",
+        "https://api.kickbase.com/leagues",
+    ]:
+        r = session.get(url, timeout=15)
+        if r.ok:
+            data = r.json()
+            if isinstance(data, dict) and "lins" in data:
+                for L in data["lins"]:
+                    if L.get("n") == LEAGUE_WANTED:
+                        return L.get("i"), L.get("n")
+    raise RuntimeError("Liga nicht gefunden.")
 
 def main():
     try:
         lj = login()
+lid, lname = choose_league()
+discord_post(f"✅ Kickbase-Alarm aktiv (Liga: {lname}, ID: {lid})")
 
-        # Debug-Ausgabe: Login JSON dumpen
         try:
             discord_post("Login JSON:\n" + json.dumps(lj, indent=2)[:1800])
         except Exception as e:
