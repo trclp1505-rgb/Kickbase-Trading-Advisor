@@ -11,15 +11,21 @@ EVENT         = os.environ.get("GITHUB_EVENT_NAME","")
 sys.path.insert(0, os.getcwd())
 from kickbase_api.user import login as kb_login
 
+import uuid
 session = requests.Session()
-# App-ähnliche Default-Header (wie iOS-App)
 session.headers.update({
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "User-Agent": "Kickbase/6.0.0 (iPhone; iOS 16.0)",
-    "X-App-Version": "6.0.0",
-    "X-Platform": "ios"
+    "Accept-Language": "de-DE",
+    "User-Agent": "Kickbase/7.0.0 (iPhone; iOS 17.5.1) AppleWebKit/605.1.15",
+    "X-App-Version": "7.0.0",
+    "X-App-Build": "7000000",
+    "X-Platform": "ios",
+    "X-Device-Id": str(uuid.uuid4()),            # einmal pro Run ok
+    "X-Device-Model": "iPhone14,2",
+    "X-OS-Version": "17.5.1"
 })
+
 
 
 def discord_post(text: str):
@@ -116,22 +122,45 @@ def main():
         ts_now = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
         discord_post(f"✅ Kickbase-Alarm aktiv – Liga: {lname} (ID: {LEAGUE_ID}) • {ts_now}")
 
-           # 4) Debug-Scan mehrerer plausibler Endpoints (mit Liga-ID im Header)
-    #    -> wir loggen ALLES ins Discord, was antwortet
+               # 4) Erweiterter Endpoint-Scan (mit Header + Query-Variante)
+    lid = str(LEAGUE_ID)
     endpoints = [
-        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket/bids",
-        f"https://api.kickbase.com/v4/transfermarket/leagues/{LEAGUE_ID}/bids",
-        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket",
-        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket/auctions",
-        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket/items",
-        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/auctions",
-        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/bids",
+        f"https://api.kickbase.com/v4/leagues/{lid}/transfermarket/bids",
+        f"https://api.kickbase.com/v4/leagues/{lid}/transfermarket",
+        f"https://api.kickbase.com/v4/transfermarket/leagues/{lid}/bids",
+        f"https://api.kickbase.com/v4/transfermarket/leagues/{lid}",
+        f"https://api.kickbase.com/v4/leagues/{lid}/transfermarket/auctions",
+        f"https://api.kickbase.com/v4/leagues/{lid}/transfermarket/items",
+        f"https://api.kickbase.com/v4/leagues/{lid}/auctions",
+        f"https://api.kickbase.com/v4/leagues/{lid}/bids",
+        f"https://api.kickbase.com/v4/transfermarket?leagueId={lid}",
         "https://api.kickbase.com/v4/user/bids",
         "https://api.kickbase.com/v4/me/bids",
-        f"https://api.kickbase.com/v3/leagues/{LEAGUE_ID}/transfermarket/bids",
-        f"https://api.kickbase.com/v3/leagues/{LEAGUE_ID}/transfermarket",
-        "https://api.kickbase.com/v3/user/bids",
     ]
+
+    found_any = False
+    for u in endpoints:
+        try:
+            r = session.get(u, headers={"x-league-id": lid}, timeout=25)
+            if r.ok:
+                # Versuche JSON zu dekodieren
+                try:
+                    data = r.json()
+                    # kompakter Preview
+                    snippet = json.dumps(data, ensure_ascii=False)[:1700]
+                    discord_post(f"✅ {u} → OK\n{snippet}")
+                    found_any = True
+                except Exception as e:
+                    discord_post(f"⚠️ {u} → JSON-Fehler: {e}\nText: {r.text[:400]}")
+            else:
+                discord_post(f"❌ {u} → {r.status_code}: {r.text[:150]}")
+        except Exception as e:
+            discord_post(f"❌ {u} → {type(e).__name__}: {e}")
+
+    if not found_any:
+        discord_post("⚠️ Keiner der erweiterten Endpoints hat geliefert. Wir passen dann im nächsten Schritt die Quelle an (Repo-Client).")
+        return
+
 
     found_any = False
     for u in endpoints:
