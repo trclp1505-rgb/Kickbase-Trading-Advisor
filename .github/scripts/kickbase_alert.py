@@ -101,21 +101,19 @@ def ts(val):
 def main():
     try:
         lj = login()
+        # Extra Debug: hole alle Ligen ab und poste sie
+        r = session.get("https://api.kickbase.com/v4/user/leagues", timeout=20)
+        if r.ok:
+            leagues = r.json()
+            txt = "Gefundene Ligen:\n" + "\n".join([f"- {L.get('name')} (ID: {L.get('id')})" for L in leagues])
+            discord_post(txt)
+        else:
+            discord_post(f"⚠️ Konnte Ligen nicht holen: {r.status_code} {r.text[:100]}")
         lid, lname = choose_league(lj)
     except Exception as e:
         discord_post(f"❌ Login/Liga fehlgeschlagen: {e}")
         return
 
-    candidates = [
-        f"https://api.kickbase.com/v4/leagues/{lid}/transfermarket/bids",
-        "https://api.kickbase.com/v4/user/bids",
-        f"https://api.kickbase.com/v3/leagues/{lid}/transfermarket/bids",
-        "https://api.kickbase.com/v3/user/bids",
-    ]
-    data, used = first_ok_json(candidates)
-    if data is None:
-        discord_post("⚠️ Konnte Bids nicht laden (API evtl. geändert). Sag mir Bescheid, dann passe ich es an.")
-        return
 
     if isinstance(data, dict):
         items = data.get("bids") or data.get("items") or []
