@@ -2,7 +2,7 @@ name: Kickbase Market Alert (Discord)
 
 on:
   schedule:
-    - cron: "*/15 * * * *"     # alle 15 Minuten
+    - cron: "*/10 * * * *"     # alle 10 Minuten
   workflow_dispatch: {}         # manuell startbar
 
 jobs:
