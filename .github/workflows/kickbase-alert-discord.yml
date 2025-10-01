@@ -1,19 +1,32 @@
 name: Kickbase Market Alert (Discord)
 
 on:
-  workflow_dispatch:        # manuell startbar
+  workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"  # alle 15 Minuten
+    - cron: "*/15 * * * *"   # alle 15 Minuten
 
 jobs:
   alert:
     runs-on: ubuntu-latest
     steps:
-      - name: Post test message to Discord
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
         run: |
-          curl -sS -H "Content-Type: application/json" \
-            -X POST \
-            -d "{\"content\":\"✅ Workflow läuft!\"}" \
-            "$DISCORD_WEBHOOK"
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run alert script
+        env:
+          KICK_USER:        ${{ secrets.KICK_USER }}
+          KICK_PASS:        ${{ secrets.KICK_PASS }}
+          DISCORD_WEBHOOK:  ${{ secrets.DISCORD_WEBHOOK }}
+          KICK_LEAGUE_NAME: ${{ secrets.KICK_LEAGUE_NAME }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python .github/scripts/kickbase_alert.py
