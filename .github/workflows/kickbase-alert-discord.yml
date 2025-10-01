@@ -1,0 +1,181 @@
+name: Kickbase Market Alert (Discord)
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"     # alle 15 Minuten
+  workflow_dispatch: {}         # manuell startbar
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Check bids and notify Discord
+        env:
+          KICK_USER:         ${{ secrets.KICK_USER }}
+          KICK_PASS:         ${{ secrets.KICK_PASS }}
+          KICK_LEAGUE_NAME:  ${{ secrets.KICK_LEAGUE_NAME }}
+          DISCORD_WEBHOOK:   ${{ secrets.DISCORD_WEBHOOK }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+import os, json, time, datetime, requests, textwrap
+
+EMAIL = os.environ["KICK_USER"]
+PASS  = os.environ["KICK_PASS"]
+WEBHOOK = os.environ["DISCORD_WEBHOOK"]
+LEAGUE_WANTED = os.environ.get("KICK_LEAGUE_NAME", "").strip()
+EVENT = os.environ.get("GITHUB_EVENT_NAME","")
+
+session = requests.Session()
+session.headers.update({"Accept":"application/json","User-Agent":"Mozilla/5.0"})
+
+def post_discord(msg):
+    # Teilt zu lange Nachrichten auf 2000 Zeichen Blöcke
+    while msg:
+      chunk = msg[:1900]
+      payload = {"content": chunk, "username": "Kickbase Alarm", "allowed_mentions":{"parse":[]}}
+      r = requests.post(WEBHOOK, json=payload, timeout=15)
+      r.raise_for_status()
+      msg = msg[1900:]
+
+def login():
+    last = None
+    for url in [
+      "https://api.kickbase.com/v4/user/login",
+      "https://api.kickbase.com/v3/user/login",
+      "https://api.kickbase.com/user/login",
+    ]:
+        try:
+            r = session.post(url, json={"email": EMAIL, "password": PASS}, timeout=20)
+            if r.ok:
+                j = r.json()
+                token = j.get("token") or j.get("accessToken")
+                if token:
+                    session.headers.update({"Authorization": f"Bearer {token}"})
+                return j
+            last = f"{r.status_code} {r.text[:200]}"
+        except Exception as e:
+            last = f"{type(e).__name__}: {e}"
+    raise RuntimeError(f"Login failed: {last}")
+
+def pick_league(login_json):
+    # Versuche gewünschte Liga per Name zu treffen, sonst erste Liga
+    leagues = login_json.get("leagues") or []
+    if LEAGUE_WANTED:
+        for L in leagues:
+            if (L.get("name") or "").strip() == LEAGUE_WANTED:
+                return L["id"], L["name"]
+    if leagues:
+        return leagues[0]["id"], leagues[0].get("name","?")
+    # Fallback: /v4/user/leagues probieren
+    r = session.get("https://api.kickbase.com/v4/user/leagues", timeout=20)
+    if r.ok and isinstance(r.json(), list) and r.json():
+        L = r.json()[0]
+        return L["id"], L.get("name","?")
+    raise RuntimeError("Keine Liga gefunden – bist du in einer Liga?")
+
+def first_ok_json(urls):
+    last = ""
+    for url in urls:
+        try:
+            r = session.get(url, timeout=20)
+            if r.ok:
+                return r.json(), url
+            last = f"{r.status_code} {r.text[:120]}"
+        except Exception as e:
+            last = f"{type(e).__name__}: {e}"
+    return None, last
+
+def get_field(d, *names, default=None):
+    for n in names:
+        if n in d and d[n] is not None:
+            return d[n]
+    return default
+
+def eur(x):
+    if x is None: return "?"
+    try:
+        # Wenn in Cent geliefert, versuchen zu erkennen
+        v = float(x)
+        if v.is_integer(): v=int(v)
+        if isinstance(v, int) and v < 1_000_000:  # heuristisch: könnte Cent sein
+            return f"{v/100:,.0f} €".replace(",", ".")
+        return f"{v:,.0f} €".replace(",", ".")
+    except:
+        return str(x)
+
+def parse_time(val):
+    if not val: return "?"
+    try:
+        if isinstance(val,(int,float)):
+            ts=int(val)
+            if ts>10_000_000_000: ts//=1000
+            return datetime.datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M UTC")
+        s=str(val)
+        return s.replace("T"," ").replace("Z"," UTC")
+    except:
+        return str(val)
+
+# --- Ablauf ---
+try:
+    login_json = login()
+    lid, lname = pick_league(login_json)
+except Exception as e:
+    post_discord(f"❌ Login/Liga fehlgeschlagen: {e}")
+    raise SystemExit(0)
+
+candidates = [
+  f"https://api.kickbase.com/v4/leagues/{lid}/transfermarket/bids",
+  "https://api.kickbase.com/v4/user/bids",
+  f"https://api.kickbase.com/v3/leagues/{lid}/transfermarket/bids",
+  "https://api.kickbase.com/v3/user/bids",
+]
+
+bids_json, used = first_ok_json(candidates)
+if bids_json is None:
+    post_discord("⚠️ Konnte Bids nicht laden. Die API hat sich evtl. geändert. Melde dich, dann passe ich es an.")
+    raise SystemExit(0)
+
+# Liste extrahieren
+if isinstance(bids_json, dict):
+    items = bids_json.get("bids") or bids_json.get("items") or []
+elif isinstance(bids_json, list):
+    items = bids_json
+else:
+    items = []
+
+alerts = []
+for it in items:
+    mine    = get_field(it, "isMine","mine", default=False) is True
+    highest = get_field(it, "isHighestBidder","highest", default=False) is True
+    over    = get_field(it, "overbid","isOverbid", default=False) is True
+    if not mine: 
+        continue
+    if highest and not over:
+        continue
+    player = get_field(get_field(it,"player",default={}), "lastName","name", default="Unbekannter Spieler")
+    my_bid = get_field(it,"amount","bidAmount","myBid","amountCents")
+    top    = get_field(it,"highestBidAmount","topBid","maxBid","topBidCents")
+    end_at = get_field(it,"endTime","deadline","expiresAt","endTs")
+    alerts.append(f"• {player}: Dein Gebot {eur(my_bid)} | Höchstgebot {eur(top)} | Ende: {parse_time(end_at)}")
+
+if alerts:
+    header = f"⚠️ Du wurdest überboten (Liga: {lname})\n"
+    post_discord(header + "\n".join(alerts))
+else:
+    # Beim manuellen Start eine „lebt“-Nachricht schicken:
+    if EVENT == "workflow_dispatch":
+        post_discord(f"✅ Kickbase-Alarm aktiv (Liga: {lname}). Aktuell keine Überbietungen.")
+PY
