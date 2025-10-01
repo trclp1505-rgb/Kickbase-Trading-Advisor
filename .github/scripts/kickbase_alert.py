@@ -12,7 +12,15 @@ sys.path.insert(0, os.getcwd())
 from kickbase_api.user import login as kb_login
 
 session = requests.Session()
-session.headers.update({"Accept":"application/json","User-Agent":"Mozilla/5.0"})
+# App-ähnliche Default-Header (wie iOS-App)
+session.headers.update({
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+    "User-Agent": "Kickbase/6.0.0 (iPhone; iOS 16.0)",
+    "X-App-Version": "6.0.0",
+    "X-Platform": "ios"
+})
+
 
 def discord_post(text: str):
     while text:
@@ -108,16 +116,48 @@ def main():
         ts_now = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
         discord_post(f"✅ Kickbase-Alarm aktiv – Liga: {lname} (ID: {LEAGUE_ID}) • {ts_now}")
 
-        # 4) Debug: probiere verschiedene Transfermarkt-/Bids-Endpoints
+           # 4) Debug-Scan mehrerer plausibler Endpoints (mit Liga-ID im Header)
+    #    -> wir loggen ALLES ins Discord, was antwortet
     endpoints = [
         f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket/bids",
+        f"https://api.kickbase.com/v4/transfermarket/leagues/{LEAGUE_ID}/bids",
         f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket",
+        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket/auctions",
+        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket/items",
+        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/auctions",
         f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/bids",
         "https://api.kickbase.com/v4/user/bids",
+        "https://api.kickbase.com/v4/me/bids",
         f"https://api.kickbase.com/v3/leagues/{LEAGUE_ID}/transfermarket/bids",
         f"https://api.kickbase.com/v3/leagues/{LEAGUE_ID}/transfermarket",
         "https://api.kickbase.com/v3/user/bids",
     ]
+
+    found_any = False
+    for u in endpoints:
+        try:
+            r = session.get(u, headers={"x-league-id": str(LEAGUE_ID)}, timeout=20)
+            if r.ok:
+                try:
+                    data = r.json()
+                    preview = json.dumps(data, indent=2)[:1700]
+                    discord_post(f"✅ {u} lieferte {len(preview)} Zeichen JSON:\n{preview}")
+                    found_any = True
+                except Exception as e:
+                    discord_post(f"⚠️ {u} -> JSON-Fehler: {e}\nText: {r.text[:500]}")
+            else:
+                discord_post(f"❌ {u} -> {r.status_code}: {r.text[:120]}")
+        except Exception as e:
+            discord_post(f"❌ {u} -> Exception: {type(e).__name__}: {e}")
+
+    if not found_any:
+        discord_post("⚠️ Keiner der getesteten Endpoints hat JSON geliefert. (Wir sind trotzdem eingeloggt; die API-Pfade/Headers variieren.)")
+        return
+
+    # Wenn einer was geliefert hat, versuche aus dem ersten brauchbaren Objekt 'meine Nicht-Höchstgebote' zu ziehen
+    # (wir nehmen heuristisch die letzte erfolgreiche Antwort aus der Schleife oben)
+    # Tipp: wir könnten hier den 'besten' Treffer merken; fürs Erste beenden wir nach dem Scan, sag mir welcher Endpoint Daten hatte.
+
 
     found = False
     for u in endpoints:
