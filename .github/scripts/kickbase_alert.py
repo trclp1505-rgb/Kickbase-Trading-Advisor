@@ -108,18 +108,34 @@ def main():
         ts_now = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
         discord_post(f"✅ Kickbase-Alarm aktiv – Liga: {lname} (ID: {LEAGUE_ID}) • {ts_now}")
 
-    # 4) Bids laden (mehrere mögliche Endpoints, da API je nach Version variiert)
-    candidates = [
+        # 4) Debug: probiere verschiedene Transfermarkt-/Bids-Endpoints
+    endpoints = [
         f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket/bids",
+        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/transfermarket",
+        f"https://api.kickbase.com/v4/leagues/{LEAGUE_ID}/bids",
         "https://api.kickbase.com/v4/user/bids",
         f"https://api.kickbase.com/v3/leagues/{LEAGUE_ID}/transfermarket/bids",
+        f"https://api.kickbase.com/v3/leagues/{LEAGUE_ID}/transfermarket",
         "https://api.kickbase.com/v3/user/bids",
     ]
-    data, used = first_ok_json(candidates)
-    if data is None:
-        # Leise sein bei Cron; beim manuellen Start kurz Bescheid sagen:
-        if EVENT == "workflow_dispatch":
-            discord_post("⚠️ Konnte aktuell keine Bids laden (API kann variieren).")
+
+    found = False
+    for u in endpoints:
+        try:
+            r = session.get(u, timeout=20)
+            if r.ok:
+                data = r.json()
+                preview = json.dumps(data, indent=2)[:1800]
+                discord_post(f"✅ Endpoint {u} lieferte:\n{preview}")
+                found = True
+            else:
+                discord_post(f"{u} → {r.status_code}")
+        except Exception as e:
+            discord_post(f"{u} → Fehler: {e}")
+
+    if not found:
+        discord_post("⚠️ Keiner der getesteten Endpoints lieferte Daten.")
+
         return
 
     # 5) Items extrahieren
