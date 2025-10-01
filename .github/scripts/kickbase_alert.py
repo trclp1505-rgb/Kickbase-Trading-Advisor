@@ -32,19 +32,29 @@ def login():
 
 def choose_league(login_json):
     leagues = login_json.get("leagues") or []
-    if LEAGUE_WANTED:
+    wanted = LEAGUE_WANTED
+    if wanted:
+        # Falls Name angegeben ist -> Liga mit exakt diesem Namen wählen
         for L in leagues:
-            if (L.get("name") or "").strip() == LEAGUE_WANTED:
+            if (L.get("name") or "").strip() == wanted:
                 return L["id"], L.get("name","?")
+        # Wenn noch nichts gefunden -> extra Abfrage
+        r = session.get("https://api.kickbase.com/v4/user/leagues", timeout=20)
+        if r.ok and isinstance(r.json(), list):
+            for L in r.json():
+                if (L.get("name") or "").strip() == wanted:
+                    return L["id"], L.get("name","?")
+        raise RuntimeError(f"Liga '{wanted}' nicht gefunden.")
+    # Fallback: erste Liga nehmen
     if leagues:
-        L = leagues[0]
-        return L["id"], L.get("name","?")
-    # Fallback: extra call
+        return leagues[0]["id"], leagues[0].get("name","?")
+    # Letzter Fallback: user/leagues holen
     r = session.get("https://api.kickbase.com/v4/user/leagues", timeout=20)
     if r.ok and isinstance(r.json(), list) and r.json():
         L = r.json()[0]
         return L["id"], L.get("name","?")
     raise RuntimeError("Keine Liga gefunden. Bist du in einer Liga?")
+
 
 def first_ok_json(urls):
     last = ""
