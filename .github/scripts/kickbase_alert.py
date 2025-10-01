@@ -7,6 +7,7 @@ EMAIL   = os.environ["KICK_USER"]
 PASS    = os.environ["KICK_PASS"]
 WEBHOOK = os.environ["DISCORD_WEBHOOK"]
 LEAGUE_WANTED = os.environ.get("KICK_LEAGUE_NAME", "").strip()
+LEAGUE_ID = os.environ.get("KICK_LEAGUE_ID", "").strip()
 EVENT = os.environ.get("GITHUB_EVENT_NAME","")  # "workflow_dispatch" beim manuellen Start
 
 session = requests.Session()
@@ -31,28 +32,60 @@ def login():
 
 
 def choose_league(login_json):
+    # 1) Wenn eine Liga-ID als Secret gesetzt ist → sofort diese nehmen
+    if LEAGUE_ID:
+        # Versuche optional den Namen zu ermitteln (nur für die Anzeige)
+        try:
+            for url in [
+                "https://api.kickbase.com/v4/leagues",
+                "https://api.kickbase.com/v3/leagues",
+                "https://api.kickbase.com/leagues",
+            ]:
+                r = session.get(url, timeout=15)
+                if r.ok:
+                    for L in (r.json() if isinstance(r.json(), list) else []):
+                        if str(L.get("id")) == LEAGUE_ID:
+                            return LEAGUE_ID, L.get("name", "(per ID)")
+        except Exception:
+            pass
+        return LEAGUE_ID, "(per ID)"
+
+    # 2) Wenn ein Name vorgegeben ist → exakt matchen (erst aus Login, dann Fallback)
     leagues = login_json.get("leagues") or []
     wanted = LEAGUE_WANTED
     if wanted:
-        # Falls Name angegeben ist -> Liga mit exakt diesem Namen wählen
         for L in leagues:
             if (L.get("name") or "").strip() == wanted:
-                return L["id"], L.get("name","?")
-        # Wenn noch nichts gefunden -> extra Abfrage
-        r = session.get("https://api.kickbase.com/v4/user/leagues", timeout=20)
-        if r.ok and isinstance(r.json(), list):
-            for L in r.json():
-                if (L.get("name") or "").strip() == wanted:
-                    return L["id"], L.get("name","?")
+                return L["id"], L.get("name", "?")
+        # Fallback: alternative Endpoints probieren
+        for url in [
+            "https://api.kickbase.com/v4/leagues",
+            "https://api.kickbase.com/v3/leagues",
+            "https://api.kickbase.com/leagues",
+        ]:
+            r = session.get(url, timeout=15)
+            if r.ok and isinstance(r.json(), list):
+                for L in r.json():
+                    if (L.get("name") or "").strip() == wanted:
+                        return L["id"], L.get("name", "?")
         raise RuntimeError(f"Liga '{wanted}' nicht gefunden.")
-    # Fallback: erste Liga nehmen
+
+    # 3) Fallback: erste Liga aus Login nehmen, wenn vorhanden
     if leagues:
-        return leagues[0]["id"], leagues[0].get("name","?")
-    # Letzter Fallback: user/leagues holen
-    r = session.get("https://api.kickbase.com/v4/user/leagues", timeout=20)
-    if r.ok and isinstance(r.json(), list) and r.json():
-        L = r.json()[0]
-        return L["id"], L.get("name","?")
+        L = leagues[0]
+        return L["id"], L.get("name", "?")
+
+    # 4) Letzter Fallback: irgendeinen League-Endpoint probieren
+    for url in [
+        "https://api.kickbase.com/v4/leagues",
+        "https://api.kickbase.com/v3/leagues",
+        "https://api.kickbase.com/leagues",
+    ]:
+        r = session.get(url, timeout=15)
+        if r.ok and isinstance(r.json(), list) and r.json():
+            L = r.json()[0]
+            return L["id"], L.get("name", "?")
+
     raise RuntimeError("Keine Liga gefunden. Bist du in einer Liga?")
 
 
@@ -101,6 +134,19 @@ def ts(val):
 def main():
     try:
         lj = login()
+                # Debug: versuche verschiedene Endpoints, um Ligen zu listen
+        for u in [
+            "https://api.kickbase.com/v4/leagues",
+            "https://api.kickbase.com/v3/leagues",
+            "https://api.kickbase.com/leagues",
+        ]:
+            r = session.get(u, timeout=15)
+            if r.ok:
+                leagues = r.json()
+                if isinstance(leagues, list) and leagues:
+                    preview = "\n".join([f"- {L.get('name')} (ID: {L.get('id')})" for L in leagues])[:1800]
+                    discord_post(f"Ligen von {u}:\n{preview}")
+                    break
         # Extra Debug: hole alle Ligen ab und poste sie
         r = session.get("https://api.kickbase.com/v4/user/leagues", timeout=20)
         if r.ok:
