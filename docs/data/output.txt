@@ -1,4 +1,4 @@
-Run: 2025-10-02 22:41:50 UTC
+Run: 2025-10-03 03:01:22 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11395664619', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-09-29T18:09:21Z'}: 'er'
@@ -50,47 +50,48 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 76.63%
-RMSE: 2254751063.33
-MAE: 25798.75
+Signs correct: 76.45%
+RMSE: 2261495055.22
+MAE: 25761.92
 R2: 0.92
 
 === Market Recommendations ===
           last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0            Andrés     Stuttgart  9.345.191              357.712              312.727          3           719           False
-1              Netz    M'gladbach  1.958.561              245.288              221.897          3            15            True
-2          Saliakas     St. Pauli  5.840.788              276.175              221.400          2           691           False
-3        Sebulonsen          Köln  9.635.477              230.740              206.676          1           691           False
-4            Ritzka     St. Pauli  4.325.669              247.204              191.119          3           691           False
-5            Chaves    Hoffenheim  4.381.627              210.072              190.276          3           691           False
-6             Krauß          Köln  7.676.613              215.195              168.902          2             6            True
-7           Haberer  Union Berlin  6.727.686              215.026              155.942          2           691           False
-8          Kaufmann    Heidenheim  5.013.852              225.225              143.482          3           693           False
-9   Heuer Fernandes       Hamburg 12.474.333              123.998              101.074          1           719           False
-10            Maina          Köln  2.473.162               43.358               95.539          3           282           False
-11          El Mala          Köln 10.368.523               58.319               67.449          3           691           False
-12         Goretzka        Bayern 23.331.298               74.593               52.916          3           683           False
-13          Ryerson      Dortmund 17.268.694               78.950               45.004          3           635           False
-14            Burke  Union Berlin  8.328.684              176.941               27.443          3            15            True
+0            Andrés     Stuttgart  9.345.191              357.712              309.743          3           714           False
+1          Saliakas     St. Pauli  5.840.788              276.175              227.249          2           687           False
+2              Netz    M'gladbach  1.958.561              245.288              220.521          3            11            True
+3        Sebulonsen          Köln  9.635.477              230.740              202.796          1           687           False
+4            Ritzka     St. Pauli  4.325.669              247.204              195.419          3           687           False
+5            Chaves    Hoffenheim  4.381.627              210.072              187.181          3           687           False
+6             Krauß          Köln  7.676.613              215.195              164.107          2             1            True
+7           Haberer  Union Berlin  6.727.686              215.026              160.006          2           687           False
+8          Kaufmann    Heidenheim  5.013.852              225.225              145.571          3           689           False
+9   Heuer Fernandes       Hamburg 12.474.333              123.998              100.280          1           714           False
+10            Maina          Köln  2.473.162               43.358               98.536          3           278           False
+11          El Mala          Köln 10.368.523               58.319               67.521          3           687           False
+12         Goretzka        Bayern 23.331.298               74.593               52.664          3           679           False
+13          Ryerson      Dortmund 17.268.694               78.950               43.625          3           631           False
+14            Burke  Union Berlin  8.328.684              176.941               35.271          3            11            True
 
 === Squad Recommendations ===
      last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0       Kofane    Leverkusen  6.022.253              380.743              337.020          2
-1     Saliakas     St. Pauli  5.840.788              276.175              221.400          2
-2    Coulibaly        Bremen  8.389.470              270.410              219.988          3
-3   Sebulonsen          Köln  9.635.477              230.740              206.676          1
-4       Ritzka     St. Pauli  4.325.669              247.204              191.119          3
-5       Chaves    Hoffenheim  4.381.627              210.072              190.276          3
-6     Vušković       Hamburg 11.688.693              219.195              187.819          1
-7      Haberer  Union Berlin  6.727.686              215.026              155.942          2
-8     Mbangula        Bremen 11.452.687              164.092              139.397          1
-9       Burger    Hoffenheim  6.824.828               58.502               78.604          2
-10    Grimaldo    Leverkusen 34.523.340               93.200               76.254          1
-11     El Mala          Köln 10.368.523               58.319               67.449          3
-12     Stiller     Stuttgart 30.981.005               47.182               46.624          1
-13      Schmid        Bremen 19.843.765               46.740               42.651          1
-14        Díaz        Bayern 48.555.768               37.017               35.847          1
-15     Tillman    Leverkusen 25.843.086               27.855               27.045          1
-16       Kömür      Augsburg 12.301.819             -463.138             -352.112          3
+0       Kofane    Leverkusen  6.022.253              380.743              336.364          2
+1     Saliakas     St. Pauli  5.840.788              276.175              227.249          2
+2    Coulibaly        Bremen  8.389.470              270.410              220.701          3
+3   Sebulonsen          Köln  9.635.477              230.740              202.796          1
+4       Ritzka     St. Pauli  4.325.669              247.204              195.419          3
+5     Vušković       Hamburg 11.688.693              219.195              187.399          1
+6       Chaves    Hoffenheim  4.381.627              210.072              187.181          3
+7      Haberer  Union Berlin  6.727.686              215.026              160.006          2
+8     Mbangula        Bremen 11.452.687              164.092              138.231          1
+9     Grimaldo    Leverkusen 34.523.340               93.200               77.305          1
+10      Burger    Hoffenheim  6.824.828               58.502               77.269          2
+11     El Mala          Köln 10.368.523               58.319               67.521          3
+12     Stiller     Stuttgart 30.981.005               47.182               45.958          1
+13      Schmid        Bremen 19.843.765               46.740               43.494          1
+14        Díaz        Bayern 48.555.768               37.017               34.824          1
+15     Tillman    Leverkusen 25.843.086               27.855               26.269          1
+16       Omlin    M'gladbach    500.000                    0                  182          5
+17       Kömür      Augsburg 12.301.819             -463.138             -355.748          3
 
 No email provided, skipping email sending.
