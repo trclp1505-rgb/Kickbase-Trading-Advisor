@@ -1,4 +1,4 @@
-Run: 2025-10-03 22:40:57 UTC
+Run: 2025-10-03 23:00:52 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11408719412', 't': 26, 'coc': 0, 'data': {'t': 402, 'n': 'Team value gold', 'd': 'Own a team with a value of 200 mil.'}, 'dt': '2025-10-03T18:06:28Z'}: 'er'
@@ -51,29 +51,29 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 76.60%
-RMSE: 2321692301.24
-MAE: 26067.30
+Signs correct: 76.64%
+RMSE: 2315392413.28
+MAE: 26044.63
 R2: 0.92
 
 === Market Recommendations ===
   last_name   team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0      Rieß       Mainz 2.108.037              163.791              104.001          1            29           False
-1  Potulski       Mainz   771.472              271.472               86.990          4             9            True
-2    Hranác  Hoffenheim 9.401.450               10.373               14.605          1            24           False
+0      Rieß       Mainz 2.108.037              163.791              101.433          1            29           False
+1  Potulski       Mainz   771.472              271.472               83.912          4             8            True
+2    Hranác  Hoffenheim 9.401.450               10.373               15.630          1            24           False
 
 === Squad Recommendations ===
    last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0     Kofane  Leverkusen  6.384.424              362.171              317.745          2
-1   Mbangula      Bremen 11.609.516              156.829              155.097          1
-2   Vušković     Hamburg 11.872.990              184.297              145.484          1
-3   Grimaldo  Leverkusen 34.602.693               79.353               75.068          1
-4     Schmid      Bremen 19.895.929               52.164               51.086          1
-5       Díaz      Bayern 48.593.324               37.556               43.156          1
-6    Stiller   Stuttgart 31.017.873               36.868               33.897          1
-7    Tillman  Leverkusen 25.865.965               22.879               22.439          2
-8     Pieper      Bremen  3.152.212              -60.682              -73.262          3
-9     Honsak  Heidenheim  4.078.370             -102.141              -97.701          3
-10     Kömür    Augsburg 11.812.983             -488.836             -379.618          2
+0     Kofane  Leverkusen  6.384.424              362.171              319.474          2
+1   Mbangula      Bremen 11.609.516              156.829              156.220          1
+2   Vušković     Hamburg 11.872.990              184.297              143.492          1
+3   Grimaldo  Leverkusen 34.602.693               79.353               68.597          1
+4     Schmid      Bremen 19.895.929               52.164               50.425          1
+5       Díaz      Bayern 48.593.324               37.556               42.455          1
+6    Stiller   Stuttgart 31.017.873               36.868               34.227          1
+7    Tillman  Leverkusen 25.865.965               22.879               23.245          2
+8     Pieper      Bremen  3.152.212              -60.682              -72.181          3
+9     Honsak  Heidenheim  4.078.370             -102.141              -98.005          3
+10     Kömür    Augsburg 11.812.983             -488.836             -378.492          2
 
 No email provided, skipping email sending.
