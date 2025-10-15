@@ -1,4 +1,4 @@
-Run: 2025-10-14 22:42:59 UTC
+Run: 2025-10-15 22:41:45 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11421442105', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2025-10-06T17:51:44Z'}: 'er'
@@ -35,100 +35,74 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User      Budget  Team Value  Max Negative  Available Budget
-0        Simon ❗️   2.134.791 208.127.005   -69.386.393        71.521.184
-1          Freddy  -9.338.983 252.348.720   -80.193.213        70.854.230
-2           Henok   4.163.328 195.073.227   -65.748.063        69.911.391
-3        Mare1987    -896.754 205.804.064   -67.619.412        66.722.658
-4           frahd  -5.231.830 213.008.092   -68.566.166        63.334.336
-5         Batigol  12.886.864 136.106.431   -49.167.787        62.054.651
-6         Simon94   2.036.824 176.609.305   -58.953.223        60.990.047
-7        MACHETE    1.538.504 169.249.142   -56.359.923        57.898.427
-8        BAN PIVA   3.582.869 153.117.813   -51.711.225        55.294.094
-9         Elvisee -11.210.966 202.432.301   -63.103.041        51.892.075
-10  David Nikolic   3.316.620 138.198.582   -46.700.017        50.016.637
-11          Jens  -25.999.286 254.269.180   -75.329.065        49.329.779
-12      JesseJay  -17.704.678 197.592.712   -59.363.051        41.658.373
-13      Falco1899  -5.117.564 142.871.636   -45.458.844        40.341.280
-14      Christoph -40.952.650 246.219.964   -67.738.214        26.785.564
+0        Mare1987   5.481.554 199.980.449   -67.802.461        73.284.015
+1          Freddy  -9.238.983 253.764.201   -80.693.322        71.454.339
+2           Henok   4.263.328 195.715.315   -65.992.952        70.256.280
+3        Simon ❗️  -5.254.307 215.842.757   -69.494.188        64.239.882
+4           frahd  -5.131.830 211.967.538   -68.255.784        63.123.954
+5         Batigol  12.986.864 135.877.616   -49.125.278        62.112.142
+6         Simon94   2.136.824 176.295.431   -58.882.644        61.019.468
+7        MACHETE    1.638.504 169.017.190   -56.316.379        57.954.883
+8        BAN PIVA   3.682.869 152.282.483   -51.468.566        55.151.435
+9   David Nikolic   3.416.620 138.197.485   -46.732.655        50.149.275
+10        Elvisee -17.823.466 209.831.219   -63.362.558        45.539.092
+11      JesseJay  -17.604.678 197.591.646   -59.395.699        41.791.021
+12      Christoph -26.608.563 233.695.952   -68.338.838        41.730.275
+13      Falco1899  -5.017.564 141.347.041   -44.988.727        39.971.163
+14          Jens  -40.045.284 269.624.300   -75.761.075        35.715.791
 
 Data reload needed, this takes a few minutes...
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
-    response = self._make_request(
-               ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
-    response = conn.getresponse()
-               ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
-    httplib_response = super().getresponse()
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/http/client.py", line 1395, in getresponse
-    response.begin()
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/http/client.py", line 325, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/http/client.py", line 294, in _read_status
-    raise RemoteDisconnected("Remote end closed connection without"
-http.client.RemoteDisconnected: Remote end closed connection without response
 
-During handling of the above exception, another exception occurred:
+Data loaded from database.
 
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
-    resp = conn.urlopen(
-           ^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
-    retries = retries.increment(
-              ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
-    raise reraise(type(error), error, _stacktrace)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/util/util.py", line 38, in reraise
-    raise value.with_traceback(tb)
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
-    response = self._make_request(
-               ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
-    response = conn.getresponse()
-               ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
-    httplib_response = super().getresponse()
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/http/client.py", line 1395, in getresponse
-    response.begin()
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/http/client.py", line 325, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/http/client.py", line 294, in _read_status
-    raise RemoteDisconnected("Remote end closed connection without"
-urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Data preprocessed.
 
-During handling of the above exception, another exception occurred:
+Model evaluation:
+Signs correct: 76.12%
+RMSE: 2467680615.42
+MAE: 26684.48
+R2: 0.92
 
-Traceback (most recent call last):
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
-    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 110, in save_player_data_to_db
-    players = get_all_players(token, competition_id)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/player.py", line 65, in get_all_players
-    data = get_json_with_token(url, token)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/config.py", line 9, in get_json_with_token
-    resp = requests.get(url, headers=headers)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/adapters.py", line 659, in send
-    raise ConnectionError(err, request=request)
-requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+=== Market Recommendations ===
+     last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0    Fellhauer      Augsburg  7.386.373              306.688              290.780          2            14            True
+1       Heintz          Köln  4.734.375              320.793              277.509          3           600           False
+2     Lienhart      Freiburg 10.226.540              236.281              219.097          1             3            True
+3      Capaldo       Hamburg  6.495.172              215.772              185.441          3           669           False
+4       Günter      Freiburg  7.682.065              219.590              172.217          3             3            True
+5    Jovanovic     Stuttgart  4.382.064              238.892              161.782          5           681           False
+6   Skov Olsen     Wolfsburg  7.512.889               93.110              141.637          2           684           False
+7    Coulibaly        Bremen 11.059.795              156.776              133.233          2           718           False
+8        Bebou    Hoffenheim  4.956.446              213.809              127.091          5           500           False
+9        Ramos       Hamburg  5.115.478              204.854              118.596          5           624           False
+10        Lund          Köln  9.361.291              190.118              113.499          3           669           False
+11      Dinkçi      Freiburg  5.509.792              178.139               93.002          4           624           False
+12      Werner       Leipzig  5.549.892              193.821               88.814          5           667           False
+13        Wind     Wolfsburg  3.001.137               39.010               87.896          3           482           False
+14    Querfeld  Union Berlin 13.493.364              101.487               80.208          1           669           False
+15      Mainka    Heidenheim  9.056.349               33.162               53.171          1            36           False
+16       Ranos    M'gladbach  5.274.139              169.143               40.583          5           482           False
+17        Treu      Freiburg  7.380.134              165.030               32.779          3            15            True
+18     Baumann    Hoffenheim 13.213.908               24.218               30.656          1            26           False
+19        Hein        Bremen  7.446.066              118.947               14.528          3           542           False
+
+=== Squad Recommendations ===
+    last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
+0   Pieringer    Heidenheim  2.887.325              281.200              223.436          5
+1    Mbangula        Bremen 14.530.969              230.223              206.305          1
+2     Capaldo       Hamburg  6.495.172              215.772              185.441          3
+3    Vušković       Hamburg 14.400.826              199.551              175.570          1
+4      Vieira       Hamburg  7.363.354               96.104              144.504          5
+5   Coulibaly        Bremen 11.059.795              156.776              133.233          2
+6       Kömür      Augsburg 12.435.829              126.256              119.654          1
+7        Lund          Köln  9.361.291              190.118              113.499          3
+8      Schmid        Bremen 21.171.207              135.176              113.342          1
+9    Querfeld  Union Berlin 13.493.364              101.487               80.208          1
+10    Zentner         Mainz  8.734.104               41.712               69.366          5
+11       Díaz        Bayern 49.421.300               48.970               49.935          1
+12    Tillman    Leverkusen 26.552.508               32.007               33.603          2
+13   Grimaldo    Leverkusen 35.130.680               17.694               14.272          1
+14    Stiller     Stuttgart 31.399.135               16.124               11.562          1
+15      Damar    Hoffenheim  4.687.441              -43.194              -42.138          3
+
+No email provided, skipping email sending.
