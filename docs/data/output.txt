@@ -1,4 +1,4 @@
-Run: 2025-10-27 22:39:48 UTC
+Run: 2025-10-28 22:40:57 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11492097779', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-10-27T18:57:28Z'}: 'er'
@@ -43,79 +43,71 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User      Budget  Team Value  Max Negative  Available Budget
-0           Henok  25.631.024 181.410.032   -68.323.548        93.954.572
-1         Batigol  37.205.541 125.124.946   -53.569.061        90.774.602
-2           frahd  13.279.472 201.438.843   -70.857.044        84.136.516
-3         Elvisee   9.765.130 203.298.622   -70.311.038        80.076.168
-4           Jens   -7.626.793 258.650.542   -82.837.837        75.211.044
-5          Freddy -10.346.317 268.864.964   -85.311.154        74.964.837
-6        Mare1987   1.933.644 204.294.751   -68.055.370        69.989.014
-7        MACHETE       74.378 174.197.086   -57.509.583        57.583.961
-8        Simon ❗️ -14.038.057 227.863.161   -70.562.284        56.524.227
-9         Simon94  -6.841.064 187.995.154   -59.780.850        52.939.786
-10      Falco1899   5.891.645 134.227.497   -46.239.317        52.130.962
-11  David Nikolic   4.385.521 138.327.992   -47.095.459        51.480.980
-12       BAN PIVA      22.369 154.571.546   -51.015.992        51.038.361
-13      Christoph -24.033.260 249.293.015   -74.335.719        50.302.459
-14      JesseJay  -16.906.371 211.791.361   -64.312.047        47.405.676
+0           Henok  25.731.024 181.844.893   -68.500.053        94.231.077
+1         Batigol  37.305.541 126.413.158   -54.027.171        91.332.712
+2        Mare1987   2.033.644 205.036.259   -68.333.068        70.366.712
+3           frahd  -3.270.557 219.136.669   -71.235.817        67.965.260
+4          Freddy -19.446.317 279.693.282   -85.881.498        66.435.181
+5         Elvisee  -7.509.870 221.834.257   -70.727.048        63.217.178
+6        MACHETE      174.378 174.162.790   -57.531.265        57.705.643
+7           Jens  -27.132.199 280.720.089   -83.684.004        56.551.805
+8         Simon94  -6.741.064 188.597.458   -60.012.610        53.271.546
+9       Falco1899   5.991.645 134.870.351   -46.484.459        52.476.104
+10  David Nikolic   4.485.521 138.882.722   -47.311.520        51.797.041
+11       BAN PIVA     122.369 156.106.124   -51.555.403        51.677.772
+12       Simon ❗️ -22.518.165 235.944.171   -70.430.582        47.912.417
+13      Christoph -28.733.259 256.623.996   -75.203.943        46.470.684
+14      JesseJay  -18.606.371 215.204.016   -64.877.223        46.270.852
 
 Data reload needed, this takes a few minutes...
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/models.py", line 820, in generate
-    yield from self.raw.stream(chunk_size, decode_content=True)
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/response.py", line 1088, in stream
-    yield from self.read_chunked(amt, decode_content=decode_content)
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/response.py", line 1248, in read_chunked
-    self._update_chunk_length()
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/response.py", line 1178, in _update_chunk_length
-    raise ProtocolError("Response ended prematurely") from None
-urllib3.exceptions.ProtocolError: Response ended prematurely
 
-During handling of the above exception, another exception occurred:
+Data loaded from database.
 
-Traceback (most recent call last):
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
-    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
-    comp_dfs = list(executor.map(process_player, players))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 130, in process_player
-    p_df = pd.DataFrame(get_player_performance(token, competition_id, player_id, last_pfm_values, player_team_id))
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/player.py", line 79, in get_player_performance
-    data = get_json_with_token(url, token)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/config.py", line 9, in get_json_with_token
-    resp = requests.get(url, headers=headers)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/sessions.py", line 746, in send
-    r.content
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/models.py", line 902, in content
-    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/models.py", line 822, in generate
-    raise ChunkedEncodingError(e)
-requests.exceptions.ChunkedEncodingError: Response ended prematurely
+Data preprocessed.
+
+Model evaluation:
+Signs correct: 75.80%
+RMSE: 2739256703.63
+MAE: 28345.91
+R2: 0.91
+
+=== Market Recommendations ===
+        last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0          Suzuki      Freiburg  1.885.885              325.485              296.876          4           718           False
+1           Busch    Heidenheim  3.248.334              288.736              283.595          3           718           False
+2           Urbig        Bayern  1.941.564              298.366              281.494          5           718           False
+3         Eriksen     Wolfsburg  8.306.133              280.926              277.594          2           709           False
+4           Burke  Union Berlin  8.175.371              281.897              242.004          3             1           False
+5           Silas     Stuttgart  1.735.948              203.174              196.804          5            24           False
+6          Wimmer     Wolfsburg  5.497.991              188.994              179.863          3            12           False
+7        Goretzka        Bayern 23.105.832              172.133              158.522          3            21           False
+8           Nübel     Stuttgart 17.065.717              164.623              145.256          1            32           False
+9          Fujita     St. Pauli 11.057.156              115.519              118.852          1           660           False
+10           Mike        Bayern    532.367               32.367               92.401          5            16           False
+11  Sambi Lokonga       Hamburg 10.638.541              142.958               81.024          3           687           False
+12         Prömel    Hoffenheim  5.634.288               82.668               77.138          4             2           False
+13     Engelhardt    M'gladbach  8.357.405               80.721               76.464          2           709           False
+14        Gulácsi       Leipzig 17.645.862               63.723               54.929          1             6           False
+
+=== Squad Recommendations ===
+       last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
+0           Mets   St. Pauli  3.882.994              417.214              400.353          2
+1         Suzuki    Freiburg  1.885.885              325.485              296.876          4
+2          Busch  Heidenheim  3.248.334              288.736              283.595          3
+3          Urbig      Bayern  1.941.564              298.366              281.494          5
+4       Kramarić  Hoffenheim 17.216.298              276.535              259.556          2
+5           Hack  M'gladbach  5.687.028              190.470              197.788          5
+6       Vušković     Hamburg 16.717.854              160.342              144.578          1
+7          Kobel    Dortmund 18.390.933              146.480              124.778          1
+8         Vieira     Hamburg 10.269.924              132.848               98.389          3
+9       Grimaldo  Leverkusen 36.142.279               98.942               92.862          1
+10       Zentner       Mainz 11.060.783              113.273               79.057          1
+11       Honorat  M'gladbach 14.668.272               67.458               73.032          1
+12         Kömür    Augsburg 14.643.198               92.328               70.143          1
+13        Schmid      Bremen 22.575.019               73.919               66.688          1
+14      Mbangula      Bremen 15.960.828               51.314               46.708          1
+15       Stiller   Stuttgart 32.185.911               51.271               44.341          1
+16          Díaz      Bayern 50.226.422               42.877               38.743          1
+17  van den Berg        Köln  4.016.563              -14.730              -24.701          5
+
+No email provided, skipping email sending.
