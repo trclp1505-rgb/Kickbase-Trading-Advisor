@@ -1,4 +1,4 @@
-Run: 2025-10-29 22:41:06 UTC
+Run: 2025-10-30 21:09:31 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11492097779', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-10-27T18:57:28Z'}: 'er'
@@ -43,141 +43,111 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User      Budget  Team Value  Max Negative  Available Budget
-0          Freddy  -7.084.392 269.692.033   -86.660.522        79.576.130
-1           Henok   8.131.025 199.710.274   -68.587.629        76.718.654
-2        Mare1987   2.133.644 205.397.693   -68.485.341        70.618.985
-3           frahd  -4.774.145 221.521.711   -71.526.697        66.752.552
-4         Elvisee  -7.409.870 224.423.235   -71.614.410        64.204.540
-5        MACHETE      274.378 173.838.350   -57.457.200        57.731.578
-6           Jens  -27.032.199 283.035.439   -84.481.069        57.448.870
-7         Simon94  -6.641.064 188.807.687   -60.114.986        53.473.922
-8       Falco1899   6.091.645 135.389.313   -46.688.716        52.780.361
-9   David Nikolic   4.585.521 139.487.573   -47.544.121        52.129.642
-10      Christoph -24.245.365 254.712.765   -76.054.242        51.808.877
-11        Batigol  -1.992.756 164.449.304   -53.610.661        51.617.905
-12       Simon ❗️ -22.418.165 236.337.525   -70.593.389        48.175.224
-13      JesseJay  -18.506.371 216.682.508   -65.398.125        46.891.754
-14       BAN PIVA  -5.416.919 162.958.355   -51.988.674        46.571.755
+0          Freddy -14.107.848 278.406.847   -87.218.670        73.110.822
+1        Mare1987   2.233.644 205.167.973   -68.442.534        70.676.178
+2           frahd  -4.674.145 221.760.239   -71.638.411        66.964.266
+3         Batigol   6.653.642 156.719.473   -53.913.128        60.566.770
+4         Elvisee -11.837.509 230.905.081   -72.292.299        60.454.790
+5           Henok  -8.962.974 217.066.046   -68.674.014        59.711.040
+6           Jens  -26.932.199 284.776.295   -85.088.552        58.156.353
+7        MACHETE     -125.623 173.846.341   -57.327.837        57.202.214
+8         Simon94  -6.541.064 188.566.628   -60.068.436        53.527.372
+9       Falco1899   6.191.645 135.867.672   -46.879.575        53.071.220
+10       BAN PIVA     389.974 157.906.377   -52.237.796        52.627.770
+11  David Nikolic   4.685.521 140.019.393   -47.752.622        52.438.143
+12       Simon ❗️ -22.318.165 236.513.520   -70.684.467        48.366.302
+13      JesseJay  -18.406.371 217.825.865   -65.808.433        47.402.062
+14      Christoph -35.226.476 267.836.169   -76.761.199        41.534.723
 
 Data reload needed, this takes a few minutes...
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
-    response = self._make_request(
-               ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
-    raise new_e
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
-    self._validate_conn(conn)
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
-    conn.connect()
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connection.py", line 790, in connect
-    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
-    ssl_sock = ssl_wrap_socket(
-               ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
-    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
-    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/ssl.py", line 517, in wrap_socket
-    return self.sslsocket_class._create(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/ssl.py", line 1104, in _create
-    self.do_handshake()
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/ssl.py", line 1382, in do_handshake
-    self._sslobj.do_handshake()
-ConnectionResetError: [Errno 104] Connection reset by peer
 
-During handling of the above exception, another exception occurred:
+Data loaded from database.
 
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
-    resp = conn.urlopen(
-           ^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
-    retries = retries.increment(
-              ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
-    raise reraise(type(error), error, _stacktrace)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/util/util.py", line 38, in reraise
-    raise value.with_traceback(tb)
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
-    response = self._make_request(
-               ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
-    raise new_e
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
-    self._validate_conn(conn)
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
-    conn.connect()
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connection.py", line 790, in connect
-    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
-    ssl_sock = ssl_wrap_socket(
-               ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
-    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
-    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/ssl.py", line 517, in wrap_socket
-    return self.sslsocket_class._create(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/ssl.py", line 1104, in _create
-    self.do_handshake()
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/ssl.py", line 1382, in do_handshake
-    self._sslobj.do_handshake()
-urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Data preprocessed.
 
-During handling of the above exception, another exception occurred:
+Model evaluation:
+Signs correct: 75.56%
+RMSE: 2733187239.53
+MAE: 28263.09
+R2: 0.91
 
-Traceback (most recent call last):
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
-    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
-    comp_dfs = list(executor.map(process_player, players))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 113, in process_player
-    player_info = get_player_info(token, competition_id, player_id)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/player.py", line 43, in get_player_info
-    data = get_json_with_token(url, token)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/config.py", line 9, in get_json_with_token
-    resp = requests.get(url, headers=headers)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/requests/adapters.py", line 659, in send
-    raise ConnectionError(err, request=request)
-requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+=== Market Recommendations ===
+         last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0           Suzuki      Freiburg  2.174.337              288.452              253.613          4           696           False
+1           Amenda     Frankfurt  5.407.145              266.452              240.970          3           708           False
+2            Urbig        Bayern  2.222.912              281.348              240.756          5           696           False
+3          Eriksen     Wolfsburg  8.558.319              252.186              231.282          2           694           False
+4            Busch    Heidenheim  3.497.488              249.154              222.478          3           696           False
+5           Suzuki      Freiburg  2.450.977              276.640              220.349          4           696           False
+6          Eriksen     Wolfsburg  8.793.795              235.476              213.000          2           694           False
+7          Führich     Stuttgart  9.731.253              227.165              204.024          3             1           False
+8      Fábio Silva      Dortmund  8.201.431              239.812              201.371          4           708           False
+9           Fraulo    M'gladbach  2.077.253              241.823              191.791          5           690           False
+10         Kemlein  Union Berlin  5.279.619              226.510              191.133          2           708           False
+11          Daghim     Wolfsburg  6.197.623              198.823              177.490          2            14           False
+12     Fábio Silva      Dortmund  8.404.648              203.217              169.603          4           708           False
+13        Hendriks     Stuttgart  7.084.838              206.252              154.476          3           705           False
+14            Bell         Mainz  3.956.513              113.459              150.027          3           719           False
+15         Führich     Stuttgart  9.919.558              188.305              148.224          3             1           False
+16           Urbig        Bayern  2.435.237              212.325              146.231          5           696           False
+17       Anselmino      Dortmund  6.614.909              207.537              142.472          4             9           False
+18          Daghim     Wolfsburg  6.357.794              160.171              119.776          2            14           False
+19          Amenda     Frankfurt  5.596.602              189.457              118.253          3           708           False
+20       Anselmino      Dortmund  6.787.331              172.422              117.733          4             9           False
+21            Bell         Mainz  4.072.548              116.035              112.663          3           719           False
+22          Fujita     St. Pauli 11.181.045              123.889              110.260          1           613           False
+23           Nübel     Stuttgart 17.193.627              127.910              108.130          1           713           False
+24          Fraulo    M'gladbach  2.246.997              169.744               98.904          5           690           False
+25        Hendriks     Stuttgart  7.238.244              153.406               91.894          3           705           False
+26           Kobel      Dortmund 18.497.632              106.699               85.527          1           696           False
+27           Nübel     Stuttgart 17.295.387              101.760               83.313          1           713           False
+28           Busch    Heidenheim  3.671.855              174.367               82.927          3           696           False
+29          Fujita     St. Pauli 11.293.938              112.893               82.753          1           613           False
+30           Kobel      Dortmund 18.594.408               96.776               80.879          1           696           False
+31  Gocholeishvili       Hamburg  5.802.868               49.340               74.567          1            20           False
+32         Gulácsi       Leipzig 17.696.144               50.282               48.513          1           713           False
+33         Gulácsi       Leipzig 17.740.957               44.813               43.331          1           713           False
+34          Coufal    Hoffenheim 16.298.400               67.377               35.743          2           693           False
+35  Gocholeishvili       Hamburg  5.753.528               11.453               35.631          1            20           False
+36         Kemlein  Union Berlin  5.424.270              144.651               11.107          2           708           False
+
+=== Squad Recommendations ===
+       last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
+0           Mets   St. Pauli  4.223.004              340.010              322.973          2
+1         Suzuki    Freiburg  2.174.337              288.452              253.613          4
+2       Kramarić  Hoffenheim 17.466.078              249.780              241.662          2
+3          Urbig      Bayern  2.222.912              281.348              240.756          5
+4           Mets   St. Pauli  4.490.159              267.155              233.222          2
+5          Busch  Heidenheim  3.497.488              249.154              222.478          3
+6         Suzuki    Freiburg  2.450.977              276.640              220.349          4
+7       Kramarić  Hoffenheim 17.703.385              237.307              215.427          2
+8           Hack  M'gladbach  5.861.313              174.285              148.900          5
+9          Urbig      Bayern  2.435.237              212.325              146.231          5
+10      Vušković     Hamburg 16.851.191              133.337              119.924          1
+11         Kobel    Dortmund 18.497.632              106.699               85.527          1
+12         Busch  Heidenheim  3.671.855              174.367               82.927          3
+13         Kobel    Dortmund 18.594.408               96.776               80.879          1
+14       Honorat  M'gladbach 14.742.953               74.681               74.777          1
+15      Grimaldo  Leverkusen 36.225.689               83.410               74.773          1
+16      Vušković     Hamburg 16.949.815               98.624               73.676          1
+17       Honorat  M'gladbach 14.818.432               75.479               65.246          1
+18        Schmid      Bremen 22.644.506               69.487               62.430          1
+19       Zentner       Mainz 11.150.309               89.526               55.069          1
+20      Grimaldo  Leverkusen 36.286.437               60.748               54.535          1
+21          Hack  M'gladbach  5.979.253              117.940               51.576          5
+22       Stiller   Stuttgart 32.281.874               47.318               42.263          1
+23       Stiller   Stuttgart 32.234.556               48.645               40.353          1
+24          Díaz      Bayern 50.268.100               41.678               37.143          2
+25          Díaz      Bayern 50.307.557               39.457               36.284          2
+26        Schmid      Bremen 22.681.067               36.561               32.976          1
+27      Mbangula      Bremen 15.989.711               28.883               23.505          1
+28       Zentner       Mainz 11.201.405               51.096               13.884          1
+29         Kömür    Augsburg 14.679.484               36.286                2.361          1
+30        Vieira     Hamburg 10.326.893               56.969              -12.726          3
+31      Mbangula      Bremen 15.993.315                3.604              -17.162          1
+32         Kömür    Augsburg 14.670.707               -8.777              -35.880          1
+33  van den Berg        Köln  3.979.283              -37.280              -50.821          5
+34  van den Berg        Köln  3.916.963              -62.320              -65.178          5
+35        Vieira     Hamburg 10.343.449               16.556              -82.236          3
+
+No email provided, skipping email sending.
