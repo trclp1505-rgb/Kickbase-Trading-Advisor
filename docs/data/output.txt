@@ -1,4 +1,4 @@
-Run: 2025-10-31 22:40:01 UTC
+Run: 2025-11-01 22:38:06 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11504711839', 't': 26, 'coc': 0, 'data': {'t': 403, 'n': 'Team value platinum', 'd': 'Own a team with a value of 250 mil.'}, 'dt': '2025-10-31T19:15:49Z'}: 'er'
@@ -43,22 +43,22 @@ Warning: Failed to process achievement bonus {'i': '11190141280', 't': 26, 'coc'
 Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc': 0, 'data': {'t': 600, 'n': 'Kreisliga', 'd': 'Your league has at least 3 managers'}, 'dt': '2025-08-01T05:55:56Z'}: 'er'
 
 === Manager Budgets ===
-             User     Budget  Team Value  Max Negative  Available Budget
-0           Henok 21.224.393 190.837.986   -69.980.585        91.204.978
-1           Jens   1.369.301 257.720.018   -85.499.475        86.868.776
-2          Freddy -1.979.890 262.385.577   -85.933.877        83.953.987
-3         Elvisee  3.730.974 214.058.965   -71.870.680        75.601.654
-4       Christoph -2.258.091 237.496.350   -77.628.625        75.370.534
-5        Mare1987  2.380.644 203.971.751   -68.096.290        70.476.934
-6           frahd   -498.262 213.593.086   -70.321.292        69.823.030
-7        Simon ❗️ -5.230.532 219.023.785   -70.551.773        65.321.241
-8       JesseJay  -2.527.244 202.537.751   -66.003.467        63.476.223
-9         Simon94  2.958.028 177.078.677   -59.412.113        62.370.141
-10       MACHETE    -489.624 173.885.237   -57.220.552        56.730.928
-11        Batigol    154.577 163.633.843   -54.050.179        54.204.756
-12      Falco1899  6.352.645 136.238.543   -47.055.092        53.407.737
-13  David Nikolic  4.806.521 140.448.037   -47.934.004        52.740.525
-14       BAN PIVA    580.974 157.365.943   -52.122.483        52.703.457
+             User      Budget  Team Value  Max Negative  Available Budget
+0           frahd  43.124.426 170.475.754   -70.488.059       113.612.485
+1           Henok  21.129.394 191.385.495   -70.129.913        91.259.307
+2          Freddy    -941.890 264.270.010   -86.898.280        85.956.390
+3         Elvisee   3.020.096 215.559.429   -72.131.243        75.151.339
+4       Christoph  -3.983.590 241.492.054   -78.377.793        74.394.203
+5        Mare1987   3.051.644 203.086.917   -68.025.725        71.077.369
+6           Jens  -13.517.500 267.653.228   -83.864.790        70.347.290
+7        Simon ❗️  -4.417.532 219.819.175   -71.082.542        66.665.010
+8       JesseJay   -1.808.244 203.513.143   -66.562.617        64.754.373
+9         Batigol   9.378.080 155.940.340   -54.555.079        63.933.159
+10        Simon94   3.695.028 177.909.112   -59.929.366        63.624.394
+11       MACHETE      308.376 173.664.516   -57.411.054        57.719.430
+12      Falco1899   6.852.645 137.323.173   -47.578.020        54.430.665
+13  David Nikolic   5.579.521 141.300.948   -48.470.555        54.050.076
+14       BAN PIVA   1.095.974 157.325.656   -52.279.138        53.375.112
 
 Data reload needed, this takes a few minutes...
 
@@ -67,35 +67,39 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 75.77%
-RMSE: 2678388084.11
-MAE: 27958.38
+Signs correct: 75.84%
+RMSE: 2651522736.08
+MAE: 27732.03
 R2: 0.91
 
 === Market Recommendations ===
-     last_name  team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0       Pieper     Bremen  7.751.497              331.376              307.901          2           720           False
-1      Zagadou  Stuttgart  2.536.691              320.949              302.290          4             1           False
-2        Seelt  Wolfsburg  2.119.743              294.489              257.816          1            32           False
-3  Huseinbasic       Köln  3.259.606              261.270              193.696          2            14           False
-4         Groß   Dortmund 10.275.677              126.981              122.357          3           720           False
-5       Fujita  St. Pauli 11.373.326               79.388               67.680          1           588           False
+   last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0      Seelt   Wolfsburg  2.566.262              446.519              379.402          1             8           False
+1     Pieper      Bremen  8.121.705              370.208              345.691          2           696           False
+2       Diks  M'gladbach  9.304.099              306.786              308.624          1             4           False
+3    Özkaçar        Köln  1.944.134              283.776              256.168          3            17           False
+4       Wahl   St. Pauli 10.252.517              258.225              224.829          1            12           False
+5       Groß    Dortmund 10.457.010              181.333              181.053          3           696           False
+6  Al Dakhil   Stuttgart  3.436.765              116.465              131.807          4            24           False
+7      Adamu    Freiburg  7.020.190               66.872              103.961          3            30           False
+8     Fujita   St. Pauli 11.469.730               96.404               87.792          1           564           False
 
 === Squad Recommendations ===
        last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0       Kramarić  Hoffenheim 17.920.130              216.745              191.965          2
-1           Mets   St. Pauli  4.666.391              176.232              165.313          2
-2        Honorat  M'gladbach 14.891.713               73.281               68.883          1
-3       Grimaldo  Leverkusen 36.341.466               55.029               53.925          1
-4       Vušković     Hamburg 17.019.455               69.640               50.791          1
-5        Stiller   Stuttgart 32.325.972               44.098               42.572          1
-6         Schmid      Bremen 22.721.770               40.703               41.834          1
-7           Díaz      Bayern 50.346.303               38.746               38.977          1
-8       Mbangula      Bremen 16.016.495               23.180               23.890          1
-9   van den Berg        Köln  3.854.576              -62.387              -55.579          5
-10       Zentner       Mainz 11.161.584              -39.821              -73.397          1
-11          Hack  M'gladbach  5.886.210              -93.043             -110.927          5
-12        Vieira     Hamburg 10.168.756             -174.693             -296.397          3
-13         Kömür    Augsburg 14.399.197             -271.510             -362.351          1
+0    Huseinbasic        Köln  3.614.382              354.776              334.330          2
+1           Mets   St. Pauli  4.931.446              265.055              282.618          2
+2       Kramarić  Hoffenheim 18.167.176              247.046              222.490          2
+3        Honorat  M'gladbach 15.020.856              129.143              144.771          1
+4       Grimaldo  Leverkusen 36.437.466               96.000               93.096          1
+5       Vušković     Hamburg 17.107.990               88.535               83.239          1
+6        Stiller   Stuttgart 32.408.002               82.030               80.340          1
+7         Schmid      Bremen 22.802.632               80.862               80.254          1
+8           Hack  M'gladbach  5.938.864               52.654               54.960          5
+9        Zentner       Mainz 11.188.819               27.235               36.152          1
+10          Díaz      Bayern 50.384.803               38.500               31.728          1
+11       Tillman  Leverkusen 19.772.571               18.472               21.142          4
+12      Mbangula      Bremen 16.032.754               16.259               12.374          1
+13  van den Berg        Köln  3.823.888              -30.688              -44.825          5
+14        Vieira     Hamburg 10.021.579             -147.177             -170.789          3
 
 No email provided, skipping email sending.
