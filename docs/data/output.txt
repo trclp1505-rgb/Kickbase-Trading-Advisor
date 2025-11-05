@@ -1,4 +1,4 @@
-Run: 2025-11-05 19:08:17 UTC
+Run: 2025-11-05 22:40:34 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11504711839', 't': 26, 'coc': 0, 'data': {'t': 403, 'n': 'Team value platinum', 'd': 'Own a team with a value of 250 mil.'}, 'dt': '2025-10-31T19:15:49Z'}: 'er'
@@ -44,21 +44,21 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User      Budget  Team Value  Max Negative  Available Budget
-0        Mare1987   9.061.575 195.263.667   -67.427.330        76.488.905
-1           Henok   5.870.646 207.524.283   -70.420.327        76.290.973
-2          Freddy -12.246.890 278.453.384   -87.848.143        75.601.253
-3           Jens  -10.814.217 271.919.433   -86.164.721        75.350.504
-4           frahd   3.953.482 208.180.447   -70.004.197        73.957.679
-5         Batigol  17.544.371 151.093.246   -55.650.414        73.194.785
-6        BAN PIVA  17.106.306 142.687.775   -52.732.047        69.838.353
-7       JesseJay   -1.183.244 206.315.195   -67.693.544        66.510.300
-8         Simon94   4.344.028 179.751.943   -60.751.670        65.095.698
-9        Simon ❗️  -9.281.531 227.244.907   -71.927.914        62.646.383
-10        Elvisee -12.542.014 233.769.512   -73.005.074        60.463.060
-11       MACHETE      851.376 173.053.220   -57.388.517        58.239.893
-12      Falco1899   7.616.645 141.736.132   -49.286.416        56.903.061
-13  David Nikolic   6.279.521 145.067.263   -49.944.439        56.223.960
-14      Christoph -39.934.231 275.942.046   -77.882.579        37.948.348
+0           frahd  14.943.595 199.377.463   -70.725.949        85.669.544
+1           Henok   6.370.646 207.680.704   -70.636.946        77.007.592
+2          Freddy -12.246.890 280.243.945   -88.439.028        76.192.138
+3        Mare1987   9.061.575 194.093.551   -67.041.192        76.102.767
+4           Jens  -10.814.217 273.416.246   -86.658.670        75.844.453
+5         Batigol  17.544.371 152.087.012   -55.978.356        73.522.727
+6        BAN PIVA  17.106.306 142.679.599   -52.729.349        69.835.655
+7       JesseJay   -1.183.244 206.538.790   -67.767.330        66.584.086
+8         Simon94   4.344.028 180.296.884   -60.931.501        65.275.529
+9        Simon ❗️  -9.281.531 228.537.844   -72.354.583        63.073.052
+10        Elvisee -12.542.014 235.987.670   -73.737.066        61.195.052
+11       MACHETE      851.376 172.564.536   -57.227.251        58.078.627
+12      Falco1899   7.616.645 142.694.624   -49.602.719        57.219.364
+13  David Nikolic   6.279.521 145.822.737   -50.193.745        56.473.266
+14      Christoph -24.586.060 262.613.345   -78.549.004        53.962.944
 
 Data reload needed, this takes a few minutes...
 
@@ -67,45 +67,45 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 75.55%
-RMSE: 2580495618.86
-MAE: 27351.99
+Signs correct: 75.75%
+RMSE: 2559538960.53
+MAE: 27264.34
 R2: 0.91
 
 === Market Recommendations ===
-     last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0       Pieper      Bremen  9.338.293              401.878              371.381          2           719           False
-1       Dárdai   Wolfsburg  2.585.488              353.310              326.234          5           649           False
-2        Mohya  M'gladbach  1.877.323              317.417              298.461          5           673           False
-3   Hollerbach       Mainz  6.181.199              257.226              259.921          1           697           False
-4        Vavro   Wolfsburg  6.746.312              294.538              255.454          5            24           False
-5       Gharbi    Augsburg  1.570.826              272.678              254.981          3            12           False
-6         Bell       Mainz  4.881.813              218.079              199.614          3           647           False
-7    Al Dakhil   Stuttgart  3.949.396              166.994              148.990          4           661           False
-8   Hountondji   St. Pauli  5.567.499              147.241              138.822          3           661           False
-9       Brandt    Dortmund 23.114.216              115.637               97.153          3            10           False
-10      Mainka  Heidenheim 11.863.684              103.104               85.377          1            29           False
-11    Schlager     Leipzig 10.387.019               64.234               32.990          4           719           False
-12   Coulibaly      Bremen 12.068.241               14.405                9.400          3            20           False
+           last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0              Seelt   Wolfsburg  4.386.696              378.066              351.266          3           717           False
+1             Pieper      Bremen  9.713.033              374.740              346.230          2           719           False
+2            Kumbedi   Wolfsburg  5.922.437              339.902              317.560          1           719           False
+3              Mohya  M'gladbach  2.210.293              332.970              309.063          5           669           False
+4         Hollerbach       Mainz  6.448.421              267.222              246.891          1           719           False
+5             Dárdai   Wolfsburg  2.874.217              288.729              244.605          5           646           False
+6              Vavro   Wolfsburg  7.015.864              269.552              232.845          5            20           False
+7             Gharbi    Augsburg  1.824.736              253.910              230.451          3             9           False
+8   Røssing-Lelesiit     Hamburg  1.728.329              246.278              184.353          5            19           False
+9               Bell       Mainz  5.057.297              175.484              103.898          3           719           False
+10         Al Dakhil   Stuttgart  4.083.865              134.469               90.126          4           658           False
+11            Mainka  Heidenheim 11.943.162               79.478               56.818          1            25           False
+12        Hountondji   St. Pauli  5.667.601              100.102               51.532          3           658           False
 
 === Squad Recommendations ===
        last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0         Dárdai   Wolfsburg  2.585.488              353.310              326.234          5
-1          Mohya  M'gladbach  1.877.323              317.417              298.461          5
-2       Kramarić  Hoffenheim 18.915.634              234.117              213.248          3
-3        Honorat  M'gladbach 15.652.792              207.250              184.669          1
-4           Mets   St. Pauli  5.632.492              199.901              167.212          2
-5      Al Dakhil   Stuttgart  3.949.396              166.994              148.990          4
-6           Hack  M'gladbach  6.380.270              160.498              140.172          5
-7     Hountondji   St. Pauli  5.567.499              147.241              138.822          3
-8        Tillman  Leverkusen 20.050.868              122.255              129.623          3
-9       Grimaldo  Leverkusen 36.753.371              103.821               96.538          1
-10       Stiller   Stuttgart 32.681.639               84.308               77.124          2
-11      Vušković     Hamburg 17.417.834               89.795               68.346          1
-12        Schmid      Bremen 23.028.052               62.923               53.884          1
-13          Díaz      Bayern 50.471.972               22.440               19.575          1
-14       Zentner       Mainz 11.251.442               11.080                3.352          1
-15  van den Berg        Köln  3.789.199              -21.789              -32.453          5
-16      Mbangula      Bremen 15.914.162             -122.832             -201.258          2
+0          Mohya  M'gladbach  2.210.293              332.970              309.063          5
+1         Dárdai   Wolfsburg  2.874.217              288.729              244.605          5
+2        Tillman  Leverkusen 20.219.141              168.273              172.165          3
+3       Kramarić  Hoffenheim 19.110.361              194.727              171.393          3
+4        Honorat  M'gladbach 15.839.037              186.245              157.604          1
+5      Al Dakhil   Stuttgart  4.083.865              134.469               90.126          4
+6           Hack  M'gladbach  6.509.872              129.602               87.656          5
+7       Grimaldo  Leverkusen 36.848.765               95.394               86.514          1
+8           Mets   St. Pauli  5.760.201              127.709               70.491          2
+9        Stiller   Stuttgart 32.757.992               76.353               67.023          2
+10      Vušković     Hamburg 17.493.218               75.384               62.472          1
+11    Hountondji   St. Pauli  5.667.601              100.102               51.532          3
+12        Schmid      Bremen 23.070.102               42.050               38.210          1
+13          Díaz      Bayern 50.493.914               21.942               18.470          1
+14  van den Berg        Köln  3.732.256              -56.943              -65.769          5
+15       Zentner       Mainz 11.154.965              -96.477             -182.857          1
+16      Mbangula      Bremen 15.590.446             -323.716             -314.616          2
 
 No email provided, skipping email sending.
