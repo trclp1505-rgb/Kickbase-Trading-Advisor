@@ -1,4 +1,4 @@
-Run: 2025-11-16 22:17:47 UTC
+Run: 2025-11-16 22:39:12 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11540906715', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2025-11-10T18:59:04Z'}: 'er'
@@ -73,42 +73,42 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 75.17%
-RMSE: 2448952063.20
-MAE: 26214.41
+Signs correct: 75.19%
+RMSE: 2452045665.81
+MAE: 26224.94
 R2: 0.91
 
 === Market Recommendations ===
      last_name     team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0      Schäfer  Union Berlin 4.464.722              317.951              306.068          3           533           False
-1  Bittencourt        Bremen 3.302.264              303.146              299.157          5           533           False
-2    Fellhauer      Augsburg 6.271.076              234.609              239.575          2           647           False
-3       Widmer         Mainz 6.519.287              239.510              226.492          2           647           False
-4    Thielmann          Köln 6.295.788              188.897              189.264          3            34           False
-5      Capaldo       Hamburg 6.332.613              182.701              169.339          3           698           False
-6      Ullrich    M'gladbach 6.605.945              145.613              134.347          3           647           False
-7      Özkaçar          Köln 6.704.781              161.259              130.529          2           614           False
-8    Bitshiabu       Leipzig 3.911.614              125.880              114.715          5           647           False
+0      Schäfer  Union Berlin 4.464.722              317.951              305.124          3           533           False
+1  Bittencourt        Bremen 3.302.264              303.146              297.079          5           533           False
+2    Fellhauer      Augsburg 6.271.076              234.609              238.509          2           647           False
+3       Widmer         Mainz 6.519.287              239.510              228.124          2           647           False
+4    Thielmann          Köln 6.295.788              188.897              188.884          3            34           False
+5      Capaldo       Hamburg 6.332.613              182.701              169.303          3           697           False
+6      Özkaçar          Köln 6.704.781              161.259              132.837          2           614           False
+7      Ullrich    M'gladbach 6.605.945              145.613              132.147          3           647           False
+8    Bitshiabu       Leipzig 3.911.614              125.880              113.801          5           647           False
 
 === Squad Recommendations ===
        last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0         Vieira     Hamburg  8.882.167              290.550              280.869          2
-1   van den Berg        Köln  5.000.990              279.770              260.157          3
-2      Fellhauer    Augsburg  6.271.076              234.609              239.575          2
-3           Hack  M'gladbach  8.458.402              243.378              233.661          4
-4         Widmer       Mainz  6.519.287              239.510              226.492          2
-5          Undav   Stuttgart 20.005.594              169.943              176.217          1
-6        Capaldo     Hamburg  6.332.613              182.701              169.339          3
-7        Ullrich  M'gladbach  6.605.945              145.613              134.347          3
-8        Tillman  Leverkusen 22.679.653              144.440              131.599          2
-9      Bitshiabu     Leipzig  3.911.614              125.880              114.715          5
-10      Grimaldo  Leverkusen 38.006.610               86.847               81.509          1
-11      Vušković     Hamburg 18.517.195               50.295               54.220          1
-12       Stiller   Stuttgart 33.645.352               44.943               47.439          1
-13      Kramarić  Hoffenheim 20.414.836               28.234               24.041          3
-14        Schmid      Bremen 23.875.825               14.344               19.143          1
-15          Díaz      Bayern 50.660.783                7.197                5.841          1
-16       Zentner       Mainz  8.991.173             -108.390             -104.888          1
-17      Mbangula      Bremen 14.903.730             -207.770             -189.967          2
+0         Vieira     Hamburg  8.882.167              290.550              281.160          2
+1   van den Berg        Köln  5.000.990              279.770              258.919          3
+2      Fellhauer    Augsburg  6.271.076              234.609              238.509          2
+3           Hack  M'gladbach  8.458.402              243.378              233.969          4
+4         Widmer       Mainz  6.519.287              239.510              228.124          2
+5          Undav   Stuttgart 20.005.594              169.943              174.420          1
+6        Capaldo     Hamburg  6.332.613              182.701              169.303          3
+7        Ullrich  M'gladbach  6.605.945              145.613              132.147          3
+8        Tillman  Leverkusen 22.679.653              144.440              131.641          2
+9      Bitshiabu     Leipzig  3.911.614              125.880              113.801          5
+10      Grimaldo  Leverkusen 38.006.610               86.847               79.172          1
+11      Vušković     Hamburg 18.517.195               50.295               52.785          1
+12       Stiller   Stuttgart 33.645.352               44.943               45.954          1
+13      Kramarić  Hoffenheim 20.414.836               28.234               22.848          3
+14        Schmid      Bremen 23.875.825               14.344               16.862          1
+15          Díaz      Bayern 50.660.783                7.197                4.824          1
+16       Zentner       Mainz  8.991.173             -108.390             -107.752          1
+17      Mbangula      Bremen 14.903.730             -207.770             -194.600          2
 
 No email provided, skipping email sending.
