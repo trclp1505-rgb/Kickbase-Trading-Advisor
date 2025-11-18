@@ -1,4 +1,4 @@
-Run: 2025-11-17 22:41:24 UTC
+Run: 2025-11-18 22:41:32 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11540906715', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2025-11-10T18:59:04Z'}: 'er'
@@ -50,21 +50,21 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User      Budget  Team Value  Max Negative  Available Budget
-0        Mare1987  24.143.503 178.901.509   -67.004.854        91.148.357
-1         Elvisee   5.551.403 231.835.021   -78.337.520        83.888.923
-2           Henok   4.328.387 223.311.107   -75.121.033        79.449.420
-3          Freddy -16.569.506 291.298.193   -90.660.467        74.090.961
-4           frahd  -5.847.102 232.635.926   -74.840.312        68.993.210
-5         Simon94     988.917 188.208.818   -62.435.253        63.424.170
-6       Falco1899   9.880.645 145.761.405   -51.361.876        61.242.522
-7         Batigol   1.219.765 174.419.837   -57.961.069        59.180.834
-8        Simon ❗️ -15.562.258 239.578.125   -73.925.236        58.362.978
-9        MACHETE      898.861 170.693.187   -56.625.376        57.524.237
-10      Christoph -29.270.313 289.376.765   -85.835.129        56.564.816
-11  David Nikolic   3.230.512 152.977.090   -51.548.509        54.779.021
-12          Jens  -35.023.648 305.672.748   -89.314.203        54.290.555
-13      JesseJay  -13.372.779 218.080.562   -67.553.568        54.180.789
-14       BAN PIVA   2.697.936 143.755.862   -48.329.753        51.027.689
+0           Henok  14.800.787 213.777.897   -75.430.966        90.231.753
+1        Mare1987  17.063.337 185.610.572   -66.882.390        83.945.727
+2         Elvisee   2.621.404 235.975.673   -78.737.035        81.358.439
+3          Freddy -16.469.506 290.888.196   -90.558.168        74.088.662
+4           frahd  -5.747.102 232.356.510   -74.781.105        69.034.003
+5        Simon ❗️  -6.892.291 229.698.092   -73.525.914        66.633.623
+6         Simon94   1.088.917 187.836.477   -62.345.380        63.434.297
+7       Christoph -24.394.083 286.205.548   -86.397.783        62.003.700
+8       Falco1899   9.980.645 145.570.036   -51.331.725        61.312.370
+9        MACHETE      998.861 170.440.904   -56.575.122        57.573.983
+10          Jens  -34.923.648 307.709.382   -90.019.292        55.095.644
+11  David Nikolic   3.330.512 152.955.117   -51.574.258        54.904.770
+12      JesseJay  -13.272.779 217.659.761   -67.447.704        54.174.925
+13       BAN PIVA   2.797.936 142.685.301   -48.009.468        50.807.404
+14        Batigol  -8.115.025 181.408.351   -57.186.798        49.071.773
 
 Data reload needed, this takes a few minutes...
 
@@ -73,43 +73,42 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 75.09%
-RMSE: 2442711871.62
-MAE: 26112.58
+Signs correct: 75.01%
+RMSE: 2436926821.26
+MAE: 25992.42
 R2: 0.91
 
 === Market Recommendations ===
-     last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0      Schäfer  Union Berlin  4.811.273              346.551              340.004          3           509           False
-1  Bittencourt        Bremen  3.621.862              319.598              312.576          5           509           False
-2    Fellhauer      Augsburg  6.551.704              280.628              271.912          2           623           False
-3       Widmer         Mainz  6.782.680              263.393              236.210          2           623           False
-4    Thielmann          Köln  6.519.612              223.824              222.012          3            10           False
-5      Capaldo       Hamburg  6.523.720              191.107              175.513          3           673           False
-6      Ullrich    M'gladbach  6.782.635              176.690              164.194          3           623           False
-7    Bitshiabu       Leipzig  4.053.796              142.182              146.470          5           623           False
-8      Özkaçar          Köln  6.855.811              151.030              131.497          2           590           False
-9         Groß      Dortmund 12.891.765               26.107               25.759          3           703           False
+     last_name     team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0      Zagadou     Stuttgart 8.482.319              306.757              291.431          3            18           False
+1      Schäfer  Union Berlin 5.116.398              305.125              278.279          3           485           False
+2  Bittencourt        Bremen 3.911.582              289.720              268.778          5           485           False
+3    Fellhauer      Augsburg 6.806.711              255.007              228.494          2           599           False
+4       Widmer         Mainz 7.044.149              261.469              205.874          2           599           False
+5      Capaldo       Hamburg 6.711.422              187.702              158.904          3           649           False
+6    Bitshiabu       Leipzig 4.208.996              155.200              149.579          5           599           False
+7      Ullrich    M'gladbach 6.952.333              169.698              137.162          3           599           False
+8      Özkaçar          Köln 6.981.354              125.543               80.360          2           566           False
 
 === Squad Recommendations ===
        last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0         Vieira     Hamburg  9.188.102              305.935              281.432          2
-1      Fellhauer    Augsburg  6.551.704              280.628              271.912          2
-2           Hack  M'gladbach  8.725.257              266.855              257.721          4
-3   van den Berg        Köln  5.267.095              266.105              243.543          3
-4         Widmer       Mainz  6.782.680              263.393              236.210          2
-5        Capaldo     Hamburg  6.523.720              191.107              175.513          3
-6          Undav   Stuttgart 20.178.875              173.281              170.178          1
-7        Ullrich  M'gladbach  6.782.635              176.690              164.194          3
-8      Bitshiabu     Leipzig  4.053.796              142.182              146.470          5
-9        Tillman  Leverkusen 22.827.007              147.354              132.995          2
-10      Vušković     Hamburg 18.572.552               55.357               54.705          1
-11      Grimaldo  Leverkusen 38.064.962               58.352               54.331          1
-12      Kramarić  Hoffenheim 20.452.530               37.694               31.763          3
-13       Stiller   Stuttgart 33.684.410               39.058               29.815          1
-14        Schmid      Bremen 23.892.066               16.241               20.202          1
-15          Díaz      Bayern 50.670.475                9.692                8.244          1
-16       Zentner       Mainz  8.910.538              -80.635              -46.255          1
-17      Mbangula      Bremen 14.544.344             -359.386             -271.798          2
+0         Vieira     Hamburg  9.477.878              289.776              249.569          2
+1      Fellhauer    Augsburg  6.806.711              255.007              228.494          2
+2           Hack  M'gladbach  8.972.860              247.603              218.439          4
+3   van den Berg        Köln  5.517.328              250.233              212.035          3
+4         Widmer       Mainz  7.044.149              261.469              205.874          2
+5        Capaldo     Hamburg  6.711.422              187.702              158.904          3
+6      Bitshiabu     Leipzig  4.208.996              155.200              149.579          5
+7          Undav   Stuttgart 20.339.520              160.645              147.313          1
+8        Ullrich  M'gladbach  6.952.333              169.698              137.162          3
+9        Tillman  Leverkusen 22.945.818              118.811              102.117          2
+10      Grimaldo  Leverkusen 38.141.212               76.250               66.560          1
+11      Vušković     Hamburg 18.626.398               53.846               49.836          1
+12       Stiller   Stuttgart 33.720.245               35.835               35.954          1
+13      Kramarić  Hoffenheim 20.488.942               36.412               33.849          3
+14        Schmid      Bremen 23.906.949               14.883               15.241          1
+15          Díaz      Bayern 50.678.989                8.514                3.855          1
+16       Zentner       Mainz  8.902.695               -7.843              -17.328          1
+17      Mbangula      Bremen 14.266.937             -277.407             -229.571          2
 
 No email provided, skipping email sending.
