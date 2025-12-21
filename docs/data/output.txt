@@ -1,4 +1,4 @@
-Run: 2025-12-20 22:40:44 UTC
+Run: 2025-12-21 22:41:49 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11664536876', 't': 26, 'coc': 0, 'data': {'t': 702, 'n': 'Silver hand', 'd': 'Yield 5 mil profit with a player. No transfers between managers.'}, 'dt': '2025-12-20T20:37:00Z'}: 'er'
@@ -58,21 +58,21 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0           Jens  24.971.121 278.799.907  -100.244.439       125.215.560
-1         Elvisee 19.739.400 250.030.583   -89.024.094       108.763.494
-2           Henok 28.691.533 194.782.675   -73.746.489       102.438.022
-3       Christoph   -153.071 297.626.202   -98.166.133        98.013.062
-4          Freddy -2.245.336 291.411.318   -95.424.774        93.179.438
-5           frahd  2.769.211 223.940.003   -74.814.041        77.583.252
-6         Batigol 12.046.141 172.306.246   -60.836.288        72.882.429
-7        Mare1987    574.219 213.683.584   -70.705.075        71.279.294
-8        Simon ❗️ -7.202.562 238.382.399   -76.289.346        69.086.784
-9       JesseJay  -2.838.830 213.277.753   -69.444.845        66.606.015
-10        Simon94  4.551.220 176.514.006   -59.751.525        64.302.745
-11      Falco1899  8.922.036 152.418.383   -53.242.338        62.164.374
-12  David Nikolic  4.756.576 161.122.689   -54.740.157        59.496.733
-13       MACHETE   4.792.143 160.506.887   -54.548.680        59.340.823
-14       BAN PIVA -1.416.814 156.391.917   -51.141.784        49.724.970
+0           Jens  25.071.121 279.836.031  -100.619.360       125.690.481
+1         Elvisee 20.329.400 251.332.859   -89.648.545       109.977.945
+2           Henok 29.197.533 194.976.537   -73.977.443       103.174.976
+3       Christoph    125.929 297.970.096   -98.371.688        98.497.617
+4          Freddy -2.145.336 292.418.218   -95.790.051        93.644.715
+5           frahd  8.556.522 218.718.887   -75.000.885        83.557.407
+6        Mare1987    800.219 213.871.091   -70.841.532        71.641.751
+7        Simon ❗️ -6.836.562 237.354.919   -76.071.058        69.234.496
+8       JesseJay  -2.605.830 213.366.898   -69.551.152        66.945.322
+9         Simon94  4.800.220 174.946.125   -59.316.294        64.116.514
+10      Falco1899  9.223.036 151.943.251   -53.184.875        62.407.911
+11  David Nikolic  4.964.576 160.182.083   -54.498.397        59.462.973
+12       MACHETE   3.866.874 161.253.426   -54.489.699        58.356.573
+13        Batigol -1.913.859 184.209.683   -60.157.622        58.243.763
+14       BAN PIVA -1.316.814 156.455.919   -51.195.905        49.879.091
 
 Data reload needed, this takes a few minutes...
 
@@ -81,38 +81,42 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 71.81%
-RMSE: 1747319681.63
-MAE: 21363.73
+Signs correct: 71.43%
+RMSE: 1766380336.93
+MAE: 21494.18
 R2: 0.92
 
 === Market Recommendations ===
-  last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0  Belocian  Leverkusen  4.190.798              148.864              106.797          2           720           False
-1  Vagnoman   Stuttgart  8.256.027              111.922               84.022          2           720           False
-2      Groß    Dortmund  8.856.396               60.172               56.670          3            19           False
-3   Karazor   Stuttgart  5.340.644               96.299               48.052          3           720           False
-4      Uzun   Frankfurt 25.682.682               79.155               43.543          2           142           False
-5   Collins   Frankfurt  8.299.335               91.696               42.769          3            34           False
-6   Hajdari  Hoffenheim 15.933.549               29.496                6.534          5           715           False
+    last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0       Urbig        Bayern  2.847.131              221.415              225.382          1            11           False
+1    Belocian    Leverkusen  4.373.803              183.005              183.427          2           696           False
+2   Culbreath    Leverkusen    628.493              128.493              162.075          5            13           False
+3    Vagnoman     Stuttgart  8.390.234              134.207              133.534          2           696           False
+4     Karazor     Stuttgart  5.442.250              101.606              106.882          3           696           False
+5        Uzun     Frankfurt 25.774.357               91.675               75.719          2           118           False
+6     Collins     Frankfurt  8.388.226               88.891               58.350          3            10           False
+7       Couto      Dortmund 11.412.270               78.535               46.475          3           696           False
+8        Köhn  Union Berlin  3.448.904               28.259               38.386          3            30           False
+9    Sabitzer      Dortmund 10.038.167               45.567               35.303          3            13           False
+10   Kaminski          Köln 23.241.129               32.926               31.266          1           691           False
+11      Grifo      Freiburg 22.338.481               24.679               17.067          3           691           False
 
 === Squad Recommendations ===
    last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0   Potulski       Mainz  3.223.282              149.910              148.935          3
-1     Nartey   Stuttgart  2.393.234              147.263              113.668          2
-2   Palacios  Leverkusen  1.209.893               88.983               93.088          5
-3   Vušković     Hamburg 21.234.505               96.570               87.108          1
-4    Tillman  Leverkusen 25.974.968               42.543               44.143          1
-5   Kramarić  Hoffenheim 19.497.767               51.249               43.831          3
-6      Undav   Stuttgart 25.905.445               50.647               36.961          1
-7       Díaz      Bayern 51.097.728               21.930               23.780          1
-8    Stiller   Stuttgart 35.112.334               22.653               16.045          1
-9    Zentner       Mainz  4.646.225              -16.392                6.261          5
-10    Harder     Leipzig  9.909.427               89.259                6.131          1
-11  Henrichs     Leipzig    500.000              -43.536                  979          5
-12    Schmid      Bremen 25.798.637                4.819              -30.763          1
-13    Santos   Frankfurt    537.198              -75.266              -35.113          5
-14  Grimaldo  Leverkusen 39.733.922                4.474              -40.192          3
-15    Vieira     Hamburg 11.525.342              -23.945             -161.665          4
+0   Potulski       Mainz  3.428.125              204.843              222.438          3
+1     Nartey   Stuttgart  2.605.786              212.552              213.934          2
+2   Vušković     Hamburg 21.407.714              173.209              173.425          1
+3   Palacios  Leverkusen  1.339.904              130.011              151.041          5
+4     Harder     Leipzig 10.016.749              107.322              103.720          1
+5    Zentner       Mainz  4.686.739               40.514               96.433          5
+6    Tillman  Leverkusen 26.037.772               62.804               64.712          1
+7      Undav   Stuttgart 25.960.497               55.052               50.176          1
+8   Grimaldo  Leverkusen 39.785.667               51.745               39.683          3
+9       Díaz      Bayern 51.134.769               37.041               35.373          1
+10  Kramarić  Hoffenheim 19.536.377               38.610               35.196          3
+11   Stiller   Stuttgart 35.144.627               32.293               23.811          1
+12    Santos   Frankfurt    500.000              -37.198                1.271          5
+13    Schmid      Bremen 25.800.928                2.291              -38.668          1
+14    Vieira     Hamburg 11.450.377              -74.965             -137.442          4
 
 No email provided, skipping email sending.
