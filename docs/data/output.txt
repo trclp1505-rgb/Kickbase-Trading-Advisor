@@ -1,4 +1,4 @@
-Run: 2025-12-29 22:42:41 UTC
+Run: 2025-12-30 22:42:50 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11673861417', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-12-22T21:03:50Z'}: 'er'
@@ -59,21 +59,21 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User      Budget  Team Value  Max Negative  Available Budget
-0         Elvisee  21.879.064 269.271.176   -96.079.579       117.958.643
-1           Jens    7.594.524 313.682.737  -106.021.496       113.616.020
-2       Christoph     309.416 311.110.040  -102.768.420       103.077.836
-3          Freddy  -1.954.169 306.069.045  -100.357.909        98.403.740
-4           frahd   5.785.664 237.358.605   -80.237.609        86.023.273
-5       Falco1899  17.509.916 159.323.253   -58.354.946        75.864.862
-6        Mare1987  -2.409.781 231.130.060   -75.477.692        73.067.911
-7        Simon ❗️  -6.041.562 242.272.865   -77.956.330        71.914.768
-8           Henok  -8.439.068 232.083.731   -73.802.739        65.363.671
-9         Simon94   5.596.220 173.369.243   -59.058.603        64.654.823
-10  David Nikolic   5.763.576 164.470.950   -56.177.394        61.940.970
-11       MACHETE       92.815 168.399.974   -55.602.620        55.695.435
-12        Batigol  -7.289.502 196.570.212   -62.462.634        55.173.132
-13       BAN PIVA    -516.814 163.222.702   -53.692.943        53.176.129
-14      JesseJay  -22.336.305 247.432.754   -74.281.828        51.945.523
+0         Elvisee  21.600.181 271.484.827   -96.718.053       118.318.234
+1           Jens    7.694.524 314.943.246  -106.470.464       114.164.988
+2       Christoph   1.018.665 312.417.293  -103.433.866       104.452.531
+3          Freddy  -1.854.169 307.518.643  -100.869.276        99.015.107
+4           frahd   5.885.664 239.258.897   -80.897.705        86.783.369
+5       Falco1899  17.609.916 159.336.523   -58.392.325        76.002.241
+6        Mare1987  -2.309.781 232.427.267   -75.938.770        73.628.989
+7        Simon ❗️  -5.941.562 243.398.472   -78.360.780        72.419.218
+8           Henok  -5.732.155 230.743.083   -74.253.606        68.521.451
+9         Simon94   5.696.220 173.491.710   -59.132.017        64.828.237
+10  David Nikolic   5.863.576 165.159.530   -56.437.625        62.301.201
+11       MACHETE      192.815 168.813.908   -55.772.219        55.965.034
+12        Batigol  -6.982.285 197.189.133   -62.768.260        55.785.975
+13       BAN PIVA    -416.814 163.695.713   -53.882.037        53.465.223
+14      JesseJay  -22.236.305 249.617.530   -75.035.804        52.799.499
 
 Data reload needed, this takes a few minutes...
 
@@ -82,60 +82,52 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 71.04%
-RMSE: 1713934656.24
-MAE: 21178.01
+Signs correct: 71.25%
+RMSE: 1613062837.51
+MAE: 20652.48
 R2: 0.92
 
 === Market Recommendations ===
      last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0    Culbreath    Leverkusen  3.817.003              407.692              392.068          5           689           False
-1       Arthur    Leverkusen  7.710.447              263.289              265.486          3            12           False
-2       Konaté       Leipzig  2.619.308              271.020              261.679          5           689           False
-3          Lee         Mainz  8.049.241              240.024              234.385          1             3           False
-4    Moerstedt    Hoffenheim  1.315.848              213.020              202.880          5           689           False
-5         Kohr         Mainz  5.544.035              206.190              200.049          2             5           False
-6   Duranville      Dortmund  1.500.015              203.567              198.287          5           682           False
-7        Stark        Bremen  3.418.575              192.333              196.051          3             9           False
-8      Machida    Hoffenheim  1.053.533              196.171              196.020          5           695           False
-9       Kerber    Heidenheim  1.059.416              193.746              192.368          4             3           False
-10      Höfler      Freiburg  1.061.021              190.931              182.344          5            23           False
-11      Traoré    Heidenheim  1.518.498              187.125              178.414          3            27           False
-12   Lindstrøm     Wolfsburg  1.448.661              173.311              175.828          4           695           False
-13     Trimmel  Union Berlin  7.577.691              178.636              164.461          2            17           False
-14    Dźwigała     St. Pauli  2.845.878              159.462              159.873          5            21           False
-15        Jung      Freiburg  3.204.956              148.366              150.221          4            15           False
-16     Karazor     Stuttgart  6.930.855              164.528              145.481          3           504           False
-17       Burcu  Union Berlin  1.312.036              143.743              142.905          3           689           False
-18     Njinmah        Bremen  6.320.715              136.751              135.420          3           682           False
-19    Vagnoman     Stuttgart  9.862.733              127.662              124.801          3           504           False
-20    Da Costa         Mainz  7.980.384              123.299              123.695          3             8           False
-21       Leite  Union Berlin 11.327.019              127.093              119.958          2           649           False
-22  Maksimovic       Leipzig  2.027.270              124.314              112.861          5            12           False
-23       Couto      Dortmund 12.299.307               75.710               59.680          3           504           False
-24     Hofmann    Leverkusen 13.073.858               51.992               49.577          3           691           False
-25     Zesiger      Augsburg  2.606.913               59.660               43.179          4           529           False
-26      Gnabry        Bayern 32.171.692               43.462               37.364          3           618           False
+0    Culbreath    Leverkusen  4.198.471              381.468              322.389          5           665           False
+1       Konaté       Leipzig  2.849.123              229.815              223.701          5           665           False
+2    Moerstedt    Hoffenheim  1.520.023              204.175              197.535          5           665           False
+3   Duranville      Dortmund  1.701.154              201.139              195.007          5           658           False
+4   Hountondji     St. Pauli  1.215.343              198.811              190.320          3            21           False
+5    Lindstrøm     Wolfsburg  1.638.608              189.947              185.787          4           671           False
+6      Fischer     Wolfsburg  1.666.089              177.823              179.591          4            10           False
+7       Traoré    Heidenheim  1.699.905              181.407              179.061          3             3           False
+8        Omari       Hamburg  1.557.786              172.883              175.104          5            27           False
+9        Burcu  Union Berlin  1.481.877              169.841              170.500          3           665           False
+10     Machida    Hoffenheim  1.228.827              175.294              168.135          5           671           False
+11     Njinmah        Bremen  6.464.350              143.635              142.973          3           658           False
+12     Karazor     Stuttgart  7.075.474              144.619              131.857          3           480           False
+13       Leite  Union Berlin 11.440.593              113.574              110.860          2           625           False
+14    Vagnoman     Stuttgart  9.961.048               98.315               68.393          3           480           False
+15       Couto      Dortmund 12.367.972               68.665               62.240          3           480           False
+16      Gnabry        Bayern 32.209.397               37.705               29.589          3           594           False
+17     Hofmann    Leverkusen 13.108.287               34.429               29.034          3           667           False
+18    Bakayoko       Leipzig 14.366.124               36.649               25.069          2            20           False
 
 === Squad Recommendations ===
    last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0   Potulski       Mainz  6.026.833              347.180              341.625          2
-1     Nartey   Stuttgart  4.743.814              285.848              269.465          3
-2   Henrichs     Leipzig  2.199.702              264.394              267.981          5
-3   Palacios  Leverkusen  3.286.942              248.898              243.610          5
-4    Zentner       Mainz  6.256.008              204.137              206.293          2
-5   Vušković     Hamburg 23.044.843              163.886              159.096          1
-6     Santos   Frankfurt  1.652.363              157.479              150.696          5
-7    Collins   Frankfurt  9.837.034              146.876              131.869          3
-8      Undav   Stuttgart 26.899.373              114.123              108.560          1
-9    Tillman  Leverkusen 26.891.274               92.793               91.648          1
-10    Harder     Leipzig 10.487.449               83.314               83.754          3
-11    Vieira     Hamburg 11.184.782               66.288               62.458          1
-12  Grimaldo  Leverkusen 40.499.650               68.858               60.482          1
-13      Díaz      Bayern 51.499.658               42.670               41.601          1
-14   Stiller   Stuttgart 35.516.746               23.323               17.279          1
-15  Mbangula      Bremen  8.111.353             -198.733             -187.412          3
-16  Kramarić  Hoffenheim 19.759.025              -79.018             -229.203          3
-17    Schmid      Bremen 25.785.888             -157.287             -242.580          1
+0   Potulski       Mainz  6.384.518              357.685              336.269          2
+1   Palacios  Leverkusen  3.541.004              254.062              256.395          5
+2     Nartey   Stuttgart  5.019.719              275.905              255.389          3
+3   Henrichs     Leipzig  2.449.507              249.805              246.378          5
+4    Zentner       Mainz  6.471.989              215.981              207.764          2
+5   Vušković     Hamburg 23.205.411              160.568              157.948          1
+6     Santos   Frankfurt  1.799.412              147.049              142.163          5
+7    Collins   Frankfurt  9.971.922              134.888              126.980          3
+8      Undav   Stuttgart 27.009.038              109.665              102.437          1
+9    Tillman  Leverkusen 26.978.938               87.664               85.146          1
+10    Harder     Leipzig 10.575.745               88.296               83.618          3
+11    Vieira     Hamburg 11.256.157               71.375               71.273          1
+12  Grimaldo  Leverkusen 40.574.917               75.267               59.624          1
+13      Díaz      Bayern 51.541.264               41.606               41.364          1
+14   Stiller   Stuttgart 35.540.995               24.249               19.260          1
+15  Mbangula      Bremen  7.918.789             -192.564             -188.259          3
+16  Kramarić  Hoffenheim 19.427.699             -331.326             -373.822          3
+17    Schmid      Bremen 25.276.222             -509.666             -382.430          1
 
 No email provided, skipping email sending.
