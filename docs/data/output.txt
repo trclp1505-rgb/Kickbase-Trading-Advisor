@@ -1,4 +1,4 @@
-Run: 2026-01-03 22:42:46 UTC
+Run: 2026-01-04 12:16:47 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11673861417', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-12-22T21:03:50Z'}: 'er'
@@ -59,83 +59,57 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User      Budget  Team Value  Max Negative  Available Budget
-0         Elvisee  33.650.798 266.589.474   -99.079.290       132.730.088
-1           Jens   -6.719.132 324.431.888  -104.845.209        98.126.077
-2          Freddy  -7.011.742 315.092.999  -101.666.815        94.655.073
-3       Christoph -17.281.334 331.940.558  -103.837.544        86.556.210
-4           Henok  10.193.751 219.327.716   -75.742.084        85.935.835
-5           frahd   3.234.168 244.559.124   -81.771.786        85.005.954
-6        Mare1987   2.854.081 226.108.720   -75.557.724        78.411.805
-7       Falco1899  18.009.916 154.271.254   -56.852.786        74.862.702
-8        Simon ❗️  -5.541.562 248.056.340   -80.029.877        74.488.315
-9         Batigol   4.494.362 189.795.524   -64.115.662        68.610.024
-10        Simon94   6.096.220 172.330.535   -58.880.829        64.977.049
-11  David Nikolic   6.263.576 165.236.751   -56.595.108        62.858.684
-12       MACHETE      592.815 167.942.717   -55.616.726        56.209.541
-13      JesseJay  -20.738.590 253.700.999   -76.877.595        56.139.005
-14       BAN PIVA     -16.814 163.405.643   -53.918.314        53.901.500
+0         Elvisee  33.750.798 266.589.474   -99.112.290       132.863.088
+1           Jens   -6.619.132 324.431.888  -104.878.209        98.259.077
+2       Christoph -17.181.334 331.940.558  -103.870.544        86.689.210
+3           Henok  10.293.751 219.327.716   -75.775.084        86.068.835
+4           frahd   3.334.168 244.559.124   -81.804.786        85.138.954
+5          Freddy -14.911.742 317.359.120   -99.807.635        84.895.893
+6        Mare1987   2.954.081 226.108.720   -75.590.724        78.544.805
+7         Batigol  12.093.362 188.029.403   -66.040.512        78.133.874
+8       Falco1899  18.109.916 154.271.254   -56.885.786        74.995.702
+9        Simon ❗️  -5.441.562 248.056.340   -80.062.877        74.621.315
+10        Simon94   6.196.220 172.330.535   -58.913.829        65.110.049
+11  David Nikolic   6.363.576 165.236.751   -56.628.108        62.991.684
+12      JesseJay  -17.750.192 250.810.044   -76.909.751        59.159.559
+13       MACHETE      692.815 167.942.717   -55.649.726        56.342.541
+14       BAN PIVA  -2.206.258 165.687.087   -53.948.674        51.742.416
 
 Data reload needed, this takes a few minutes...
-
-Data loaded from database.
-
-Data preprocessed.
-
-Model evaluation:
-Signs correct: 71.84%
-RMSE: 1554358748.98
-MAE: 20254.50
-R2: 0.92
-
-=== Market Recommendations ===
-           last_name     team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0             Heintz          Köln  4.003.527              322.809              316.241          2           695           False
-1          Moerstedt    Hoffenheim  2.451.426              258.869              257.583          5           569           False
-2          Rexhbecaj      Augsburg  2.203.177              239.464              244.834          4           712           False
-3              Krauß          Köln  1.763.598              236.231              244.819          3           718           False
-4              Mohya    M'gladbach  3.724.999              240.268              242.161          5           695           False
-5               Wolf      Augsburg  2.385.164              234.907              239.490          3           695           False
-6              Wöber        Bremen  3.041.230              237.800              236.414          4            16           False
-7            Neuhaus    M'gladbach  7.027.619              243.166              230.087          2            16           False
-8             Traoré    Heidenheim  2.445.238              221.106              229.412          3           649           False
-9             Gimber    Heidenheim  2.281.444              203.120              221.980          3             8           False
-10            Stöger    M'gladbach  1.630.194              222.693              220.171          4           712           False
-11           Makengo      Freiburg  1.849.894              201.706              220.061          4           707           False
-12         Culbreath    Leverkusen  5.361.825              234.416              213.982          5           569           False
-13           Zentner         Mainz  7.365.621              219.724              212.560          2           710           False
-14        Duranville      Dortmund  2.536.547              205.519              200.110          5           562           False
-15          Stergiou     Stuttgart  2.267.898              185.700              180.002          5            16           False
-16        Skov Olsen     Wolfsburg  1.344.753              176.588              166.525          4             1           False
-17           Njinmah        Bremen  7.029.217              157.274              156.929          3           562           False
-18          Pedersen      Augsburg  2.120.300              163.488              154.034          3           712           False
-19         Juranović  Union Berlin  1.798.219              138.651              153.963          5           695           False
-20             Burcu  Union Berlin  2.108.279              157.618              147.523          3           569           False
-21          Hendriks     Stuttgart  5.316.470              162.704              142.297          3           696           False
-22           Khedira  Union Berlin 10.181.354              139.432              115.760          1           695           False
-23  Røssing-Lelesiit       Hamburg  1.600.096              132.064              106.214          5            33           False
-24         Schöppner    Heidenheim  3.028.366               33.971               93.584          2            28           False
-25            Vasilj     St. Pauli 12.362.433               49.948               56.641          1            33           False
-26        Engelhardt    M'gladbach 11.435.674               18.607               13.266          1           672           False
-
-=== Squad Recommendations ===
-   last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0   Potulski       Mainz  7.723.646              344.072              335.919          2
-1     Santos   Frankfurt  2.878.580              319.698              318.088          3
-2   Henrichs     Leipzig  3.495.744              282.236              270.689          5
-3   Palacios  Leverkusen  4.524.050              255.388              252.705          5
-4      Krauß        Köln  1.763.598              236.231              244.819          3
-5    Zentner       Mainz  7.365.621              219.724              212.560          2
-6     Harder     Leipzig 10.903.122              101.571              115.904          3
-7   Sabitzer    Dortmund 10.948.592              102.151              115.523          2
-8   Vušković     Hamburg 23.626.173               97.966               96.058          1
-9     Vieira     Hamburg 11.522.992               67.245               66.780          1
-10   Tillman  Leverkusen 27.269.007               65.095               65.401          1
-11     Undav   Stuttgart 27.362.059               68.894               63.711          1
-12     Seelt   Wolfsburg 10.976.632               95.857               53.571          1
-13      Díaz      Bayern 51.663.372               30.635               28.869          1
-14  Grimaldo  Leverkusen 40.752.418               27.642               15.185          1
-15  Goretzka      Bayern 23.019.890             -351.037             -311.784          4
-16   Stiller   Stuttgart 35.127.898             -296.962             -342.185          1
-17    Schmid      Bremen 23.508.494             -365.354             -350.997          1
-
-No email provided, skipping email sending.
+Traceback (most recent call last):
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
+    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
+    comp_dfs = list(executor.map(process_player, players))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
+    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 708, in merge_asof
+    return op.get_result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1927, in get_result
+    join_index, left_indexer, right_indexer = self._get_join_info()
+                                              ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1152, in _get_join_info
+    (left_indexer, right_indexer) = self._get_join_indexers()
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2240, in _get_join_indexers
+    right_values = self._convert_values_for_libjoin(right_values, "right")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2183, in _convert_values_for_libjoin
+    raise ValueError(f"{side} keys must be sorted")
+ValueError: right keys must be sorted
