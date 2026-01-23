@@ -1,4 +1,4 @@
-Run: 2026-01-22 22:47:36 UTC
+Run: 2026-01-23 22:43:37 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11741558437', 't': 26, 'coc': 0, 'data': {'t': 702, 'n': 'Silver hand', 'd': 'Yield 5 mil profit with a player. No transfers between managers.'}, 'dt': '2026-01-16T18:33:52Z'}: 'er'
@@ -63,21 +63,21 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0          Freddy 10.911.743 310.893.213  -106.195.635       117.107.378
-1           Jens   8.252.734 315.509.208  -106.841.441       115.094.175
-2         Elvisee 12.745.542 296.841.435  -102.163.702       114.909.244
-3       Christoph    -58.775 330.989.192  -109.207.038       109.148.263
-4        Mare1987 29.011.665 202.411.913   -76.369.781       105.381.446
-5         Batigol 29.055.769 193.185.483   -73.339.613       102.395.382
-6           Henok 22.505.570 207.799.283   -76.000.601        98.506.171
-7           frahd 11.736.940 236.898.384   -82.049.657        93.786.597
-8       JesseJay   3.703.743 248.150.229   -83.111.811        86.815.554
-9        Simon ❗️  6.113.214 222.524.693   -75.450.509        81.563.723
-10        Simon94  8.994.916 169.865.461   -59.023.924        68.018.840
-11  David Nikolic 10.122.576 163.094.589   -57.161.664        67.284.240
-12      Falco1899  9.537.306 163.102.639   -56.971.182        66.508.488
-13       BAN PIVA  4.754.069 168.560.811   -57.193.910        61.947.979
-14       MACHETE   1.338.626 155.040.340   -51.605.059        52.943.685
+0         Elvisee 22.002.097 274.111.307   -97.717.423       119.719.520
+1          Freddy 11.011.743 310.803.724  -106.199.104       117.210.847
+2           Jens   8.352.734 314.291.419  -106.472.570       114.825.304
+3       Christoph     41.225 331.357.710  -109.361.649       109.402.874
+4           Henok 28.490.988 215.242.491   -80.432.048       108.923.036
+5        Mare1987 29.111.665 202.013.649   -76.271.354       105.383.019
+6         Batigol 29.383.769 193.417.474   -73.524.410       102.908.179
+7       JesseJay   5.224.421 247.227.438   -83.309.113        88.533.534
+8           frahd  4.504.829 242.422.895   -81.486.149        85.990.978
+9        Simon ❗️  6.315.214 219.502.315   -74.519.785        80.834.999
+10        Simon94  9.094.916 168.544.896   -58.621.138        67.716.054
+11  David Nikolic 10.295.576 161.854.348   -56.809.475        67.105.051
+12      Falco1899  9.697.306 162.995.113   -56.988.498        66.685.804
+13       BAN PIVA  4.934.069 166.766.982   -56.661.347        61.595.416
+14       MACHETE   4.743.798 151.311.806   -51.498.349        56.242.147
 
 Data reload needed, this takes a few minutes...
 Traceback (most recent call last):
@@ -92,7 +92,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
     return fut.result(timeout)
            ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
   File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
