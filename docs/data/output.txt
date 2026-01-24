@@ -1,4 +1,4 @@
-Run: 2026-01-23 22:43:37 UTC
+Run: 2026-01-24 22:42:53 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11741558437', 't': 26, 'coc': 0, 'data': {'t': 702, 'n': 'Silver hand', 'd': 'Yield 5 mil profit with a player. No transfers between managers.'}, 'dt': '2026-01-16T18:33:52Z'}: 'er'
@@ -63,56 +63,61 @@ Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0         Elvisee 22.002.097 274.111.307   -97.717.423       119.719.520
-1          Freddy 11.011.743 310.803.724  -106.199.104       117.210.847
-2           Jens   8.352.734 314.291.419  -106.472.570       114.825.304
-3       Christoph     41.225 331.357.710  -109.361.649       109.402.874
-4           Henok 28.490.988 215.242.491   -80.432.048       108.923.036
-5        Mare1987 29.111.665 202.013.649   -76.271.354       105.383.019
-6         Batigol 29.383.769 193.417.474   -73.524.410       102.908.179
-7       JesseJay   5.224.421 247.227.438   -83.309.113        88.533.534
-8           frahd  4.504.829 242.422.895   -81.486.149        85.990.978
-9        Simon ❗️  6.315.214 219.502.315   -74.519.785        80.834.999
-10        Simon94  9.094.916 168.544.896   -58.621.138        67.716.054
-11  David Nikolic 10.295.576 161.854.348   -56.809.475        67.105.051
-12      Falco1899  9.697.306 162.995.113   -56.988.498        66.685.804
-13       BAN PIVA  4.934.069 166.766.982   -56.661.347        61.595.416
-14       MACHETE   4.743.798 151.311.806   -51.498.349        56.242.147
+0         Elvisee 41.368.507 256.997.651   -98.460.832       139.829.339
+1          Freddy 12.086.743 310.714.112  -106.524.282       118.611.025
+2           Jens   9.476.919 312.318.533  -106.192.499       115.669.418
+3       Christoph  1.070.225 332.054.859  -109.931.278       111.001.503
+4           Henok 28.555.433 214.860.325   -80.327.200       108.882.633
+5        Mare1987 22.769.665 207.485.761   -75.984.291        98.753.956
+6         Batigol 21.858.439 200.140.292   -73.259.581        95.118.020
+7           frahd  8.978.777 239.208.634   -81.901.846        90.880.623
+8       JesseJay   1.590.067 251.751.881   -83.602.843        85.192.910
+9        Simon ❗️  6.738.214 216.497.971   -73.667.941        80.406.155
+10        Simon94  9.336.916 167.454.903   -58.341.300        67.678.216
+11      Falco1899 10.332.306 163.387.855   -57.327.653        67.659.959
+12  David Nikolic 10.518.576 160.133.755   -56.315.269        66.833.845
+13       BAN PIVA  5.879.069 165.252.330   -56.473.362        62.352.431
+14       MACHETE   5.587.798 151.072.790   -51.697.994        57.285.792
 
 Data reload needed, this takes a few minutes...
-Traceback (most recent call last):
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
-    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
-    comp_dfs = list(executor.map(process_player, players))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
-    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
-    op = _AsOfMerge(
-         ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
-    _OrderedMerge.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
-    _MergeOperation.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
-    self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
-    _check_dtype_match(lk, rk, i)
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
-    raise MergeError(msg)
-pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
+
+Data loaded from database.
+
+Data preprocessed.
+
+Model evaluation:
+Signs correct: 72.24%
+RMSE: 1635288284.72
+MAE: 20998.13
+R2: 0.92
+
+=== Market Recommendations ===
+   last_name team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0  Bitshiabu   Leipzig 1.079.957              336.901              345.906          1            11           False
+1  Matanović  Freiburg 5.026.403              317.265              307.801          3            17           False
+2   Mbangula    Bremen 6.270.449              220.660              246.223          3            15           False
+3    Tangvik   Hamburg   764.318              154.956              199.086          5            21           False
+4    Banzuzi   Leipzig 2.074.440               89.584               90.903          5             4           False
+5    Ribeiro  Augsburg 1.485.418               76.375               67.049          5           637           False
+
+=== Squad Recommendations ===
+    last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
+0      Chaves    Augsburg  1.076.732              576.732              317.539          3
+1     Shiogai   Wolfsburg  2.800.203              133.508              159.646          4
+2   Coulibaly      Bremen  8.212.787              126.217              156.372          1
+3    Goretzka      Bayern 24.399.928              100.943              100.461          3
+4       Undav   Stuttgart 29.641.443              106.267               97.861          3
+5    Vušković     Hamburg 25.720.549               91.358               96.683          1
+6    Palacios  Leverkusen  4.445.802               20.779               61.314          4
+7    Grimaldo  Leverkusen 41.882.678               36.341               32.719          1
+8        Díaz      Bayern 52.290.649               24.476               22.024          2
+9      Santos   Frankfurt  8.133.726               18.614                8.413          1
+10     Vieira     Hamburg 12.953.017               20.226                4.776          1
+11    Tillman  Leverkusen 28.292.401                5.757                 -997          2
+12   Henrichs     Leipzig  4.111.340              -76.327              -72.338          5
+13      Takai  M'gladbach  5.391.875             -128.528             -119.137          2
+14     Schmid      Bremen 20.844.412             -300.189             -287.474          3
+15    Stiller   Stuttgart 31.655.632             -412.587             -332.406          3
+16   Sabitzer    Dortmund 10.465.359             -465.517             -406.360          5
+
+No email provided, skipping email sending.
