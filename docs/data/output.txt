@@ -1,4 +1,4 @@
-Run: 2026-01-29 22:54:04 UTC
+Run: 2026-01-30 22:52:30 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11786747069', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2026-01-28T19:01:19Z'}: 'er'
@@ -12,79 +12,23 @@ Warning: Failed to process achievement bonus {'i': '11741558437', 't': 26, 'coc'
 Warning: Failed to process achievement bonus {'i': '11741558436', 't': 26, 'coc': 0, 'data': {'t': 701, 'n': 'Bronze hand', 'd': 'Yield 3 mil profit with a player. No transfers between managers.'}, 'dt': '2026-01-16T18:33:52Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11738708400', 't': 26, 'coc': 0, 'data': {'t': 702, 'n': 'Silver hand', 'd': 'Yield 5 mil profit with a player. No transfers between managers.'}, 'dt': '2026-01-15T18:25:50Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11738708399', 't': 26, 'coc': 0, 'data': {'t': 701, 'n': 'Bronze hand', 'd': 'Yield 3 mil profit with a player. No transfers between managers.'}, 'dt': '2026-01-15T18:25:50Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11673861417', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-12-22T21:03:50Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11664536876', 't': 26, 'coc': 0, 'data': {'t': 702, 'n': 'Silver hand', 'd': 'Yield 5 mil profit with a player. No transfers between managers.'}, 'dt': '2025-12-20T20:37:00Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11664536875', 't': 26, 'coc': 0, 'data': {'t': 701, 'n': 'Bronze hand', 'd': 'Yield 3 mil profit with a player. No transfers between managers.'}, 'dt': '2025-12-20T20:37:00Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11651074468', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-12-15T18:55:35Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11651074374', 't': 26, 'coc': 0, 'data': {'t': 202, 'n': 'Season points gold', 'd': 'Score at least 15.000 points during a season'}, 'dt': '2025-12-15T18:55:35Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11628334712', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-12-08T19:57:18Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11605769750', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-12-01T18:54:44Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11582887195', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-11-24T18:58:48Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11582887099', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-11-24T18:58:47Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11540906715', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2025-11-10T18:59:04Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11540906623', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-11-10T18:59:04Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11540906491', 't': 26, 'coc': 0, 'data': {'t': 102, 'n': 'Match day points gold', 'd': 'Score at least 1500 points during a match day'}, 'dt': '2025-11-10T18:59:04Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11540906382', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-11-10T18:59:04Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11540906270', 't': 26, 'coc': 0, 'data': {'t': 1, 'n': 'Match day winner bronze', 'd': 'Win the match day 3 times in a season'}, 'dt': '2025-11-10T18:59:04Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11540906197', 't': 26, 'coc': 0, 'data': {'t': 5, 'n': 'Match day winner', 'd': 'Win the match day'}, 'dt': '2025-11-10T18:59:04Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11504711839', 't': 26, 'coc': 0, 'data': {'t': 403, 'n': 'Team value platinum', 'd': 'Own a team with a value of 250 mil.'}, 'dt': '2025-10-31T19:15:49Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11492097779', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-10-27T18:57:28Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11492097640', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-10-27T18:57:28Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11485239501', 't': 26, 'coc': 0, 'data': {'t': 502, 'n': 'Transfer King silver', 'd': 'Sell or buy 250 players during a season'}, 'dt': '2025-10-26T19:18:47Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11467140990', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2025-10-20T17:58:57Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11467140874', 't': 26, 'coc': 0, 'data': {'t': 5001, 'n': 'MVP', 'd': 'Own the best player of a match day'}, 'dt': '2025-10-20T17:58:57Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11467140773', 't': 26, 'coc': 0, 'data': {'t': 301, 'n': 'Match winner', 'd': 'Score at least 300 points with a player'}, 'dt': '2025-10-20T17:58:57Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11467140699', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-10-20T17:58:56Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11467140527', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-10-20T17:58:56Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11421442105', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2025-10-06T17:51:44Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11421441977', 't': 26, 'coc': 0, 'data': {'t': 5001, 'n': 'MVP', 'd': 'Own the best player of a match day'}, 'dt': '2025-10-06T17:51:44Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11421441864', 't': 26, 'coc': 0, 'data': {'t': 301, 'n': 'Match winner', 'd': 'Score at least 300 points with a player'}, 'dt': '2025-10-06T17:51:43Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11421441781', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-10-06T17:51:43Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11421441670', 't': 26, 'coc': 0, 'data': {'t': 102, 'n': 'Match day points gold', 'd': 'Score at least 1500 points during a match day'}, 'dt': '2025-10-06T17:51:43Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11421441593', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-10-06T17:51:43Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11421441484', 't': 26, 'coc': 0, 'data': {'t': 5, 'n': 'Match day winner', 'd': 'Win the match day'}, 'dt': '2025-10-06T17:51:43Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11408719412', 't': 26, 'coc': 0, 'data': {'t': 402, 'n': 'Team value gold', 'd': 'Own a team with a value of 200 mil.'}, 'dt': '2025-10-03T18:06:28Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11395664619', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-09-29T18:09:21Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11395664502', 't': 26, 'coc': 0, 'data': {'t': 201, 'n': 'Season points silver', 'd': 'Score at least 5.000 points during a season'}, 'dt': '2025-09-29T18:09:21Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11395664399', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-09-29T18:09:21Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11382028995', 't': 26, 'coc': 0, 'data': {'t': 701, 'n': 'Bronze hand', 'd': 'Yield 3 mil profit with a player. No transfers between managers.'}, 'dt': '2025-09-26T20:14:18Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11367904171', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-09-22T17:53:13Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11340676804', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2025-09-15T22:47:14Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11340676671', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-09-15T22:47:14Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11340676576', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-09-15T22:47:14Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11340676465', 't': 26, 'coc': 0, 'data': {'t': 5, 'n': 'Match day winner', 'd': 'Win the match day'}, 'dt': '2025-09-15T22:47:14Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11289153806', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-09-01T18:16:41Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11261203308', 't': 26, 'coc': 0, 'data': {'t': 301, 'n': 'Match winner', 'd': 'Score at least 300 points with a player'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11261203197', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11261203098', 't': 26, 'coc': 0, 'data': {'t': 200, 'n': 'Season points bronze', 'd': 'Score at least 1.000 points during a season'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11261202999', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11261202882', 't': 26, 'coc': 0, 'data': {'t': 100, 'n': 'Match day points bronze', 'd': 'Score at least 500 points during a match day'}, 'dt': '2025-08-25T17:55:52Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11244575359', 't': 26, 'coc': 0, 'data': {'t': 700, 'n': 'The right touch', 'd': 'Yield 1 mil profit with a player. No transfers between managers.'}, 'dt': '2025-08-21T21:53:44Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11237418950', 't': 26, 'coc': 0, 'data': {'t': 501, 'n': 'Transfer King bronze', 'd': 'Sell or buy 50 players during a season'}, 'dt': '2025-08-19T18:22:18Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11198504486', 't': 26, 'coc': 0, 'data': {'t': 401, 'n': 'Team value silver', 'd': 'Own a team with a value of 150 mil.'}, 'dt': '2025-08-05T00:25:11Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11196879387', 't': 26, 'coc': 0, 'data': {'t': 400, 'n': 'Team value bronze', 'd': 'Own a team with a value of 125 mil.'}, 'dt': '2025-08-04T08:45:07Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11190450263', 't': 26, 'coc': 0, 'data': {'t': 500, 'n': 'First deal', 'd': 'Sell or buy 1 player during a season'}, 'dt': '2025-08-01T09:09:41Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11190141281', 't': 26, 'coc': 0, 'data': {'t': 602, 'n': '2. Liga', 'd': 'Your league has at least 12 managers'}, 'dt': '2025-08-01T05:55:56Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11190141280', 't': 26, 'coc': 0, 'data': {'t': 601, 'n': 'Regionalliga', 'd': 'Your league has at least 6 managers'}, 'dt': '2025-08-01T05:55:56Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11190141278', 't': 26, 'coc': 0, 'data': {'t': 600, 'n': 'Kreisliga', 'd': 'Your league has at least 3 managers'}, 'dt': '2025-08-01T05:55:56Z'}: 'er'
 
 === Manager Budgets ===
-             User     Budget  Team Value  Max Negative  Available Budget
-0         Elvisee 38.584.574 254.885.635   -96.845.169       135.429.743
-1           Jens  13.906.266 301.122.917  -103.959.630       117.865.896
-2         Batigol 36.546.630 190.169.856   -74.816.440       111.363.070
-3        Mare1987 34.767.727 189.765.062   -74.095.820       108.863.547
-4           Henok 26.085.631 217.191.563   -80.281.474       106.367.105
-5       Christoph -1.681.196 327.616.017  -107.558.491       105.877.295
-6          Freddy    462.085 318.176.149  -105.150.617       105.612.702
-7       JesseJay  10.916.264 246.520.559   -84.954.152        95.870.416
-8           frahd  8.986.291 248.470.223   -84.960.650        93.946.941
-9        Simon ❗️  7.603.214 206.644.612   -70.701.783        78.304.997
-10      Falco1899 10.833.037 163.989.412   -57.691.408        68.524.445
-11  David Nikolic 11.589.576 153.630.214   -54.522.531        66.112.107
-12        Simon94  9.888.916 158.553.747   -55.586.079        65.474.995
-13       BAN PIVA  5.804.521 163.876.526   -55.994.746        61.799.267
-14       MACHETE   6.380.798 149.128.382   -51.318.029        57.698.827
+         User      Budget  Team Value  Max Negative  Available Budget
+0   Christoph  81.917.138 327.947.442  -135.255.311       217.172.449
+1   JesseJay  104.351.062 235.327.297  -112.093.858       216.444.920
+2      Freddy  73.609.827 317.805.636  -129.167.103       202.776.930
+3    Mare1987 103.684.220 189.565.782   -96.772.501       200.456.721
+4     Elvisee  74.405.864 254.954.647  -108.688.969       183.094.833
+5     Batigol  83.992.082 196.489.138   -92.558.803       176.550.885
+6       Henok  77.477.946 214.800.742   -96.451.967       173.929.913
+7       frahd  68.731.123 249.633.296  -105.060.258       173.791.381
+8    Simon ❗️  77.637.776 205.228.633   -93.345.915       170.983.691
+9    BAN PIVA  68.398.779 164.184.759   -76.752.568       145.151.347
+10    Simon94  65.998.696 156.581.442   -73.451.446       139.450.142
+11   MACHETE   66.846.983 149.171.201   -71.286.001       138.132.984
+12  Falco1899  53.434.121 162.952.273   -71.407.510       124.841.631
+13      Jens   14.006.266 301.441.677  -104.097.821       118.104.087
 
 Data reload needed, this takes a few minutes...
 Traceback (most recent call last):
