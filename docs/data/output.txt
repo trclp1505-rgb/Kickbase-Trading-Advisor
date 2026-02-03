@@ -1,4 +1,4 @@
-Run: 2026-02-03 00:39:11 UTC
+Run: 2026-02-03 22:56:59 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11804257324', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2026-02-02T18:46:10Z'}: 'er'
@@ -17,57 +17,57 @@ Warning: Failed to process achievement bonus {'i': '11738708399', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0       Christoph 67.141.413 331.951.993  -131.700.824       198.842.237
-1        Mare1987 98.034.863 193.374.527   -96.165.099       194.199.962
-2          Freddy 64.720.344 317.831.903  -126.242.242       190.962.586
-3       JesseJay  77.951.854 250.557.500  -108.408.087       186.359.941
-4         Batigol 88.382.785 192.579.828   -92.717.662       181.100.447
-5           frahd 71.669.689 243.782.504  -104.099.224       175.768.913
-6         Elvisee 63.284.825 264.740.326  -108.248.300       171.533.125
-7           Henok 74.937.689 214.239.264   -95.428.394       170.366.083
-8        Simon ❗️ 67.236.336 210.017.728   -91.493.841       158.730.177
-9        MACHETE  80.734.794 140.102.604   -72.876.341       153.611.135
-10  David Nikolic 70.257.565 150.704.459   -72.917.468       143.175.033
-11        Simon94 66.406.696 149.934.523   -71.392.602       137.799.298
-12       BAN PIVA 58.792.372 165.349.374   -73.966.776       132.759.148
-13          Jens  20.188.777 301.036.177  -106.004.235       126.193.012
-14      Falco1899 54.485.121 158.459.673   -70.271.782       124.756.903
+0       Christoph 67.041.413 332.875.114  -131.972.454       199.013.867
+1        Mare1987 97.934.863 193.371.874   -96.131.223       194.066.086
+2         Batigol 95.526.020 193.969.843   -95.533.635       191.059.655
+3          Freddy 64.620.344 317.895.548  -126.230.244       190.850.588
+4       JesseJay  77.851.854 251.686.107  -108.747.527       186.599.381
+5           Henok 82.149.820 212.605.493   -97.269.253       179.419.073
+6           frahd 69.147.467 250.034.217  -105.329.956       174.477.423
+7         Elvisee 60.181.492 268.674.910  -108.522.613       168.704.105
+8        Simon ❗️ 67.136.336 210.831.207   -91.729.289       158.865.625
+9        MACHETE  80.634.794 140.639.639   -73.020.563       153.655.357
+10  David Nikolic 70.157.565 151.117.073   -73.020.631       143.178.196
+11        Simon94 66.306.696 148.277.720   -70.812.857       137.119.553
+12       BAN PIVA 58.692.372 165.515.892   -73.988.727       132.681.099
+13          Jens  20.188.777 303.122.965  -106.692.875       126.881.652
+14      Falco1899 54.385.121 156.758.479   -69.677.388       124.062.509
 
 Data reload needed, this takes a few minutes...
-
-Data loaded from database.
-
-Data preprocessed.
-
-Model evaluation:
-Signs correct: 72.32%
-RMSE: 1760775609.09
-MAE: 21991.24
-R2: 0.92
-
-=== Market Recommendations ===
-  last_name team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0      Lund      Köln 4.203.257              269.834              272.974          2             8            True
-1    Chávez    Bayern   835.910               69.977               61.938          5             7            True
-
-=== Squad Recommendations ===
-   last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0     Chaves    Augsburg  4.787.398              411.112              379.139          2
-1   Palacios  Leverkusen  6.787.910              350.683              329.502          3
-2   Henrichs     Leipzig  5.103.275              333.932              312.343          5
-3   Mbangula      Bremen  8.139.976              286.160              275.432          2
-4     Vieira     Hamburg 11.683.937              160.444              188.085          1
-5    Banzuzi     Leipzig  3.717.137              175.687              161.958          5
-6      Posch       Mainz 11.105.255              142.763              144.076          1
-7   Vušković     Hamburg 26.616.053              126.846              118.629          1
-8      Undav   Stuttgart 30.590.168              113.019              106.852          2
-9        Agu      Bremen  2.573.544               81.350               81.576          4
-10   Tillman  Leverkusen 25.061.586               35.688               56.772          3
-11   Stiller   Stuttgart 31.963.903               58.731               55.388          2
-12  Grimaldo  Leverkusen 42.096.239               41.301               41.006          1
-13     Kobel    Dortmund 18.054.130               28.729               21.855          1
-14      Díaz      Bayern 52.470.259               22.706               21.770          1
-15   Honorat  M'gladbach 12.365.068              -99.355              -72.160          1
-16  Sabitzer    Dortmund  7.920.339             -163.303             -146.219          4
-
-No email provided, skipping email sending.
+Traceback (most recent call last):
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
+    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
+    comp_dfs = list(executor.map(process_player, players))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
+    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 934, in merge_asof
+    return op.get_result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2280, in get_result
+    join_index, left_indexer, right_indexer = self._get_join_info()
+                                              ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1423, in _get_join_info
+    (left_indexer, right_indexer) = self._get_join_indexers()
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2593, in _get_join_indexers
+    right_values = self._convert_values_for_libjoin(right_values, "right")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2536, in _convert_values_for_libjoin
+    raise ValueError(f"{side} keys must be sorted")
+ValueError: right keys must be sorted
