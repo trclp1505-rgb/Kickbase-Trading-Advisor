@@ -1,4 +1,4 @@
-Run: 2026-02-05 21:42:41 UTC
+Run: 2026-02-05 22:54:54 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11804257324', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2026-02-02T18:46:10Z'}: 'er'
@@ -20,7 +20,7 @@ Warning: Failed to process achievement bonus {'i': '11738708399', 't': 26, 'coc'
 0         Elvisee 94.854.275 259.851.746  -117.052.987       211.907.262
 1       Christoph 68.309.190 330.731.731  -131.683.504       199.992.694
 2          Freddy 69.870.344 317.771.682  -127.921.869       197.792.213
-3       JesseJay  83.301.854 253.055.349  -110.997.877       194.299.731
+3       JesseJay  84.001.854 253.055.349  -111.228.877       195.230.731
 4         Batigol 92.455.236 194.452.651   -94.679.603       187.134.839
 5           Henok 74.178.109 214.427.669   -95.239.907       169.418.016
 6           frahd 57.988.125 247.222.396  -100.719.472       158.707.597
@@ -46,7 +46,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
     return fut.result(timeout)
            ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
   File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
