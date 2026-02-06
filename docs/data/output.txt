@@ -1,6 +1,7 @@
-Run: 2026-02-05 22:54:54 UTC
+Run: 2026-02-06 22:49:37 UTC
 
 Logged in to Kickbase.
+Warning: Failed to process achievement bonus {'i': '11814998686', 't': 26, 'coc': 0, 'data': {'t': 2, 'n': 'Match day winner silver', 'd': 'Win the match day 5 times in a season'}, 'dt': '2026-02-06T15:11:35Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11804257324', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2026-02-02T18:46:10Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11804257259', 't': 26, 'coc': 0, 'data': {'t': 5, 'n': 'Match day winner', 'd': 'Win the match day'}, 'dt': '2026-02-02T18:46:10Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11786747069', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2026-01-28T19:01:19Z'}: 'ac'
@@ -17,21 +18,21 @@ Warning: Failed to process achievement bonus {'i': '11738708399', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0         Elvisee 94.854.275 259.851.746  -117.052.987       211.907.262
-1       Christoph 68.309.190 330.731.731  -131.683.504       199.992.694
-2          Freddy 69.870.344 317.771.682  -127.921.869       197.792.213
-3       JesseJay  84.001.854 253.055.349  -111.228.877       195.230.731
-4         Batigol 92.455.236 194.452.651   -94.679.603       187.134.839
-5           Henok 74.178.109 214.427.669   -95.239.907       169.418.016
-6           frahd 57.988.125 247.222.396  -100.719.472       158.707.597
-7        Simon ❗️ 64.931.861 211.603.054   -91.256.522       156.188.383
-8   David Nikolic 70.257.565 151.620.927   -73.219.902       143.477.467
-9         Simon94 66.406.696 144.851.887   -69.715.332       136.122.028
-10       BAN PIVA 59.411.480 164.610.016   -73.927.094       133.338.574
-11          Jens  24.298.589 302.229.437  -107.754.249       132.052.838
-12       Mare1987 40.233.504 225.167.035   -87.582.178       127.815.682
-13      Falco1899 54.485.121 152.905.664   -68.438.959       122.924.080
-14       MACHETE  42.827.318 141.441.123   -60.808.586       103.635.904
+0       Christoph 84.211.930 314.379.261  -131.535.093       215.747.023
+1         Elvisee 94.381.275 260.215.136  -117.016.816       211.398.091
+2       JesseJay  93.615.125 253.134.717  -114.427.448       208.042.573
+3          Freddy 66.644.562 313.427.358  -125.423.734       192.068.296
+4         Batigol 97.060.585 184.273.154   -92.840.134       189.900.719
+5           Henok 74.178.109 214.437.226   -95.243.061       169.421.170
+6        Simon ❗️ 72.780.262 204.892.951   -91.632.160       164.412.422
+7           frahd 55.177.527 246.986.387   -99.714.092       154.891.619
+8         Simon94 76.517.807 143.570.801   -72.629.241       149.147.048
+9        Mare1987 60.077.921 201.436.275   -86.299.685       146.377.606
+10       MACHETE  73.361.787 141.587.987   -70.933.425       144.295.212
+11  David Nikolic 70.257.565 152.243.050   -73.425.203       143.682.768
+12       BAN PIVA 59.411.480 164.118.189   -73.764.791       133.176.271
+13      Falco1899 54.485.121 150.851.231   -67.760.996       122.246.117
+14          Jens  -1.379.410 311.422.022  -102.314.062       100.934.652
 
 Data reload needed, this takes a few minutes...
 Traceback (most recent call last):
@@ -46,7 +47,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
     return fut.result(timeout)
            ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
   File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
