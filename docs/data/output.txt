@@ -1,4 +1,4 @@
-Run: 2026-02-10 23:07:18 UTC
+Run: 2026-02-11 22:58:53 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11827015431', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2026-02-09T18:52:04Z'}: 'er'
@@ -20,74 +20,58 @@ Warning: Failed to process achievement bonus {'i': '11786746767', 't': 26, 'coc'
 Warning: Failed to process achievement bonus {'i': '11786746687', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2026-01-28T19:01:18Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11786746552', 't': 26, 'coc': 0, 'data': {'t': 5, 'n': 'Match day winner', 'd': 'Win the match day'}, 'dt': '2026-01-28T19:01:18Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11771113214', 't': 26, 'coc': 0, 'data': {'t': 701, 'n': 'Bronze hand', 'd': 'Yield 3 mil profit with a player. No transfers between managers.'}, 'dt': '2026-01-25T21:29:56Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11741558437', 't': 26, 'coc': 0, 'data': {'t': 702, 'n': 'Silver hand', 'd': 'Yield 5 mil profit with a player. No transfers between managers.'}, 'dt': '2026-01-16T18:33:52Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '11741558436', 't': 26, 'coc': 0, 'data': {'t': 701, 'n': 'Bronze hand', 'd': 'Yield 3 mil profit with a player. No transfers between managers.'}, 'dt': '2026-01-16T18:33:52Z'}: 'er'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0       Christoph 81.057.109 309.761.514  -128.970.146       210.027.255
-1       JesseJay  86.243.395 252.081.912  -111.647.351       197.890.746
-2         Elvisee 77.630.864 266.685.617  -113.624.439       191.255.303
-3          Freddy 60.344.606 317.981.484  -124.847.610       185.192.216
-4           Henok 72.429.969 215.420.974   -94.990.811       167.420.780
-5         Batigol 76.599.095 195.844.528   -89.906.396       166.505.491
-6        Simon ❗️ 71.248.237 213.070.144   -93.825.066       165.073.303
-7           frahd 52.268.020 251.408.750  -100.213.334       152.481.354
-8   David Nikolic 71.081.565 155.068.077   -74.629.382       145.710.947
-9        Mare1987 57.092.458 194.157.596   -82.912.518       140.004.976
-10       BAN PIVA 59.685.120 166.476.441   -74.633.315       134.318.435
-11       MACHETE  59.410.658 151.821.286   -69.706.542       129.117.200
-12      Falco1899 54.644.121 142.962.335   -65.210.130       119.854.251
-13          Jens  -2.508.964 321.882.553  -105.393.284       102.884.320
+0       Christoph 68.897.797 317.443.963  -127.492.781       196.390.578
+1       JesseJay  79.191.246 259.506.780  -111.770.349       190.961.595
+2          Freddy 60.444.606 318.089.524  -124.916.263       185.360.869
+3         Elvisee 70.480.864 271.821.127  -112.959.657       183.440.521
+4           frahd 65.728.351 245.134.747  -102.584.822       168.313.173
+5         Batigol 76.780.069 194.971.918   -89.678.156       166.458.225
+6        Simon ❗️ 67.580.743 213.542.931   -92.770.812       160.351.555
+7           Henok 59.636.636 221.237.998   -92.688.629       152.325.265
+8   David Nikolic 71.181.565 155.527.923   -74.814.131       145.995.696
+9        Mare1987 57.192.458 193.716.551   -82.799.973       139.992.431
+10       BAN PIVA 62.548.585 162.872.157   -74.388.845       136.937.430
+11       MACHETE  56.634.047 151.967.342   -68.838.458       125.472.505
+12      Falco1899 54.744.121 140.876.346   -64.554.754       119.298.875
+13          Jens  -2.408.964 323.710.614  -106.029.544       103.620.580
 
 Data reload needed, this takes a few minutes...
-
-Data loaded from database.
-
-Data preprocessed.
-
-Model evaluation:
-Signs correct: 72.99%
-RMSE: 1781385796.14
-MAE: 22161.80
-R2: 0.92
-
-=== Market Recommendations ===
-      last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0   Rosenfelder    Freiburg  3.982.776              341.925              316.375          2           548           False
-1    Engelhardt  M'gladbach  6.504.945              246.826              261.384          1             9            True
-2       Capaldo     Hamburg  4.817.188              213.953              251.428          1            11            True
-3         Jatta     Hamburg  2.399.297              280.961              249.772          2            16            True
-4          Ando   St. Pauli  4.993.658              280.974              247.834          1            11            True
-5      Saliakas   St. Pauli  3.181.798              279.566              246.761          1           587           False
-6       Niehues  Heidenheim  3.261.560              231.769              231.173          2           668           False
-7     Fernández  Leverkusen  5.755.223              258.830              215.313          3           548           False
-8      Reggiani    Dortmund  1.316.733              216.733              201.166          5            26           False
-9       Terrier  Leverkusen  6.984.281              206.849              180.903          3             9            True
-10         Wolf    Augsburg  2.296.028              135.141              114.280          3            24           False
-11         Lund        Köln  5.608.449              113.700               74.150          2           609           False
-12       Vasilj   St. Pauli 10.103.606               98.115               51.519          1           587           False
-13      Remberg     Hamburg 11.214.276               60.257               44.725          1            19            True
-
-=== Squad Recommendations ===
-   last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0     Chaves    Augsburg  7.191.408              290.381              270.707          1
-1   Henrichs     Leipzig  6.309.615              248.404              258.203          2
-2    Niehues  Heidenheim  3.261.560              231.769              231.173          2
-3      Gruda     Leipzig  9.245.464              220.072              221.175          3
-4   Palacios  Leverkusen  8.989.143              240.358              204.618          3
-5     Vieira     Hamburg 13.240.978              213.393              191.671          1
-6    Honorat  M'gladbach 13.134.557              180.932              159.886          1
-7      Posch       Mainz 12.043.552              170.906              152.938          1
-8   Vušković     Hamburg 27.541.398              108.636               96.863          1
-9   Sabitzer    Dortmund  7.360.158               59.965               94.274          5
-10   Stiller   Stuttgart 32.503.081               82.094               71.302          1
-11  Mbangula      Bremen 10.112.248              138.673               67.972          3
-12     Undav   Stuttgart 31.268.018               70.384               63.386          1
-13   Tillman  Leverkusen 25.368.161               58.505               48.358          2
-14  Grimaldo  Leverkusen 42.434.049               51.732               44.753          1
-15      Díaz      Bayern 52.609.013               25.987               20.989          1
-16       Agu      Bremen  2.032.778              -38.515              -36.712          2
-17     Kobel    Dortmund 17.237.372              -89.076              -79.157          1
-
-No email provided, skipping email sending.
+Traceback (most recent call last):
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
+    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
+    comp_dfs = list(executor.map(process_player, players))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
+    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
+    op = _AsOfMerge(
+         ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
+    _OrderedMerge.__init__(
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
+    _MergeOperation.__init__(
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
+    self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
+    _check_dtype_match(lk, rk, i)
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
+    raise MergeError(msg)
+pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
