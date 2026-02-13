@@ -1,4 +1,4 @@
-Run: 2026-02-12 22:56:48 UTC
+Run: 2026-02-13 22:59:18 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11827015431', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2026-02-09T18:52:04Z'}: 'er'
@@ -23,20 +23,20 @@ Warning: Failed to process achievement bonus {'i': '11771113214', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0       Christoph 68.897.797 316.567.236  -127.203.461       196.101.258
-1         Elvisee 78.730.864 271.810.023  -115.678.493       194.409.357
-2       JesseJay  79.191.246 259.590.059  -111.797.831       190.989.077
-3          Freddy 60.444.606 318.080.077  -124.913.145       185.357.751
-4         Batigol 76.780.069 193.975.251   -89.349.256       166.129.325
-5           frahd 61.150.574 249.618.264  -102.553.717       163.704.291
-6        Simon ❗️ 67.580.743 213.331.682   -92.701.100       160.281.843
-7           Henok 53.969.970 226.198.458   -92.455.581       146.425.551
-8   David Nikolic 71.181.565 155.624.983   -74.846.161       146.027.726
-9        Mare1987 57.192.458 193.274.517   -82.654.102       139.846.560
-10       BAN PIVA 62.548.585 161.779.470   -74.028.258       136.576.843
-11       MACHETE  56.634.047 151.783.802   -68.777.890       125.411.937
-12      Falco1899 54.744.121 138.770.304   -63.859.760       118.603.881
-13          Jens  -2.308.964 324.929.540  -106.464.790       104.155.826
+0       Christoph 76.330.787 315.138.501  -129.184.865       205.515.652
+1       JesseJay  74.892.246 263.467.608  -111.658.752       186.550.998
+2          Freddy 60.442.606 317.458.813  -124.707.468       185.150.074
+3         Elvisee 71.074.477 270.916.118  -112.856.896       183.931.373
+4         Batigol 77.005.069 192.229.500   -88.847.408       165.852.477
+5           Henok 69.723.267 211.323.887   -92.745.561       162.468.828
+6        Simon ❗️ 57.646.174 212.287.223   -89.078.021       146.724.195
+7   David Nikolic 71.305.565 154.941.414   -74.661.503       145.967.068
+8           frahd 46.340.455 249.123.460   -97.503.092       143.843.547
+9        Mare1987 52.570.458 197.093.322   -82.389.047       134.959.505
+10       BAN PIVA 61.427.878 160.769.472   -73.325.126       134.753.004
+11       MACHETE  56.654.047 150.940.551   -68.506.217       125.160.264
+12      Falco1899 55.150.121 136.631.827   -63.288.043       118.438.164
+13          Jens   2.291.036 321.153.511  -106.736.701       109.027.737
 
 Data reload needed, this takes a few minutes...
 Traceback (most recent call last):
@@ -51,7 +51,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
     return fut.result(timeout)
            ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
   File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
