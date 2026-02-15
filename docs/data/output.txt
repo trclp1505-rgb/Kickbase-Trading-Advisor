@@ -1,4 +1,4 @@
-Run: 2026-02-14 22:49:56 UTC
+Run: 2026-02-15 22:51:16 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11827015431', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2026-02-09T18:52:04Z'}: 'er'
@@ -23,55 +23,60 @@ Warning: Failed to process achievement bonus {'i': '11771113214', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0       Christoph 77.300.787 314.342.050  -129.242.136       206.542.923
-1           frahd 75.796.677 241.022.367  -104.550.285       180.346.962
-2         Elvisee 64.472.299 270.470.927  -110.531.265       175.003.564
-3        Simon ❗️ 81.199.778 191.109.521   -89.862.069       171.061.847
-4          Freddy 49.934.585 308.844.347  -118.397.048       168.331.633
-5         Batigol 77.350.514 191.363.044   -88.675.474       166.025.988
-6           Henok 70.238.267 211.395.164   -92.939.032       163.177.299
-7       JesseJay  55.411.844 263.473.906  -105.232.298       160.644.142
-8   David Nikolic 71.972.565 155.035.120   -74.912.536       146.885.101
-9        BAN PIVA 61.875.878 159.498.942   -73.053.691       134.929.569
-10       MACHETE  59.339.646 150.260.347   -69.167.998       128.507.644
-11      Falco1899 55.617.121 134.993.491   -62.901.502       118.518.623
-12          Jens   2.391.036 322.232.786  -107.125.861       109.516.897
-13       Mare1987 32.509.574 200.628.287   -76.935.494       109.445.068
+0       Christoph 71.382.736 313.906.049  -127.145.299       198.528.035
+1         Elvisee 66.481.299 270.292.960  -111.135.505       177.616.804
+2        Simon ❗️ 81.555.778 191.122.603   -89.983.866       171.539.644
+3           frahd 66.456.208 250.111.509  -104.467.347       170.923.555
+4          Freddy 50.644.585 308.893.761  -118.647.654       169.292.239
+5           Henok 75.390.842 206.538.197   -93.036.583       168.427.425
+6         Batigol 77.429.514 189.685.098   -88.147.822       165.577.336
+7       JesseJay  55.748.844 263.919.655  -105.490.605       161.239.449
+8   David Nikolic 71.972.565 155.108.512   -74.936.755       146.909.320
+9        BAN PIVA 62.250.878 158.230.539   -72.758.868       135.009.746
+10       MACHETE  59.409.646 149.862.596   -69.059.840       128.469.486
+11      Falco1899 55.617.121 133.411.769   -62.379.534       117.996.655
+12          Jens   2.491.036 323.566.372  -107.598.945       110.089.981
+13       Mare1987 32.509.574 200.969.571   -77.048.118       109.557.692
 
 Data reload needed, this takes a few minutes...
-Traceback (most recent call last):
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
-    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
-    comp_dfs = list(executor.map(process_player, players))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
-    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
-    op = _AsOfMerge(
-         ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
-    _OrderedMerge.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
-    _MergeOperation.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
-    self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
-    _check_dtype_match(lk, rk, i)
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
-    raise MergeError(msg)
-pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
+
+Data loaded from database.
+
+Data preprocessed.
+
+Model evaluation:
+Signs correct: 72.70%
+RMSE: 1772491935.99
+MAE: 22178.16
+R2: 0.92
+
+=== Market Recommendations ===
+  last_name   team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0  Assignon   Stuttgart 2.929.329              112.865              245.042          3            20           False
+1     Silas       Mainz 6.331.678              201.299              238.679          3           646           False
+2    Bürger   Wolfsburg 1.858.078              188.558              219.427          3             3           False
+3     Takai  M'gladbach 5.112.262              170.411              166.342          3           668           False
+4     Jatta     Hamburg 3.114.379              110.526              120.208          2           646           False
+5   Behrens  Heidenheim 3.443.786               78.720               75.900          1           646           False
+
+=== Squad Recommendations ===
+   last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
+0     Vieira     Hamburg 14.019.182              194.938              205.691          1
+1      Gruda     Leipzig  9.916.640              182.118              202.946          3
+2   Sabitzer    Dortmund  7.673.524              129.835              186.450          5
+3   Palacios  Leverkusen  9.550.368              142.039              174.608          3
+4   Henrichs     Leipzig  7.185.742              151.323              147.105          3
+5     Chaves    Augsburg  8.071.811              147.107              139.707          1
+6    Honorat  M'gladbach 13.595.084               98.322              100.008          1
+7      Kobel    Dortmund 16.765.859               76.818               96.649          1
+8      Undav   Stuttgart 31.615.162               89.235               88.178          1
+9    Tillman  Leverkusen 25.721.197               89.366               85.824          2
+10     Posch       Mainz 12.688.742               96.221               70.908          1
+11  Grimaldo  Leverkusen 42.592.523               44.378               42.170          1
+12   Stiller   Stuttgart 32.552.041               33.464               30.965          3
+13      Díaz      Bayern 52.726.265               22.575               22.936          2
+14  Vušković     Hamburg 27.892.032               15.749                 -596          5
+15       Agu      Bremen  1.825.174              -20.274              -12.221          3
+16  Mbangula      Bremen  9.175.026             -159.628             -150.279          3
+
+No email provided, skipping email sending.
