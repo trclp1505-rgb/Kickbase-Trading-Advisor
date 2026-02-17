@@ -1,4 +1,4 @@
-Run: 2026-02-16 22:56:27 UTC
+Run: 2026-02-17 22:57:10 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11850408384', 't': 26, 'coc': 0, 'data': {'t': 301, 'n': 'Match winner', 'd': 'Score at least 300 points with a player'}, 'dt': '2026-02-16T19:08:49Z'}: 'er'
@@ -28,20 +28,20 @@ Warning: Failed to process achievement bonus {'i': '11771113214', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0         Elvisee 97.641.925 246.529.003  -113.576.406       211.218.331
-1       Christoph 80.675.192 313.656.456  -130.129.444       210.804.636
-2          Freddy 68.219.407 307.256.016  -123.906.890       192.126.297
-3           frahd 71.547.214 245.119.080  -104.499.877       176.047.091
-4       JesseJay  62.139.843 264.755.446  -107.875.445       170.015.288
-5        Simon ❗️ 76.924.006 194.678.221   -89.628.735       166.552.741
-6           Henok 66.560.842 215.062.272   -92.935.628       159.496.470
-7         Batigol 69.268.221 188.433.034   -85.041.414       154.309.635
-8   David Nikolic 71.856.565 155.314.665   -74.966.506       146.823.071
-9        BAN PIVA 63.905.318 157.462.830   -73.051.489       136.956.807
-10      Falco1899 67.639.731 131.956.911   -65.866.892       133.506.623
-11       MACHETE  58.808.637 150.157.458   -68.958.811       127.767.448
-12          Jens  12.913.036 316.938.041  -108.850.855       121.763.891
-13       Mare1987 38.798.574 201.677.220   -79.357.012       118.155.586
+0         Elvisee 93.074.026 247.540.033  -112.402.639       205.476.665
+1          Freddy 78.975.508 296.767.536  -123.995.205       202.970.713
+2       Christoph 74.632.674 313.092.298  -127.949.241       202.581.915
+3        Simon ❗️ 82.781.005 195.494.697   -91.830.982       174.611.987
+4       JesseJay  63.994.127 260.596.240  -107.114.821       171.108.948
+5           frahd 67.071.132 246.780.654  -103.571.089       170.642.221
+6         Batigol 78.825.991 177.899.311   -84.719.350       163.545.341
+7   David Nikolic 71.856.565 155.308.058   -74.964.326       146.820.891
+8           Henok 56.890.635 215.410.152   -89.859.260       146.749.895
+9        BAN PIVA 63.905.318 156.777.489   -72.825.326       136.730.644
+10       Mare1987 55.374.559 186.247.158   -79.735.167       135.109.726
+11      Falco1899 67.639.731 130.530.677   -65.396.235       133.035.966
+12       MACHETE  58.808.637 149.884.683   -68.868.796       127.677.433
+13          Jens  13.013.036 318.285.099  -109.328.385       122.341.421
 
 Data reload needed, this takes a few minutes...
 
@@ -50,39 +50,40 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 72.68%
-RMSE: 1770253777.05
-MAE: 22180.96
+Signs correct: 72.71%
+RMSE: 1780718587.78
+MAE: 22252.51
 R2: 0.92
 
 === Market Recommendations ===
-  last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0   Özkaçar        Köln  2.949.356              324.819              313.075          2            32           False
-1     Stark      Bremen    773.888              230.821              277.398          2            13           False
-2     Silas       Mainz  6.578.900              247.222              224.547          3           622           False
-3  Svanberg   Wolfsburg    632.968              132.968              155.849          3            33           False
-4     Jatta     Hamburg  3.277.445              163.066              147.568          2           622           False
-5     Takai  M'gladbach  5.268.550              156.288              140.357          4           644           False
-6  Backhaus      Bremen 11.374.759               60.149               96.314          1           622           False
-7   Behrens  Heidenheim  3.528.153               84.367               90.726          1           622           False
+     last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0     Svanberg   Wolfsburg    907.926              274.958              281.105          3             9           False
+1      Özkaçar        Köln  3.264.612              315.256              276.945          2             8           False
+2    Osterhage    Freiburg  4.445.747              256.945              245.667          1            19           False
+3        Silas       Mainz  6.829.846              250.946              201.851          3           598           False
+4        Jatta     Hamburg  3.491.147              213.702              193.364          2           598           False
+5        Mwene       Mainz  1.352.951               64.001              158.089          1            24           False
+6  Waldschmidt        Köln    644.483              143.789              113.456          4            13           False
+7     Backhaus      Bremen 11.463.979               89.220              110.335          1           598           False
+8      Behrens  Heidenheim  3.611.807               83.654               85.931          1           598           False
 
 === Squad Recommendations ===
    last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0      Gruda     Leipzig 10.252.712              336.072              258.334          2
-1     Vieira     Hamburg 14.242.218              223.036              210.157          1
-2   Palacios  Leverkusen  9.718.861              168.493              168.596          3
-3   Sabitzer    Dortmund  7.824.736              151.212              147.880          3
-4      Kobel    Dortmund 16.875.522              109.663              132.618          1
-5   Henrichs     Leipzig  7.326.963              141.221              131.314          3
-6    Honorat  M'gladbach 13.699.310              104.226              107.587          1
-7      Undav   Stuttgart 31.714.481               99.319              100.547          2
-8    Tillman  Leverkusen 25.811.936               90.739               81.876          3
-9        Agu      Bremen  1.838.030               12.856               57.639          1
-10     Posch       Mainz 12.763.958               75.216               51.540          1
-11   Stiller   Stuttgart 32.590.277               38.236               35.303          1
-12  Grimaldo  Leverkusen 42.630.877               38.354               35.245          1
-13      Díaz      Bayern 52.752.559               26.294               25.538          1
-14  Vušković     Hamburg 27.901.376                9.344              -17.955          5
-15  Mbangula      Bremen  8.994.225             -180.801             -169.506          3
+0        Agu      Bremen  1.959.643              121.613              240.286          1
+1     Vieira     Hamburg 14.457.274              215.056              188.671          1
+2      Gruda     Leipzig 10.449.203              196.491              164.582          2
+3      Kobel    Dortmund 17.004.275              128.753              125.515          1
+4   Sabitzer    Dortmund  7.975.715              150.979              122.973          3
+5   Palacios  Leverkusen  9.865.728              146.867              122.252          3
+6    Honorat  M'gladbach 13.807.817              108.507              103.497          1
+7   Henrichs     Leipzig  7.460.349              133.386               96.502          3
+8      Undav   Stuttgart 31.804.410               89.929               83.308          2
+9    Tillman  Leverkusen 25.879.849               67.913               59.133          3
+10   Stiller   Stuttgart 32.636.100               45.823               44.126          1
+11  Grimaldo  Leverkusen 42.653.793               22.916               22.133          1
+12      Díaz      Bayern 52.774.688               22.129               21.869          1
+13     Posch       Mainz 12.812.497               48.539               18.976          1
+14  Vušković     Hamburg 27.902.846                1.470              -35.095          5
+15  Mbangula      Bremen  8.840.912             -153.313             -141.608          3
 
 No email provided, skipping email sending.
