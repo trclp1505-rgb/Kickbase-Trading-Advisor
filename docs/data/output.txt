@@ -1,4 +1,4 @@
-Run: 2026-03-11 22:48:59 UTC
+Run: 2026-03-12 22:52:04 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '11921999725', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2026-03-09T19:03:29Z'}: 'er'
@@ -21,21 +21,21 @@ Warning: Failed to process achievement bonus {'i': '11850407935', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0          Freddy 67.740.614 297.693.521  -120.593.265       188.333.879
-1        Simon ❗️ 88.543.672 196.277.577   -93.991.012       182.534.684
-2       Christoph 60.584.360 303.864.744  -120.268.204       180.852.564
-3        Mare1987 81.833.273 191.863.089   -90.319.799       172.153.072
-4         Elvisee 61.381.656 259.032.070  -105.736.530       167.118.186
-5       JesseJay  60.551.766 257.059.358  -104.811.671       165.363.437
-6           Henok 64.308.119 240.399.899  -100.553.646       164.861.765
-7           frahd 62.212.498 234.379.714   -97.875.430       160.087.928
-8         Simon94 71.958.671 149.207.553   -72.984.854       144.943.525
-9        BAN PIVA 73.153.286 124.147.396   -65.109.225       138.262.511
-10  David Nikolic 65.883.000 151.227.554   -71.646.483       137.529.483
-11       MACHETE  66.350.912 147.741.021   -70.650.338       137.001.250
-12      Falco1899 65.034.880 134.955.899   -65.996.957       131.031.837
-13        Batigol 39.120.252 181.102.540   -72.673.521       111.793.773
-14          Jens    -182.740 330.406.281  -108.973.769       108.791.029
+0          Freddy 72.240.614 294.044.331  -120.874.032       193.114.646
+1         Elvisee 80.580.187 248.548.663  -108.612.520       189.192.708
+2       JesseJay  79.949.192 245.015.281  -107.238.276       187.187.468
+3        Simon ❗️ 85.383.613 198.448.833   -93.664.707       179.048.320
+4       Christoph 57.881.746 303.344.395  -119.204.627       177.086.373
+5           Henok 70.363.674 240.693.744  -102.648.948       173.012.622
+6        Mare1987 72.333.273 198.738.287   -89.453.615       161.786.888
+7           frahd 61.036.604 234.288.830   -97.457.393       158.493.997
+8         Simon94 71.958.671 148.897.020   -72.882.378       144.841.049
+9   David Nikolic 65.883.000 150.954.028   -71.556.219       137.439.219
+10       MACHETE  66.350.912 148.266.388   -70.823.709       137.174.621
+11       BAN PIVA 70.389.821 122.560.174   -63.673.498       134.063.319
+12      Falco1899 65.034.880 135.096.281   -66.043.283       131.078.163
+13        Batigol 39.039.278 180.276.978   -72.374.364       111.413.642
+14          Jens     -82.740 329.931.403  -108.850.059       108.767.319
 
 Data reload needed, this takes a few minutes...
 
@@ -44,35 +44,36 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 71.00%
-RMSE: 1760898596.87
-MAE: 21813.64
+Signs correct: 70.79%
+RMSE: 1774984924.16
+MAE: 21840.85
 R2: 0.92
 
 === Market Recommendations ===
-  last_name   team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0   Terrier  Leverkusen 5.176.034              244.267              178.982          3            29           False
-1  Da Costa       Mainz 8.626.509              117.669              154.742          2           720           False
-2      Kohr       Mainz 4.881.916              -19.006               16.871          1            14           False
+   last_name   team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0    Ulreich      Bayern   925.396              320.609              323.279          1            20           False
+1      Omari     Hamburg 3.884.229              167.569               95.612          3            36           False
+2    Terrier  Leverkusen 5.338.224              162.190               22.250          3             5           False
+3  Fernández  Leverkusen 4.984.589               42.552               19.226          3            37           False
 
 === Squad Recommendations ===
    last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0   Lienhart    Freiburg  3.677.578              220.442              169.926          3
-1   Vušković     Hamburg 29.184.637              131.661              121.405          1
-2      Gruda     Leipzig 15.302.660              148.344              120.463          3
-3   Sabitzer    Dortmund 11.333.969              125.480               98.955          2
-4      Undav   Stuttgart 33.236.201               75.843               60.388          2
-5     Vieira     Hamburg 17.566.989               69.775               54.732          3
-6    Stiller   Stuttgart 32.366.124               50.541               46.043          2
-7    Honorat  M'gladbach 14.583.551               58.078               43.921          1
-8   Palacios  Leverkusen  9.309.307               45.252               43.519          3
-9      Posch       Mainz 10.364.114               53.035               39.252          1
-10      Díaz      Bayern 53.484.586               15.661               16.162          2
-11     Kobel    Dortmund 18.057.276                7.430               -4.580          1
-12     Smith   St. Pauli  7.834.861                2.258              -13.328          1
-13  Mbangula      Bremen  4.180.167             -113.094             -111.258          5
-14    Theate   Frankfurt  9.002.963             -264.545             -244.694          5
-15   Tillman  Leverkusen 19.028.561             -346.915             -305.427          3
-16  Grimaldo  Leverkusen 41.392.737             -504.018             -372.648          5
+0   Lienhart    Freiburg  3.874.610              197.032              124.673          3
+1   Vušković     Hamburg 29.303.440              118.803              111.213          1
+2      Gruda     Leipzig 15.431.292              128.632               93.283          3
+3   Sabitzer    Dortmund 11.446.310              112.341               77.221          2
+4   Palacios  Leverkusen  9.366.280               56.973               52.079          3
+5      Undav   Stuttgart 33.291.182               54.981               50.683          2
+6    Stiller   Stuttgart 32.398.770               32.646               30.805          2
+7      Posch       Mainz 10.402.636               38.522               26.635          1
+8    Honorat  M'gladbach 14.623.018               39.467               23.621          2
+9      Kobel    Dortmund 18.067.694               10.418               10.517          1
+10     Smith   St. Pauli  7.839.012                4.151                6.298          1
+11      Díaz      Bayern 53.487.166                2.580              -29.973          2
+12    Vieira     Hamburg 17.580.450               13.461              -32.254          1
+13  Mbangula      Bremen  4.062.525             -117.642             -114.614          5
+14    Theate   Frankfurt  8.745.977             -256.986             -244.642          5
+15   Tillman  Leverkusen 18.718.836             -309.725             -251.947          3
+16  Grimaldo  Leverkusen 40.792.205             -600.532             -396.150          5
 
 No email provided, skipping email sending.
