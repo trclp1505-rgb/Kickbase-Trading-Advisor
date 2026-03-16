@@ -1,6 +1,8 @@
-Run: 2026-03-15 22:53:50 UTC
+Run: 2026-03-16 22:56:07 UTC
 
 Logged in to Kickbase.
+Warning: Failed to process achievement bonus {'i': '11943237447', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2026-03-16T18:58:21Z'}: 'er'
+Warning: Failed to process achievement bonus {'i': '11943237370', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2026-03-16T18:58:20Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11921999725', 't': 26, 'coc': 0, 'data': {'t': 7502, 'n': 'Goal machine', 'd': 'Your players scored most goals in your league'}, 'dt': '2026-03-09T19:03:29Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11921999588', 't': 26, 'coc': 0, 'data': {'t': 301, 'n': 'Match winner', 'd': 'Score at least 300 points with a player'}, 'dt': '2026-03-09T19:03:29Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '11921999501', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2026-03-09T19:03:28Z'}: 'er'
@@ -21,21 +23,21 @@ Warning: Failed to process achievement bonus {'i': '11850407935', 't': 26, 'coc'
 
 === Manager Budgets ===
              User     Budget  Team Value  Max Negative  Available Budget
-0       Christoph 76.131.118 294.704.468  -122.375.743       198.506.861
-1          Freddy 71.114.614 297.277.157  -121.569.284       192.683.898
-2       JesseJay  80.211.735 248.900.527  -108.607.046       188.818.781
-3         Elvisee 74.720.188 257.232.395  -109.544.352       184.264.540
-4        Simon ❗️ 85.983.613 193.985.755   -92.389.891       178.373.504
-5        Mare1987 77.884.273 194.480.214   -89.880.281       167.764.554
-6           Henok 66.308.770 235.843.329   -99.710.193       166.018.963
-7           frahd 59.869.873 232.952.485   -96.631.378       156.501.251
-8         Simon94 72.723.671 147.127.903   -72.551.019       145.274.690
-9        MACHETE  67.729.912 149.567.484   -71.708.141       139.438.053
-10  David Nikolic 66.308.000 148.373.649   -70.844.944       137.152.944
-11       BAN PIVA 72.335.528 116.348.499   -62.265.729       134.601.257
-12      Falco1899 65.806.880 135.066.591   -66.288.245       132.095.125
-13        Batigol 40.183.833 176.740.458   -71.585.016       111.768.849
-14          Jens     217.260 330.256.611  -109.056.377       109.273.637
+0       Christoph 82.371.874 287.378.206  -122.017.526       204.389.400
+1       JesseJay  80.168.735 249.365.960  -108.746.449       188.915.184
+2          Freddy 68.978.874 293.609.518  -119.654.169       188.633.043
+3         Elvisee 74.735.188 257.901.113  -109.769.979       184.505.167
+4        Mare1987 82.097.273 193.960.781   -91.099.158       173.196.431
+5           Henok 55.706.771 245.055.978   -99.251.707       154.958.478
+6        Simon ❗️ 65.153.378 192.819.207   -85.130.953       150.284.331
+7           frahd 51.685.577 233.070.095   -93.969.372       145.654.949
+8         Simon94 72.713.671 147.112.792   -72.542.733       145.256.404
+9        MACHETE  67.740.912 151.148.018   -72.233.347       139.974.259
+10  David Nikolic 66.299.000 147.276.732   -70.479.992       136.778.992
+11       BAN PIVA 72.301.528 114.418.863   -61.617.729       133.919.257
+12      Falco1899 65.760.880 135.340.239   -66.363.369       132.124.249
+13        Batigol 40.176.833 175.329.428   -71.117.066       111.293.899
+14          Jens   1.493.260 331.156.081  -109.774.283       111.267.543
 
 Data reload needed, this takes a few minutes...
 Traceback (most recent call last):
@@ -44,33 +46,33 @@ Traceback (most recent call last):
   File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
     comp_dfs = list(executor.map(process_player, players))
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
     yield _result_or_cancel(fs.pop())
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
     return fut.result(timeout)
            ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
     raise self._exception
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
     result = self.fn(*self.args, **self.kwargs)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
     pd.merge_asof(mv_df, p_df, on="date", direction="backward")
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
     op = _AsOfMerge(
          ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
     _OrderedMerge.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
     _MergeOperation.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
     self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
     _check_dtype_match(lk, rk, i)
-  File "/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
     raise MergeError(msg)
 pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
