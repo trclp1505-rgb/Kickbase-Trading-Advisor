@@ -1,4 +1,4 @@
-Run: 2026-04-29 23:27:46 UTC
+Run: 2026-04-30 23:26:47 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12042761243', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2026-04-20T17:50:42Z'}: 'er'
@@ -24,37 +24,20 @@ Warning: Failed to process achievement bonus {'i': '11964974834', 't': 26, 'coc'
 
 === Manager Budgets ===
          User     Budget  Team Value  Max Negative  Available Budget
-0      Freddy 78.441.534 298.895.988  -124.521.382       202.962.916
-1   Christoph 81.843.298 277.495.379  -118.581.763       200.425.061
-2       Henok 82.060.280 251.139.314  -109.955.866       192.016.146
-3   JesseJay  83.109.986 241.059.906  -106.976.064       190.086.050
-4       frahd 79.444.877 245.209.913  -107.136.081       186.580.958
-5     Elvisee 72.429.518 270.153.616  -113.052.434       185.481.952
-6    MACHETE  79.744.634 181.307.969   -86.147.359       165.891.993
-7    Simon ❗️ 81.610.133 165.264.748   -81.468.711       163.078.844
-8       Jens  38.777.234 337.427.782  -124.147.655       162.924.889
-9     Batigol 68.477.629 175.778.100   -80.604.391       149.082.020
-10   Mare1987 64.274.822 173.985.078   -78.625.767       142.900.589
-11   BAN PIVA 77.148.396  82.020.168   -52.525.626       129.674.022
+0      Freddy 78.693.322 298.305.431  -124.409.588       203.102.910
+1     Elvisee 77.097.417 269.804.120  -114.477.507       191.574.924
+2   JesseJay  83.209.986 240.616.351  -106.862.691       190.072.677
+3       frahd 82.467.714 242.193.053  -107.138.053       189.605.767
+4   Christoph 66.387.743 280.969.961  -114.628.042       181.015.785
+5       Henok 73.667.629 251.274.634  -107.230.947       180.898.576
+6    MACHETE  79.844.634 181.891.393   -86.372.889       166.217.523
+7    Simon ❗️ 81.710.133 164.435.895   -81.228.189       162.938.322
+8       Jens  38.877.234 336.881.447  -124.000.365       162.877.599
+9     Batigol 68.577.629 175.353.494   -80.497.271       149.074.900
+10   Mare1987 64.374.822 173.553.899   -78.516.478       142.891.300
+11   BAN PIVA 77.248.396  80.178.957   -51.951.026       129.199.422
 
 Data reload needed, this takes a few minutes...
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 978, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/json/decoder.py", line 353, in raw_decode
-    obj, end = self.scan_once(s, idx)
-               ^^^^^^^^^^^^^^^^^^^^^^
-json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 40959 (char 40958)
-
-During handling of the above exception, another exception occurred:
-
 Traceback (most recent call last):
   File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
     save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
@@ -75,15 +58,19 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
     result = self.fn(*self.args, **self.kwargs)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 130, in process_player
-    p_df = pd.DataFrame(get_player_performance(token, competition_id, player_id, last_pfm_values, player_team_id))
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/player.py", line 79, in get_player_performance
-    data = get_json_with_token(url, token)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/config.py", line 11, in get_json_with_token
-    return resp.json()
-           ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 982, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Unterminated string starting at: line 1 column 40959 (char 40958)
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
+    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
+    op = _AsOfMerge(
+         ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
+    _OrderedMerge.__init__(
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
+    _MergeOperation.__init__(
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
+    self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
+    _check_dtype_match(lk, rk, i)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
+    raise MergeError(msg)
+pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
