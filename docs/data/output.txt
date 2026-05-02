@@ -1,4 +1,4 @@
-Run: 2026-05-01 23:25:19 UTC
+Run: 2026-05-02 23:08:39 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12042761243', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2026-04-20T17:50:42Z'}: 'er'
@@ -24,53 +24,54 @@ Warning: Failed to process achievement bonus {'i': '11964974834', 't': 26, 'coc'
 
 === Manager Budgets ===
          User     Budget  Team Value  Max Negative  Available Budget
-0      Freddy 79.749.986 290.951.920  -122.331.629       202.081.615
-1     Elvisee 77.197.417 269.276.389  -114.336.356       191.533.773
-2   JesseJay  83.309.986 239.805.392  -106.628.075       189.938.061
-3       frahd 81.123.270 242.878.755  -106.920.668       188.043.938
-4       Henok 78.767.628 251.228.723  -108.898.796       187.666.424
-5   Christoph 59.613.858 281.136.775  -112.447.709       172.061.567
-6    MACHETE  79.944.634 182.135.582   -86.486.471       166.431.105
-7       Jens  39.077.234 335.901.979  -123.743.140       162.820.374
-8    Simon ❗️ 81.810.133 163.502.870   -80.953.291       162.763.424
-9     Batigol 68.677.629 174.499.167   -80.248.343       148.925.972
-10   Mare1987 64.474.822 172.887.980   -78.329.725       142.804.547
-11   BAN PIVA 77.348.396  78.646.330   -51.478.260       128.826.656
+0      Freddy 85.115.477 291.599.544  -124.315.957       209.431.434
+1   JesseJay  83.619.986 239.042.951  -106.478.769       190.098.755
+2       Henok 79.441.628 251.190.077  -109.108.463       188.550.091
+3       frahd 78.508.937 242.697.153  -105.998.010       184.506.947
+4     Elvisee 68.752.604 268.855.276  -111.410.600       180.163.204
+5   Christoph 65.385.808 277.206.666  -113.055.516       178.441.324
+6    MACHETE  80.182.634 182.113.828   -86.557.832       166.740.466
+7    Simon ❗️ 82.429.133 162.385.183   -80.788.724       163.217.857
+8       Jens  39.077.234 335.090.727  -123.475.427       162.552.661
+9     Batigol 69.119.629 173.229.736   -79.975.290       149.094.919
+10   Mare1987 60.405.822 177.040.718   -78.357.358       138.763.180
+11   BAN PIVA 77.414.396  77.197.521   -51.021.933       128.436.329
 
 Data reload needed, this takes a few minutes...
-Traceback (most recent call last):
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
-    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
-    comp_dfs = list(executor.map(process_player, players))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
-    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
-    op = _AsOfMerge(
-         ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
-    _OrderedMerge.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
-    _MergeOperation.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
-    self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
-    _check_dtype_match(lk, rk, i)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
-    raise MergeError(msg)
-pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
+
+Data loaded from database.
+
+Data preprocessed.
+
+Model evaluation:
+Signs correct: 62.08%
+RMSE: 1439665969.67
+MAE: 18356.34
+R2: 0.92
+
+=== Market Recommendations ===
+  last_name     team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0      Ofli        Bayern   967.876              149.887              145.728          3             7            True
+1   Trimmel  Union Berlin 1.739.818               14.360               23.873          2            15            True
+
+=== Squad Recommendations ===
+        last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
+0           Undav   Stuttgart 37.873.456              116.352              109.600          1
+1        Sabitzer    Dortmund 15.652.483               72.179               74.269          1
+2        Vušković     Hamburg 29.400.396               53.159               50.430          3
+3        Grimaldo  Leverkusen 45.079.203               61.775               47.843          1
+4           Kobel    Dortmund 17.945.143               27.225               46.594          1
+5           Posch       Mainz 12.215.981               50.375               43.735          1
+6         Puertas      Bremen  8.496.424               56.255               31.587          1
+7        Palacios  Leverkusen 16.767.082               44.767               31.110          1
+8         Stiller   Stuttgart 36.145.460               28.403               23.707          1
+9      Gouweleeuw    Augsburg  5.375.994               41.728                9.888          1
+10         Vieira     Hamburg 21.107.807              -18.181              -17.508          1
+11           Díaz      Bayern 50.961.106                1.597              -37.813          3
+12        Ribeiro    Augsburg    796.994              -95.397              -89.546          3
+13  Castro-Montes        Köln  3.531.124             -108.790             -108.227          3
+14       Lienhart    Freiburg  5.063.186             -261.998             -251.528          4
+15          Gruda     Leipzig 17.434.012             -384.405             -315.071          4
+16         Theate   Frankfurt 10.744.876             -496.296             -427.459          4
+
+No email provided, skipping email sending.
