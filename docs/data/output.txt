@@ -1,4 +1,4 @@
-Run: 2026-05-04 23:26:40 UTC
+Run: 2026-05-05 23:25:12 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12081829439', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2026-05-04T18:04:04Z'}: 'er'
@@ -19,18 +19,18 @@ Warning: Failed to process achievement bonus {'i': '12002014583', 't': 26, 'coc'
 
 === Manager Budgets ===
          User     Budget  Team Value  Max Negative  Available Budget
-0      Freddy 76.147.731 293.478.977  -121.976.814       198.124.545
-1   JesseJay  84.147.986 239.027.885  -106.648.037       190.796.023
-2     Elvisee 75.074.663 268.754.840  -113.463.736       188.538.399
-3       frahd 78.852.937 241.751.209  -105.799.368       184.652.305
-4   Christoph 66.470.780 274.204.434  -112.422.821       178.893.601
-5       Henok 69.832.773 252.206.277  -106.272.886       176.105.660
-6    MACHETE  80.610.634 181.489.293   -86.492.976       167.103.610
-7       Jens  40.413.234 334.780.348  -123.813.882       164.227.116
-8    Simon ❗️ 82.755.834 160.808.416   -80.376.202       163.132.036
-9     Batigol 72.837.470 172.061.755   -80.816.744       153.654.214
-10   Mare1987 69.300.972 167.532.709   -78.155.115       147.456.087
-11   BAN PIVA 49.535.497  74.826.173   -41.039.351        90.574.848
+0      Freddy 84.778.829 286.140.629  -122.403.421       207.182.250
+1     Elvisee 91.634.673 252.379.310  -113.524.614       205.159.287
+2   JesseJay  84.147.986 239.740.695  -106.883.265       191.031.251
+3   Christoph 76.329.045 266.557.935  -113.152.703       189.481.748
+4       frahd 78.852.937 241.767.569  -105.804.767       184.657.704
+5       Henok 69.832.773 252.809.836  -106.472.061       176.304.834
+6    MACHETE  80.610.634 181.576.326   -86.521.697       167.132.331
+7       Jens  40.513.234 335.309.410  -124.021.473       164.534.707
+8    Simon ❗️ 76.503.673 160.700.268   -78.277.301       154.780.974
+9     Batigol 72.837.470 172.127.397   -80.838.406       153.675.876
+10   Mare1987 69.300.972 167.392.006   -78.108.683       147.409.655
+11   BAN PIVA 49.535.497  73.905.374   -40.735.487        90.270.984
 
 Data reload needed, this takes a few minutes...
 
@@ -39,38 +39,43 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 61.95%
-RMSE: 1441580899.66
-MAE: 18327.00
+Signs correct: 61.76%
+RMSE: 1436144325.70
+MAE: 18267.89
 R2: 0.91
 
 === Market Recommendations ===
-    last_name     team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
-0  Zivzivadze    Heidenheim 2.810.875              299.701              311.220          1            24           False
-1      Inácio      Dortmund 2.661.895              318.122              287.956          3           NaN           False
-2   Finkgräfe       Leipzig 3.270.990              171.916              172.102          3            25           False
-3       Bolin    M'gladbach   576.744               76.744              124.935          3            38           False
-4     Flekken    Leverkusen 5.651.879                8.735               60.354          1            13            True
-5       Nsoki  Union Berlin   687.376               58.793               59.578          3            13            True
+     last_name     team_name        mv  mv_change_yesterday  predicted_mv_target  s_11_prob  hours_to_exp  expiring_today
+0   Zivzivadze    Heidenheim 3.137.423              326.548              323.766          1             0            True
+1       Inácio      Dortmund 2.932.891              270.996              222.904          3           NaN           False
+2        Burke  Union Berlin 1.556.657              115.990              144.029          1            17            True
+3    Schöppner    Heidenheim   603.235               77.215              118.576          2            15            True
+4       Widmer         Mainz 1.907.506               39.321              101.124          3             4            True
+5    Finkgräfe       Leipzig 3.408.163              137.173               99.182          3             1            True
+6        Krauß          Köln   557.732               11.847               84.501          2            22           False
+7       Wimmer     Wolfsburg 4.254.376               83.696               74.279          1           NaN           False
+8      Zentner         Mainz   705.814               58.276               50.619          3             6            True
+9        Bolin    M'gladbach   600.873               24.129               26.153          3            14            True
+10       Maina          Köln   705.875               38.434                7.108          3            35           False
 
 === Squad Recommendations ===
         last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0           Posch       Mainz 12.392.111              110.838              140.754          1
-1        Lienhart    Freiburg  4.930.315               50.566              122.474          3
-2        Vušković     Hamburg 29.608.120              113.004              112.155          3
-3          Vieira     Hamburg 21.225.004               84.072              105.857          1
-4           Undav   Stuttgart 38.086.105              112.790              105.014          1
-5      Gouweleeuw    Augsburg  5.519.552               92.319              101.753          1
-6        Sabitzer    Dortmund 15.807.921               85.235               76.583          1
-7        Palacios  Leverkusen 16.901.926               73.938               74.549          1
-8        Grimaldo  Leverkusen 45.227.381               73.686               67.333          1
-9         Stiller   Stuttgart 36.239.532               45.190               41.052          1
-10          Kobel    Dortmund 18.019.259               34.680               31.528          1
-11          Gruda     Leipzig 17.374.135                5.315               25.834          3
-12           Díaz      Bayern 50.978.061                7.435                2.726          3
-13        Ribeiro    Augsburg    544.857             -123.579              -46.591          4
-14  Castro-Montes        Köln  3.291.992             -116.022             -113.559          3
-15        Puertas      Bremen  8.291.442             -137.284             -229.467          1
-16         Theate   Frankfurt  9.842.635             -433.455             -247.174          3
+0        Lienhart    Freiburg  5.034.371              104.056              188.821          3
+1           Posch       Mainz 12.532.406              140.295              147.327          1
+2      Gouweleeuw    Augsburg  5.638.379              118.827              128.943          1
+3          Vieira     Hamburg 21.329.154              104.150              119.053          1
+4        Palacios  Leverkusen 17.010.859              108.933              117.042          1
+5        Vušković     Hamburg 29.721.092              112.972              106.822          3
+6           Undav   Stuttgart 38.185.742               99.637               85.019          1
+7        Sabitzer    Dortmund 15.892.251               84.330               75.147          1
+8        Grimaldo  Leverkusen 45.289.725               62.344               58.861          1
+9         Stiller   Stuttgart 36.295.135               55.603               51.542          1
+10          Gruda     Leipzig 17.406.839               32.704               44.617          3
+11          Kobel    Dortmund 18.065.594               46.335               44.517          1
+12           Díaz      Bayern 50.988.491               10.430                9.892          3
+13        Ribeiro    Augsburg    500.000              -44.857                   58          4
+14  Castro-Montes        Köln  3.170.789             -121.203             -118.817          4
+15         Theate   Frankfurt  9.663.921             -178.714             -158.080          3
+16        Puertas      Bremen  8.084.662             -206.780             -215.892          2
 
 No email provided, skipping email sending.
