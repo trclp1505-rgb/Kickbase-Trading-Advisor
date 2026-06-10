@@ -1,4 +1,4 @@
-Run: 2026-06-09 23:50:28 UTC
+Run: 2026-06-10 23:55:28 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12118077326', 't': 26, 'coc': 0, 'data': {'t': 2001, 'n': 'Champion', 'd': 'Win the championship'}, 'dt': '2026-05-17T18:32:18Z'}: 'er'
@@ -24,18 +24,18 @@ Warning: Failed to process achievement bonus {'i': '12002014583', 't': 26, 'coc'
 
 === Manager Budgets ===
          User      Budget  Team Value  Max Negative  Available Budget
-0       Henok 112.040.174 231.923.183  -113.507.908       225.548.082
-1   Christoph 102.684.863 251.104.639  -116.750.536       219.435.399
-2       frahd  89.870.818 234.234.366  -106.954.711       196.825.529
-3      Freddy  79.160.088 269.794.778  -115.155.106       194.315.194
-4     Elvisee  70.765.510 251.442.076  -106.328.503       177.094.013
-5   JesseJay   63.914.754 251.703.914  -104.154.160       168.068.914
-6     Batigol  82.882.528 170.826.871   -83.724.102       166.606.630
-7    MACHETE   84.277.634 157.822.279   -79.892.971       164.170.605
-8       Jens   36.826.101 328.779.209  -120.649.752       157.475.853
-9    Mare1987  71.529.972 161.367.830   -76.856.275       148.386.247
-10   Simon ❗️  56.759.175 172.698.803   -75.721.133       132.480.308
-11   BAN PIVA  53.122.497  64.386.748   -38.778.051        91.900.548
+0       Henok 112.140.174 231.549.300  -113.417.526       225.557.700
+1   Christoph 102.784.863 249.922.166  -116.393.320       219.178.183
+2       frahd  89.970.818 234.223.001  -106.983.960       196.954.778
+3      Freddy  79.260.088 269.037.713  -114.938.274       194.198.362
+4     Elvisee  70.865.510 250.238.879  -105.964.448       176.829.958
+5   JesseJay   64.014.754 250.269.800  -103.713.903       167.728.657
+6     Batigol  82.982.528 170.615.891   -83.687.478       166.670.006
+7    MACHETE   84.377.634 155.868.560   -79.281.244       163.658.878
+8       Jens   36.926.101 327.049.386  -120.111.911       157.038.012
+9    Mare1987  71.629.972 160.786.257   -76.697.356       148.327.328
+10   Simon ❗️  56.859.175 172.205.431   -75.591.320       132.450.495
+11   BAN PIVA  53.222.497  64.035.408   -38.695.109        91.917.606
 
 Data reload needed, this takes a few minutes...
 
@@ -44,38 +44,38 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 59.75%
-RMSE: 1572294676.05
-MAE: 18894.31
-R2: 0.89
+Signs correct: 59.65%
+RMSE: 1549518412.22
+MAE: 18676.44
+R2: 0.90
 
 === Market Recommendations ===
   last_name   team_name         mv  mv_change_yesterday  predicted_mv_target s_11_prob hours_to_exp  expiring_today
-0     Couto    Dortmund  3.825.948              180.152              175.742      None          NaN           False
-1   Karazor   Stuttgart  5.545.245              154.710              146.331      None          NaN           False
-2     Tella  Leverkusen  5.337.731              157.263              144.672      None          NaN           False
-3     Musah      Bremen  3.004.247              120.093              124.805      None          NaN           False
-4    Chaïbi   Frankfurt  8.823.107               74.373               70.904      None          NaN           False
-5  Pavlović      Bayern 27.542.367               41.422               37.788      None          NaN           False
+0     Couto    Dortmund  4.002.621              176.673              170.776      None          NaN           False
+1     Tella  Leverkusen  5.490.715              152.984              145.595      None          NaN           False
+2   Karazor   Stuttgart  5.695.441              150.196              143.126      None          NaN           False
+3     Musah      Bremen  3.122.963              118.716              123.083      None          NaN           False
+4    Chaïbi   Frankfurt  8.905.042               81.935               83.027      None          NaN           False
+5  Pavlović      Bayern 27.581.939               39.572               34.343      None          NaN           False
 
 === Squad Recommendations ===
      last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0        Kobel    Dortmund 19.526.936               42.302               49.204        NaN
-1        Undav   Stuttgart 39.882.935               39.908               36.354        NaN
-2     Palacios  Leverkusen 19.444.577               30.771               32.128        NaN
-3       Theate   Frankfurt 10.678.235               31.030               23.662        NaN
-4     Lienhart    Freiburg  8.266.744               26.417               19.765        NaN
-5         Díaz      Bayern 51.632.968               10.026               10.369        NaN
-6     Grimaldo  Leverkusen 46.297.743                5.006              -16.600        NaN
-7        Posch       Mainz  9.464.993              -68.780              -82.942        NaN
-8      Stiller   Stuttgart 35.821.960              -98.440              -86.786        NaN
-9      Puertas      Bremen  3.954.161              -90.721              -89.916        NaN
-10  Föhrenbach  Heidenheim    677.446             -122.035             -112.996        NaN
-11   Pieringer  Heidenheim  2.401.923             -113.541             -113.133        NaN
-12      Vieira     Hamburg 22.249.394             -210.994             -228.013        NaN
-13  Gouweleeuw    Augsburg  6.955.789             -226.961             -245.902        NaN
-14    Vušković     Hamburg 23.766.974             -314.079             -253.253        NaN
-15    Sabitzer    Dortmund 10.373.893             -301.626             -274.180        NaN
-16       Gruda     Leipzig 16.882.538             -355.898             -332.509        NaN
+0        Kobel    Dortmund 19.574.486               47.550               50.636        NaN
+1        Undav   Stuttgart 39.920.286               37.351               34.596        NaN
+2       Theate   Frankfurt 10.713.981               35.746               34.179        NaN
+3     Palacios  Leverkusen 19.464.217               19.640               17.481        NaN
+4     Lienhart    Freiburg  8.285.755               19.011               12.219        NaN
+5         Díaz      Bayern 51.644.360               11.392               10.511        NaN
+6     Grimaldo  Leverkusen 46.302.182                4.439              -24.364        NaN
+7   Föhrenbach  Heidenheim    558.070             -119.376              -53.417        NaN
+8        Posch       Mainz  9.411.039              -53.954              -63.541        NaN
+9      Puertas      Bremen  3.865.137              -89.024              -88.259        NaN
+10   Pieringer  Heidenheim  2.298.310             -103.613             -103.317        NaN
+11     Stiller   Stuttgart 35.728.823              -93.137             -107.110        NaN
+12    Vušković     Hamburg 23.531.165             -235.809             -124.620        NaN
+13      Vieira     Hamburg 21.973.862             -275.532             -254.063        NaN
+14    Sabitzer    Dortmund 10.074.762             -299.131             -264.261        NaN
+15       Gruda     Leipzig 16.576.683             -305.855             -288.993        NaN
+16  Gouweleeuw    Augsburg  6.626.268             -329.521             -308.178        NaN
 
 No email provided, skipping email sending.
