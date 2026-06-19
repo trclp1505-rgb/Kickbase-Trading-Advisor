@@ -1,4 +1,4 @@
-Run: 2026-06-19 00:08:05 UTC
+Run: 2026-06-19 23:35:12 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12118077326', 't': 26, 'coc': 0, 'data': {'t': 2001, 'n': 'Champion', 'd': 'Win the championship'}, 'dt': '2026-05-17T18:32:18Z'}: 'er'
@@ -24,59 +24,53 @@ Warning: Failed to process achievement bonus {'i': '12002014583', 't': 26, 'coc'
 
 === Manager Budgets ===
          User      Budget  Team Value  Max Negative  Available Budget
-0       Henok 112.840.174 228.606.798  -112.677.501       225.517.675
-1   Christoph 103.484.863 238.736.428  -112.933.026       216.417.889
-2       frahd  90.670.818 231.891.671  -106.445.621       197.116.439
-3      Freddy  79.960.088 256.254.312  -110.950.752       190.910.840
-4     Elvisee  71.565.510 233.099.014  -100.539.293       172.104.803
-5     Batigol  83.682.528 166.013.332   -82.399.634       166.082.162
-6   JesseJay   64.714.754 232.611.122   -98.117.539       162.832.293
-7    MACHETE   85.077.634 140.579.622   -74.466.894       159.544.528
-8       Jens   37.826.101 311.561.268  -115.297.832       153.123.933
-9    Mare1987  72.329.972 154.113.017   -74.726.186       147.056.158
-10   Simon ❗️  53.545.135 165.337.909   -72.231.405       125.776.540
-11   BAN PIVA  53.922.497  57.516.509   -36.774.872        90.697.369
+0       Henok 112.840.174 228.543.546  -112.656.628       225.496.802
+1   Christoph 103.484.863 237.751.286  -112.607.929       216.092.792
+2       frahd  90.670.818 231.992.048  -106.478.746       197.149.564
+3      Freddy  79.960.088 254.865.181  -110.492.339       190.452.427
+4     Elvisee  71.565.510 230.762.265   -99.768.166       171.333.676
+5     Batigol  83.682.528 165.016.375   -82.070.638       165.753.166
+6   JesseJay   64.714.754 231.004.782   -97.587.447       162.302.201
+7    MACHETE   85.077.634 140.009.906   -74.278.888       159.356.522
+8       Jens   37.826.101 310.694.703  -115.011.865       152.837.966
+9    Mare1987  72.329.972 153.933.730   -74.667.022       146.996.994
+10   Simon ❗️  53.545.135 164.280.823   -71.882.566       125.427.701
+11   BAN PIVA  53.922.497  57.096.526   -36.636.278        90.558.775
 
 Data reload needed, this takes a few minutes...
-
-Data loaded from database.
-
-Data preprocessed.
-
-Model evaluation:
-Signs correct: 59.59%
-RMSE: 1556630911.78
-MAE: 18509.09
-R2: 0.89
-
-=== Market Recommendations ===
-  last_name   team_name         mv  mv_change_yesterday  predicted_mv_target s_11_prob hours_to_exp  expiring_today
-0   Karazor   Stuttgart  6.881.285              156.608              152.896      None          NaN           False
-1     Tella  Leverkusen  6.777.248              164.674              152.334      None          NaN           False
-2     Couto    Dortmund  5.178.159              144.607              150.061      None          NaN           False
-3     Musah      Bremen  4.173.578              136.000              132.020      None          NaN           False
-4    Chaïbi   Frankfurt  9.619.121               94.869               90.956      None          NaN           False
-5  Pavlović      Bayern 27.888.362               40.522               35.703      None          NaN           False
-
-=== Squad Recommendations ===
-     last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0        Kobel    Dortmund 19.877.160               36.024               38.420        NaN
-1       Theate   Frankfurt 10.950.008               36.199               36.785        NaN
-2        Undav   Stuttgart 40.164.978               27.715               24.115        NaN
-3         Díaz      Bayern 51.730.841               11.343               10.962        NaN
-4   Föhrenbach  Heidenheim    500.000                    0                7.531        NaN
-5      Stiller   Stuttgart 34.843.849                  746                6.492        NaN
-6     Palacios  Leverkusen 19.586.690                7.350                2.511        NaN
-7        Meyer    Dortmund    500.000                    0                  171        NaN
-8   Gouweleeuw    Augsburg  4.439.893              -86.000              -82.200        NaN
-9      Puertas      Bremen  3.142.663              -87.804              -86.999        NaN
-10       Posch       Mainz  8.348.773             -106.013              -87.902        NaN
-11      Vieira     Hamburg 18.586.935             -244.999             -117.403        NaN
-12   Pieringer  Heidenheim  1.371.838             -120.132             -117.763        NaN
-13    Sabitzer    Dortmund  8.902.027             -182.505             -178.073        NaN
-14    Grimaldo  Leverkusen 45.252.516             -285.936             -189.921        NaN
-15    Vušković     Hamburg 22.543.544             -240.983             -200.408        NaN
-16       Gruda     Leipzig 14.179.791             -265.891             -237.124        NaN
-17    Lienhart    Freiburg  6.639.762             -380.459             -341.213        NaN
-
-No email provided, skipping email sending.
+Traceback (most recent call last):
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
+    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
+    comp_dfs = list(executor.map(process_player, players))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
+    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
+    op = _AsOfMerge(
+         ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
+    _OrderedMerge.__init__(
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
+    _MergeOperation.__init__(
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
+    self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
+    _check_dtype_match(lk, rk, i)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
+    raise MergeError(msg)
+pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
