@@ -1,4 +1,4 @@
-Run: 2026-06-19 23:35:12 UTC
+Run: 2026-06-20 23:43:32 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12118077326', 't': 26, 'coc': 0, 'data': {'t': 2001, 'n': 'Champion', 'd': 'Win the championship'}, 'dt': '2026-05-17T18:32:18Z'}: 'er'
@@ -24,53 +24,51 @@ Warning: Failed to process achievement bonus {'i': '12002014583', 't': 26, 'coc'
 
 === Manager Budgets ===
          User      Budget  Team Value  Max Negative  Available Budget
-0       Henok 112.840.174 228.543.546  -112.656.628       225.496.802
-1   Christoph 103.484.863 237.751.286  -112.607.929       216.092.792
-2       frahd  90.670.818 231.992.048  -106.478.746       197.149.564
-3      Freddy  79.960.088 254.865.181  -110.492.339       190.452.427
-4     Elvisee  71.565.510 230.762.265   -99.768.166       171.333.676
-5     Batigol  83.682.528 165.016.375   -82.070.638       165.753.166
-6   JesseJay   64.714.754 231.004.782   -97.587.447       162.302.201
-7    MACHETE   85.077.634 140.009.906   -74.278.888       159.356.522
-8       Jens   37.826.101 310.694.703  -115.011.865       152.837.966
-9    Mare1987  72.329.972 153.933.730   -74.667.022       146.996.994
-10   Simon ❗️  53.545.135 164.280.823   -71.882.566       125.427.701
-11   BAN PIVA  53.922.497  57.096.526   -36.636.278        90.558.775
+0       Henok 112.940.174 228.497.404  -112.674.401       225.614.575
+1   Christoph 103.584.863 236.847.026  -112.342.523       215.927.386
+2       frahd  89.947.247 232.010.159  -106.245.944       196.193.191
+3      Freddy  80.060.088 254.147.814  -110.288.608       190.348.696
+4     Elvisee  71.665.510 228.699.736   -99.120.531       170.786.041
+5     Batigol  83.782.528 164.264.582   -81.855.546       165.638.074
+6   JesseJay   64.814.754 229.460.768   -97.110.922       161.925.676
+7    MACHETE   85.177.634 139.488.350   -74.139.775       159.317.409
+8       Jens   37.926.101 309.927.411  -114.791.659       152.717.760
+9    Mare1987  72.429.972 153.630.250   -74.599.873       147.029.845
+10   Simon ❗️  53.645.135 163.429.536   -71.634.641       125.279.776
+11   BAN PIVA  54.022.497  57.186.035   -36.698.816        90.721.313
 
 Data reload needed, this takes a few minutes...
-Traceback (most recent call last):
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
-    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
-    comp_dfs = list(executor.map(process_player, players))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
-    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
-    op = _AsOfMerge(
-         ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
-    _OrderedMerge.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
-    _MergeOperation.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
-    self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
-    _check_dtype_match(lk, rk, i)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
-    raise MergeError(msg)
-pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
+
+Data loaded from database.
+
+Data preprocessed.
+
+Model evaluation:
+Signs correct: 65.03%
+RMSE: 1707353095.68
+MAE: 20093.79
+R2: 0.90
+
+=== Market Recommendations ===
+  last_name   team_name         mv  mv_change_yesterday  predicted_mv_target s_11_prob hours_to_exp  expiring_today
+0   Karazor   Stuttgart  7.196.736              153.643              151.068      None          NaN           False
+1     Tella  Leverkusen  7.096.102              149.209              144.441      None          NaN           False
+2     Couto    Dortmund  5.447.271              126.367              121.324      None          NaN           False
+3    Chaïbi   Frankfurt  9.836.061              110.492              112.706      None          NaN           False
+4     Musah      Bremen  4.421.390              111.970              109.481      None          NaN           False
+5  Pavlović      Bayern 27.974.113               40.594               36.813      None          NaN           False
+
+=== Squad Recommendations ===
+    last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
+0      Theate   Frankfurt 11.037.661               46.798               43.130        NaN
+1       Undav   Stuttgart 40.233.450               34.515               35.180        NaN
+2       Kobel    Dortmund 19.945.630               30.677               29.297        NaN
+3    Palacios  Leverkusen 19.618.724               17.524               24.462        NaN
+4        Díaz      Bayern 51.753.641               10.995               11.166        NaN
+5  Gouweleeuw    Augsburg  4.314.461              -58.077              -55.194        NaN
+6     Stiller   Stuttgart 34.774.244              -70.351             -152.052        NaN
+7    Sabitzer    Dortmund  8.529.303             -183.251             -176.093        NaN
+8    Lienhart    Freiburg  6.234.957             -204.878             -183.681        NaN
+9    Grimaldo  Leverkusen 44.439.117             -391.244             -298.516        NaN
+
+No email provided, skipping email sending.
