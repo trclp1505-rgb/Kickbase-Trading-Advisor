@@ -1,4 +1,4 @@
-Run: 2026-06-27 23:33:19 UTC
+Run: 2026-06-28 23:37:00 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12118077326', 't': 26, 'coc': 0, 'data': {'t': 2001, 'n': 'Champion', 'd': 'Win the championship'}, 'dt': '2026-05-17T18:32:18Z'}: 'er'
@@ -24,18 +24,18 @@ Warning: Failed to process achievement bonus {'i': '12002014583', 't': 26, 'coc'
 
 === Manager Budgets ===
          User      Budget  Team Value  Max Negative  Available Budget
-0       Henok 113.540.174 225.978.742  -112.041.242       225.581.416
-1   Christoph 107.947.969 227.070.583  -110.556.122       218.504.091
-2       frahd  90.547.247 229.317.500  -105.555.367       196.102.614
-3      Freddy  80.660.088 249.072.783  -108.811.847       189.471.935
-4     Elvisee  72.265.510 215.756.078   -95.047.124       167.312.634
-5     Batigol  84.382.528 157.879.296   -79.946.402       164.328.930
-6   JesseJay   65.414.754 220.008.489   -94.189.670       159.604.424
-7    MACHETE   85.777.634 136.042.689   -73.200.707       158.978.341
-8       Jens   38.626.101 302.944.681  -112.718.358       151.344.459
-9    Mare1987  73.029.972 149.658.208   -73.487.099       146.517.071
-10   Simon ❗️  54.245.135 161.615.857   -71.234.127       125.479.262
-11   BAN PIVA  54.622.497  57.977.482   -37.157.993        91.780.490
+0       Henok 113.640.174 225.183.337  -111.811.759       225.451.933
+1   Christoph 108.047.969 225.139.134  -109.951.744       217.999.713
+2       frahd  90.647.247 228.526.526  -105.327.345       195.974.592
+3      Freddy  80.760.088 248.032.507  -108.501.556       189.261.644
+4     Elvisee  72.365.510 213.987.052   -94.496.345       166.861.855
+5     Batigol  84.482.528 156.469.339   -79.514.116       163.996.644
+6   JesseJay   65.514.754 218.452.259   -93.709.114       159.223.868
+7    MACHETE   85.877.634 135.758.370   -73.139.881       159.017.515
+8       Jens   38.726.101 301.500.504  -112.274.780       151.000.881
+9    Mare1987  73.129.972 148.650.622   -73.187.596       146.317.568
+10   Simon ❗️  54.345.135 161.316.368   -71.168.296       125.513.431
+11   BAN PIVA  54.722.497  57.987.722   -37.194.372        91.916.869
 
 Data reload needed, this takes a few minutes...
 
@@ -44,30 +44,30 @@ Data loaded from database.
 Data preprocessed.
 
 Model evaluation:
-Signs correct: 64.98%
-RMSE: 1715492222.65
-MAE: 20076.34
+Signs correct: 65.00%
+RMSE: 1716358916.01
+MAE: 20129.90
 R2: 0.90
 
 === Market Recommendations ===
   last_name   team_name         mv  mv_change_yesterday  predicted_mv_target s_11_prob hours_to_exp  expiring_today
-0     Tella  Leverkusen  8.003.959              126.198              136.324      None          NaN           False
-1   Karazor   Stuttgart  8.031.734              100.907              103.982      None          NaN           False
-2     Couto    Dortmund  6.057.244               56.835               55.602      None          NaN           False
-3    Chaïbi   Frankfurt 10.400.379               38.070               25.987      None          NaN           False
-4  Pavlović      Bayern 28.222.911               25.315               22.236      None          NaN           False
+0     Tella  Leverkusen  8.121.825              117.866              119.251      None          NaN           False
+1   Karazor   Stuttgart  8.132.734              101.000              107.394      None          NaN           False
+2     Couto    Dortmund  6.094.374               37.130               36.788      None          NaN           False
+3  Pavlović      Bayern 28.249.691               26.780               22.219      None          NaN           False
+4    Chaïbi   Frankfurt 10.421.591               21.212                9.756      None          NaN           False
 
 === Squad Recommendations ===
     last_name   team_name         mv  mv_change_yesterday  predicted_mv_target  s_11_prob
-0       Undav   Stuttgart 40.472.077               29.733               28.129        NaN
-1      Theate   Frankfurt 11.277.181               20.940               18.326        NaN
-2       Kobel    Dortmund 20.146.785               12.473               12.346        NaN
-3        Díaz      Bayern 51.816.216                9.353               10.306        NaN
-4     Stiller   Stuttgart 34.807.412                4.673              -14.371        NaN
-5    Sabitzer    Dortmund  7.714.576              -47.706              -21.183        NaN
-6    Lienhart    Freiburg  4.945.718             -225.095              -76.487        NaN
-7  Gouweleeuw    Augsburg  3.814.108              -83.497              -81.953        NaN
-8    Palacios  Leverkusen 19.060.397             -255.386             -243.177        NaN
-9    Grimaldo  Leverkusen 39.843.988             -796.864             -430.918        NaN
+0       Undav   Stuttgart 40.504.424               32.347               32.759        NaN
+1      Theate   Frankfurt 11.298.189               21.008               19.128        NaN
+2        Díaz      Bayern 51.826.572               10.356               10.976        NaN
+3     Stiller   Stuttgart 34.809.732                2.320              -17.536        NaN
+4       Kobel    Dortmund 20.151.105                4.320              -24.684        NaN
+5    Lienhart    Freiburg  4.873.815              -71.903              -51.411        NaN
+6  Gouweleeuw    Augsburg  3.744.933              -69.175              -65.490        NaN
+7    Sabitzer    Dortmund  7.665.722              -48.854              -70.870        NaN
+8    Palacios  Leverkusen 18.642.250             -418.147             -374.536        NaN
+9    Grimaldo  Leverkusen 38.937.539             -906.449             -434.639        NaN
 
 No email provided, skipping email sending.
