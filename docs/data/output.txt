@@ -1,4 +1,4 @@
-Run: 2026-07-11 23:25:00 UTC
+Run: 2026-07-12 23:24:48 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12118077326', 't': 26, 'coc': 0, 'data': {'t': 2001, 'n': 'Champion', 'd': 'Win the championship'}, 'dt': '2026-05-17T18:32:18Z'}: 'er'
@@ -24,18 +24,18 @@ Warning: Failed to process achievement bonus {'i': '12002014583', 't': 26, 'coc'
 
 === Manager Budgets ===
          User      Budget  Team Value  Max Negative  Available Budget
-0       Henok 107.821.938 233.380.092  -112.596.670       220.418.608
-1   Christoph 109.247.969 226.245.501  -110.712.845       219.960.814
-2       frahd  90.901.758 237.225.525  -108.282.003       199.183.761
-3      Freddy  81.960.088 248.114.989  -108.924.775       190.884.863
-4   JesseJay   70.370.081 225.128.167   -97.514.422       167.884.503
-5     Batigol  85.682.528 161.158.810   -81.457.642       167.140.170
-6    MACHETE   87.077.634 147.186.030   -77.307.009       164.384.643
-7     Elvisee  67.291.647 214.542.420   -93.005.242       160.296.889
-8       Jens   40.026.101 303.606.727  -113.398.833       153.424.934
-9    Mare1987  74.329.972 153.044.955   -75.033.726       149.363.698
-10   Simon ❗️  58.045.135 169.859.233   -75.208.441       133.253.576
-11   BAN PIVA  55.922.497  62.077.798   -38.940.097        94.862.594
+0       Henok 107.921.938 235.148.110  -113.213.116       221.135.054
+1   Christoph 109.347.969 227.397.684  -111.126.065       220.474.034
+2       frahd  91.001.758 238.627.209  -108.777.559       199.779.317
+3      Freddy  82.060.088 248.628.317  -109.127.174       191.187.262
+4   JesseJay   70.470.081 226.658.201   -98.052.333       168.522.414
+5     Batigol  85.782.528 162.762.132   -82.019.738       167.802.266
+6    MACHETE   87.177.634 148.715.862   -77.844.854       165.022.488
+7     Elvisee  67.391.647 215.450.683   -93.337.969       160.729.616
+8       Jens   40.126.101 304.660.963  -113.779.731       153.905.832
+9    Mare1987  74.429.972 154.129.731   -75.424.702       149.854.674
+10   Simon ❗️  58.145.135 171.250.403   -75.700.528       133.845.663
+11   BAN PIVA  56.022.497  62.465.580   -39.101.065        95.123.562
 
 Data reload needed, this takes a few minutes...
 Traceback (most recent call last):
@@ -50,7 +50,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
     return fut.result(timeout)
            ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
   File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
