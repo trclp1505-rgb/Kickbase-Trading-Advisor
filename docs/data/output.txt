@@ -1,4 +1,4 @@
-Run: 2026-07-19 23:28:00 UTC
+Run: 2026-07-20 23:29:30 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12118077326', 't': 26, 'coc': 0, 'data': {'t': 2001, 'n': 'Champion', 'd': 'Win the championship'}, 'dt': '2026-05-17T18:32:18Z'}: 'er'
@@ -14,24 +14,21 @@ Warning: Failed to process achievement bonus {'i': '12022694432', 't': 26, 'coc'
 Warning: Failed to process achievement bonus {'i': '12022694347', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2026-04-13T17:55:17Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '12003017867', 't': 26, 'coc': 0, 'data': {'t': 404, 'n': 'The Galactics', 'd': 'Own a team with a value of 350 mil.'}, 'dt': '2026-04-07T00:31:07Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '12002015263', 't': 26, 'coc': 0, 'data': {'t': 5001, 'n': 'MVP', 'd': 'Own the best player of a match day'}, 'dt': '2026-04-06T17:57:53Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '12002015156', 't': 26, 'coc': 0, 'data': {'t': 302, 'n': 'World class', 'd': 'Score at least 400 points with a player'}, 'dt': '2026-04-06T17:57:53Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '12002015071', 't': 26, 'coc': 0, 'data': {'t': 301, 'n': 'Match winner', 'd': 'Score at least 300 points with a player'}, 'dt': '2026-04-06T17:57:52Z'}: 'er'
-Warning: Failed to process achievement bonus {'i': '12002014980', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2026-04-06T17:57:52Z'}: 'er'
 
 === Manager Budgets ===
          User      Budget  Team Value  Max Negative  Available Budget
-0       Henok 108.621.938 245.825.361  -116.967.609       225.589.547
-1   Christoph 110.047.969 232.310.920  -112.978.433       223.026.402
-2       frahd  97.847.606 242.294.235  -112.246.808       210.094.414
-3      Freddy  82.760.088 246.450.435  -108.639.473       191.399.561
-4   JesseJay   71.170.081 233.551.389  -100.558.085       171.728.166
-5     Batigol  86.482.528 169.877.493   -84.598.807       171.081.335
-6    MACHETE   87.877.634 155.589.952   -80.344.303       168.221.937
-7     Elvisee  68.091.647 219.334.227   -94.850.538       162.942.185
-8       Jens   40.926.101 307.860.763  -115.099.665       156.025.766
-9    Mare1987  75.129.972 159.129.945   -77.305.773       152.435.745
-10   Simon ❗️  58.845.135 180.314.534   -78.922.691       137.767.826
-11   BAN PIVA  56.722.497  61.518.593   -39.019.560        95.742.057
+0       Henok 108.621.938 247.240.207  -117.434.508       226.056.446
+1   Christoph 110.047.969 232.757.339  -113.125.752       223.173.721
+2       frahd  97.847.606 242.811.991  -112.417.667       210.265.273
+3      Freddy  82.760.088 246.192.115  -108.554.227       191.314.315
+4   JesseJay   71.170.081 234.653.719  -100.921.854       172.091.935
+5     Batigol  86.482.528 170.915.820   -84.941.455       171.423.983
+6    MACHETE   87.877.634 156.373.620   -80.602.914       168.480.548
+7     Elvisee  68.091.647 219.568.457   -94.927.834       163.019.481
+8       Jens   40.926.101 308.819.436  -115.416.027       156.342.128
+9    Mare1987  75.129.972 159.780.441   -77.520.436       152.650.408
+10   Simon ❗️  58.845.135 181.760.483   -79.399.854       138.244.989
+11   BAN PIVA  56.722.497  61.763.636   -39.100.424        95.822.921
 
 Data reload needed, this takes a few minutes...
 Traceback (most recent call last):
