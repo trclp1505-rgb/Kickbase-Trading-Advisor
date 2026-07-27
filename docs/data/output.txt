@@ -1,4 +1,4 @@
-Run: 2026-07-26 23:27:34 UTC
+Run: 2026-07-27 23:33:07 UTC
 
 Logged in to Kickbase.
 Warning: Failed to process achievement bonus {'i': '12118077326', 't': 26, 'coc': 0, 'data': {'t': 2001, 'n': 'Champion', 'd': 'Win the championship'}, 'dt': '2026-05-17T18:32:18Z'}: 'er'
@@ -12,56 +12,21 @@ Warning: Failed to process achievement bonus {'i': '12042761243', 't': 26, 'coc'
 Warning: Failed to process achievement bonus {'i': '12042761153', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2026-04-20T17:50:42Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '12022694432', 't': 26, 'coc': 0, 'data': {'t': 300, 'n': 'Top scorer', 'd': 'Score at least 200 points with a player'}, 'dt': '2026-04-13T17:55:17Z'}: 'er'
 Warning: Failed to process achievement bonus {'i': '12022694347', 't': 26, 'coc': 0, 'data': {'t': 101, 'n': 'Match day points silver', 'd': 'Score at least 1000 points during a match day'}, 'dt': '2026-04-13T17:55:17Z'}: 'er'
-
-=== Manager Budgets ===
-         User      Budget  Team Value  Max Negative  Available Budget
-0       Henok 109.021.938 252.850.706  -119.417.973       228.439.911
-1   Christoph 110.447.969 235.266.499  -114.085.774       224.533.743
-2       frahd  98.247.606 245.370.704  -113.394.042       211.641.648
-3      Freddy  82.366.505 245.569.761  -108.218.968       190.585.473
-4     Elvisee  70.246.647 219.932.071   -95.758.977       166.005.624
-5   JesseJay   65.112.463 240.166.076  -100.741.918       165.854.381
-6       Jens   41.526.101 314.527.595  -117.497.720       159.023.821
-7    Mare1987  75.529.972 162.564.021   -78.571.018       154.100.990
-8    Simon ❗️  59.245.135 187.527.264   -81.434.892       140.680.027
-9    MACHETE   61.357.634         NaN   -20.248.019        81.605.653
-10    Batigol  52.245.501         NaN   -17.241.015        69.486.516
-11   BAN PIVA  42.361.649         NaN   -13.979.344        56.340.993
-
-Data reload needed, this takes a few minutes...
+Warning: Skipping manager ('Nordend069', '4006456'): list index out of range
 Traceback (most recent call last):
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 82, in <module>
-    save_player_data_to_db(token, competition_ids, last_mv_values, last_pfm_values, reload_data)
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 156, in save_player_data_to_db
-    comp_dfs = list(executor.map(process_player, players))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/predictions/data_handler.py", line 138, in process_player
-    pd.merge_asof(mv_df, p_df, on="date", direction="backward")
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 917, in merge_asof
-    op = _AsOfMerge(
-         ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2353, in __init__
-    _OrderedMerge.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2265, in __init__
-    _MergeOperation.__init__(
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 1026, in __init__
-    self._maybe_require_matching_dtypes(self.left_join_keys, self.right_join_keys)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2478, in _maybe_require_matching_dtypes
-    _check_dtype_match(lk, rk, i)
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pandas/core/reshape/merge.py", line 2474, in _check_dtype_match
-    raise MergeError(msg)
-pandas.errors.MergeError: incompatible merge keys [0] dtype('<M8[us]') and dtype('<M8[s]'), must be the same type
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/daily_predictions.py", line 75, in <module>
+    manager_budgets_df = calc_manager_budgets(token, league_id, league_start_date, start_budget)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/budgets.py", line 103, in calc_manager_budgets
+    achievement_bonus = calc_achievement_bonus_by_points(token, league_id, user, total_achievement_bonus)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/features/budgets.py", line 130, in calc_achievement_bonus_by_points
+    ranking = get_league_ranking(token, league_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/league.py", line 92, in get_league_ranking
+    players = [(user["n"], user["sp"]) for user in data["us"]]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Kickbase-Trading-Advisor/Kickbase-Trading-Advisor/kickbase_api/league.py", line 92, in <listcomp>
+    players = [(user["n"], user["sp"]) for user in data["us"]]
+                           ~~~~^^^^^^
+KeyError: 'sp'
